@@ -1,0 +1,115 @@
+{
+    "image_root": "../asset/image/board/",
+    "committees": [
+        {
+            "name": "Directors",
+            "members": [
+                {
+                    "name": "Tessa Ryan",
+                    "role": "Executive Director",
+                    "image": "tessa.jpg"
+                },
+                {
+                    "name": "Hafsa Khan",
+                    "role": "Executive Director",
+                    "image": "hafsa.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Internal",
+            "members": [
+                {
+                    "name": "Travis Chan",
+                    "role": "Internal Director",
+                    "image": "travis.jpg"
+                },
+                {
+                    "name": "Jessica May",
+                    "role": "Logistics",
+                    "image": "jessica.jpg"
+                },
+                {
+                    "name": "Shruthi Ganapuram",
+                    "role": "Events",
+                    "image": "shruthi.jpg"
+                }
+            ]
+        },
+        {
+            "name": "External",
+            "members": [
+                {
+                    "name": "Jinju Brown",
+                    "role": "External Director",
+                    "image": "jinju.jpg"
+                },
+                {
+                    "name": "Ria Rathi",
+                    "role": "Mentorship",
+                    "image": "ria.jpg"
+                },
+                {
+                    "name": "Johanna Johnsen",
+                    "role": "Judging",
+                    "image": "johanna.jpg"
+                },
+                {
+                    "name": "Murrium Mirza",
+                    "role": "Judging",
+                    "image": "Murrium.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Sponsorship",
+            "members": [
+                {
+                    "name": "Rakesh Pillai",
+                    "role": "Sponsorship Director",
+                    "image": "rakesh.jpg"
+                },
+                {
+                    "name": "Sidney Nguyen",
+                    "role": "Company Relations",
+                    "image": "sidney.jpg"
+                },
+                {
+                    "name": "Sahithi Sarva",
+                    "role": "Company Relations",
+                    "image": "sahithi.jpg"
+                },
+                {
+                    "name": "Varsha Manickam",
+                    "role": "Finance",
+                    "image": "varsha.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Marketing",
+            "members": [
+                {
+                    "name": "Mia Nguyen",
+                    "role": "Marketing Director",
+                    "image": "mia.jpg"
+                },
+                {
+                    "name": "Jasmine Varma",
+                    "role": "Technology",
+                    "image": "jasmine.jpg"
+                },
+                {
+                    "name": "Annie Tran",
+                    "role": "Webmaster",
+                    "image": "annie.jpg"
+                },
+                {
+                    "name": "Ken Lin",
+                    "role": "Graphic Design Webmaster",
+                    "image": "ken.jpg"
+                }
+            ]
+        }
+    ]
+}

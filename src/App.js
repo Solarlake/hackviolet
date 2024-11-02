@@ -25,11 +25,6 @@ function App() {
                 </Routes>
             </div>
         </Router>
-        // <div className="App">
-        //     <Navigation />
-        //     <Background />
-        //     <Home />
-        // </div>
     );
 
 }

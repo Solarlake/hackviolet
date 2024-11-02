@@ -4,8 +4,11 @@
     justify-content: center;
     align-items: center;
     padding: 0 21.875%;
-    @media (max-width: 1200px) {
+    @media (max-width: 1360px) {
         padding: 0 8%;
+    }
+    @media (max-width: 900px) {
+        padding: 0 4%;
     }
     gap: 14em;
     
@@ -21,19 +24,20 @@
                 font-weight: 400;
                 font-size: 7.6em;
                 font-size: 6.5vw;
-                @media (max-width: 1200px) {
+                @media (max-width: 1360px) {
                     font-size: 11vw;
                 }
             }
         
             .copy {
-                margin-top: -1.2em;
+                margin-top: -1.6em;
         
                 p {
                     font-family: "Space Grotesk";
                     font-weight: 400;
                     font-size: 1.2em;
-                    @media (max-width: 768px) {
+                    line-height: 1.4em;
+                    @media (max-width: 900px) {
                         font-size: 1em;
                     }
                 }
@@ -66,6 +70,7 @@
                     &__register {
                         color: white;
                         background-color: black;
+                        // mix-blend-mode: multiply;
                     }
                 }
             }
@@ -137,13 +142,11 @@
     }
 
     .faq {
-
         .header {
             text-align: center;
             font-family: "PP Editorial New";
             font-size: 4em;
             font-weight: 400;
-            margin-top: 1em;
             font-style: italic;
             color: #ffffff;
         }
@@ -152,7 +155,21 @@
             overflow: visible;
             object-fit: none;
             width: 100vw;
-            margin-bottom: -14em;
+            margin-bottom: -13em;
+        }
+    }
+
+    .board {
+        width: 100%;
+
+        .header {
+            text-align: center;
+            font-family: "PP Editorial New";
+            font-size: 4em;
+            font-weight: 400;
+            font-style: italic;
+            color: #3A475A;
+            margin-bottom: 0.5em;
         }
     }
 }

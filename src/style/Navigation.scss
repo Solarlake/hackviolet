@@ -16,7 +16,7 @@
         padding: 0 4em;
         border-radius: 1em;
         border: 1px solid #0000001A;
-        backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px) saturate(120%);
         background-color: #7441FF0D;
 
         .logo {

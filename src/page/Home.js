@@ -5,6 +5,8 @@ import "../style/Home.scss";
 import Blob from "../asset/svg/blob.svg";
 import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
+import FAQ from "../component/FAQ";
+import Team from "../component/Team";
 
 const Home = () => {
     return (
@@ -55,9 +57,12 @@ const Home = () => {
             <div className="faq">
                 <img className="blob" src={Blob} alt="" />
                 <p className="header">Frequently Asked Questions</p>
-                <div className="questions">
-                    {/* question and answer component */}
-                </div>
+                <FAQ />
+            </div>
+
+            <div className="board">
+                <p className="header">Team</p>
+                <Team />
             </div>
         </div>
     );
