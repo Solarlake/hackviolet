@@ -46,9 +46,8 @@
                     height: 18em;
                 }
                 @media screen and (max-width: 900px) {
-                    width: 11em;
+                    width: 10em;
                     height: 14em;
-                    font-size: 0.9em;
                 }
                 
                 .image {
@@ -77,12 +76,18 @@
 
                 .name {
                     font-weight: 600;
+                    @media (max-width: 900px) {
+                        font-size: 0.8em;
+                    }
                 }
-
+                
                 .role {
                     font-weight: 400;
                     text-align: center;
                     line-height: 1.2em;
+                    @media (max-width: 900px) {
+                        font-size: 0.8em;
+                    }
                 }
             }
         }

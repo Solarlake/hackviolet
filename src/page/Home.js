@@ -40,7 +40,9 @@ const Home = () => {
             </div>
 
             <img className="clouds" src={Clouds} alt="" />
-            <img className="rocket" src={Rocket} alt="" />
+            <div className="rocket_container">
+                <img className="rocket" src={Rocket} alt="" />
+            </div>
 
             <div className="about">
                 <p className="header">ABOUT HACKVIOLET</p>

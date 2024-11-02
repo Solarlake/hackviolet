@@ -62,9 +62,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                column-gap: 2em;
                 
                 @media (max-width: 900px) {
                     margin-top: 1.1em;    
+                    column-gap: 1em;
                 }
 
                 .button {
@@ -73,7 +75,6 @@
                     font-size: 0.9em;
                     text-decoration: none;
         
-                    margin: 0 1em;
                     padding: 0.5em 4em;
                     padding-top: 0.6em;
                     border: 1px solid black;
@@ -133,24 +134,32 @@
         @media (max-width: 900px) {
             // width: 500em;
             height: 10em;
-            bottom: 4em;
+            bottom: 3em;
         }
     }
     
-    .rocket {
-        max-width: 32em;
-        object-fit: cover;
-        justify-self: center;
+    .rocket_container {
         position: absolute;
-        left: 0;
-        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         bottom: 0;
-        pointer-events: none;
-        
+
         @media (max-width: 900px) {
-            max-width: 15em;
-            bottom: 5em;
+            bottom: 4em;
         }
+
+        .rocket {
+            max-width: 32em;
+            object-fit: cover;
+            pointer-events: none;
+            
+            @media (max-width: 900px) {
+                max-width: 15em;
+            }
+        }
+
     }
 
     .about {
@@ -205,6 +214,7 @@
             overflow: visible;
             object-fit: none;
             width: 100vw;
+            height: auto;
             margin-bottom: -13em;
 
             @media (max-width: 900px) {
