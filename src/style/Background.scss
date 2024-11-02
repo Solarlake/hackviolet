@@ -25,6 +25,12 @@
             mix-blend-mode: soft-light;
             opacity: 0.8;
             z-index: 1000;
+
+            @media (max-width: 900px) {
+                width: 110vh;
+                height: 110vh;
+                top: -45vh;
+            }
         }
         
         &__gradient {
@@ -44,6 +50,13 @@
                 100% {
                     transform: rotate(360deg);
                 }
+            }
+
+            @media (max-width: 900px) {
+                width: 120vh;
+                height: 120vh;
+                top: -49vh;
+                animation: rotate 15s linear infinite;
             }
         }
     }

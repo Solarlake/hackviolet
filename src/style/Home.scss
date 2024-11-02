@@ -11,10 +11,16 @@
         padding: 0 4%;
     }
     gap: 14em;
+
+    overflow-x: hidden;
     
     .landing {
         text-align: center;
         height: 100vh;
+
+        @media (max-width: 900px) {
+            height: 70vh;
+        }
 
         .header {
             margin-top: 20vh;
@@ -47,7 +53,7 @@
 
                 @media (max-width: 900px) {
                     margin-top: -0.5em;
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                 }
             }
         
@@ -56,7 +62,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-        
+                
+                @media (max-width: 900px) {
+                    margin-top: 1.1em;    
+                }
+
                 .button {
                     font-family: "PP Supply Mono";
                     font-weight: 400;
@@ -94,7 +104,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-        
+
                 .icon {
                     color: black;
                     margin: 0 0.4em;
@@ -102,7 +112,7 @@
                     cursor: pointer;
 
                     @media (max-width: 900px) {
-                        font-size: 1.2em;
+                        font-size: 1.5em;
                     }
                 }
             }
@@ -111,6 +121,7 @@
 
     .clouds {
         width: 1000em;
+        height: 30em;
         object-fit: cover;
         justify-self: center;
         position: absolute;  
@@ -118,11 +129,16 @@
         right: 0;
         bottom: -5em;
         pointer-events: none;
+        
+        @media (max-width: 900px) {
+            // width: 500em;
+            height: 10em;
+            bottom: 4em;
+        }
     }
     
     .rocket {
         max-width: 32em;
-        margin: auto;
         object-fit: cover;
         justify-self: center;
         position: absolute;
@@ -130,6 +146,11 @@
         right: 0;
         bottom: 0;
         pointer-events: none;
+        
+        @media (max-width: 900px) {
+            max-width: 15em;
+            bottom: 5em;
+        }
     }
 
     .about {
@@ -185,6 +206,10 @@
             object-fit: none;
             width: 100vw;
             margin-bottom: -13em;
+
+            @media (max-width: 900px) {
+                margin-bottom: -6em;
+            }
         }
     }
 
