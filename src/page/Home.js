@@ -88,10 +88,10 @@ const Home = () => {
                 <Team />
             </div>
 
-            <div className="footer">
+            {/* <div className="footer">
                 <img className="blob" src={Blob} alt="" />
                 <Footer />
-            </div>
+            </div> */}
         </div>
     );
 };
