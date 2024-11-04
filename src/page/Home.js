@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faDiscord, faDev, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../style/Home.scss";
 import Blob from "../asset/svg/blob.svg";
+import BlobMobile from "../asset/svg/blob_mobile.svg";
 import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
 import FAQ from "../component/FAQ";
@@ -10,6 +11,18 @@ import Team from "../component/Team";
 import Footer from "../component/Footer";
 
 const Home = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 900);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className="home">
             <div id="landing" className="landing">
@@ -57,7 +70,7 @@ const Home = () => {
             </div>
 
             <div id="faq" className="faq">
-                <img className="blob" src={Blob} alt="" />
+            <img className="blob" src={isMobile ? BlobMobile : Blob} alt="" />
                 <p className="header">Frequently Asked Questions</p>
                 <FAQ />
             </div>
@@ -89,7 +102,7 @@ const Home = () => {
             </div>
 
             <div className="footer">
-                <img className="blob" src={Blob} alt="" />
+            <img className="blob" src={isMobile ? BlobMobile : Blob} alt="" />
                 <Footer />
             </div>
         </div>
