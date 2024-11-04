@@ -9,11 +9,11 @@ import hv5 from "../asset/image/gallery/hv5.jpg";
 import hv6 from "../asset/image/gallery/hv6.jpg";
 
 const images = [
+    { src: hv5, alt: "Description of image 5" },
     { src: hv1, alt: "Description of image 1" },
+    { src: hv4, alt: "Description of image 4" },
     { src: hv2, alt: "Description of image 2" },
     { src: hv3, alt: "Description of image 3" },
-    { src: hv4, alt: "Description of image 4" },
-    { src: hv5, alt: "Description of image 5" },
     { src: hv6, alt: "Description of image 6" },
 ];
 

@@ -3,8 +3,8 @@
         "question": "What is a hackathon?",
         "answer": "A hackathon is an exciting, collaborative event where teams of students innovate and code solutions to real-world problems within a limited timeframe. Participants can attend workshops, network with industry professionals, receive mentorship, and enjoy free food and swag while bringing their ideas to life!"    },
     {
-        "question": "Who can attend? Is this event only for underrepresented students?",
-        "answer": "We welcome students of all genders, majors, and backgrounds who are 18 and older. We are not a female (trans and cis)-only event, and there is absolutely no experience necessary!"
+        "question": "Who can attend?",
+        "answer": "We welcome students of all genders, majors, and backgrounds who are 18 and older. HackViolet is a female-empowerment event, but not a female (trans and cis)-only event, and there is absolutely no experience necessary!"
     },
     {
         "question": "How much does it cost?",
@@ -19,15 +19,15 @@
         "answer": "If you plan to submit your project for a prize, you must be in a team of 2-4 people. If you don’t have a team yet, no worries! We'll hold team formation sessions at the start of the event to help you find teammates. Once our Discord server is set up, you'll be able to connect with others there as well!"
     }, 
     {
-        "question": "How do project submissions work? Are there prizes?",
-        "answer": "Participants can start working on their projects when the hackathon starts. Projects will be submitted on our DevPost page. Judges will score them and winning teams will take home big prizes! More details coming soon."
-    },
-    {
-        "question": "Can I add my project to my resume?",
-        "answer": "Yes! Many participants add their projects to their resumes to showcase their experience and new skills."
+        "question": "How do project submissions and prizes work?",
+        "answer": "Participants can start their projects as soon as the hackathon begins, with submissions made via our DevPost page. Judges will evaluate each project, and top teams will win exciting prizes! Stay tuned for more details."
     },
     {
         "question": "Do you provide travel reimbursements or housing?",
         "answer": "Currently, we are not able to offer travel reimbursements or housing for participants."
+    },
+    {
+        "question": "I have other questions!",
+        "answer": "Feel free to contact us at hackvioletvt@gmail.com"
     }
 ]

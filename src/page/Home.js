@@ -17,8 +17,8 @@ const Home = () => {
                 <div className="header">
                     <h1>HackViolet 2025</h1>
                     <div className="copy">
-                        <p>Virginia Tech's premier female-empowerment hackathon</p>
-                        <p>February 1-2 • Data & Decision Sciences Building</p>
+                        <p className="p1">Virginia Tech's premier female-empowerment hackathon</p>
+                        <p className="p2">February 1-2 • Data & Decision Sciences Building</p>
                     </div>
                     <div className="buttons">
                         {/* <a href="/" className="button button__resources">Resources</a> */}
