@@ -1,0 +1,46 @@
+.footer_container {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    // padding: 0.5em 4em;
+    // padding-top: 0.6em;
+    // border: 1px solid black;
+    // border-top-left-radius: 1em;
+    // border-top-right-radius: 1em;
+    // background-color: #ECF7FF;
+
+    text-align: center;
+    font-family: "PP Supply Mono";
+    margin-bottom: 1.2em;
+
+    .logo {
+        a {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // padding: 0.6em 0;
+
+            img {
+                width: 20em;
+            }
+        }
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            color: black;
+            margin: 0 0.4em;
+            font-size: 1.5em;
+            cursor: pointer;
+
+            @media (max-width: 900px) {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

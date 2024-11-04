@@ -7,6 +7,7 @@ import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
 import FAQ from "../component/FAQ";
 import Team from "../component/Team";
+import Footer from "../component/Footer";
 
 const Home = () => {
     return (
@@ -88,17 +89,8 @@ const Home = () => {
             </div>
 
             <div className="footer">
-                <p>
-                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:da94c2e3-f11b-40b3-9c6c-68e9507693ca" target="_blank" rel="noreferrer">
-                        <u>MLH Code of Conduct</u> |&nbsp;
-                    </a>
-                    <a href="mailto:hackvioletvt@gmail.com" target="_blank" rel="noreferrer">
-                        <u>Contact Us</u>
-                    </a>
-                </p>
-                <p>
-                    Copyright © 2025 HackViolet. All rights reserved.           
-                </p>
+                <img className="blob" src={Blob} alt="" />
+                <Footer />
             </div>
         </div>
     );
