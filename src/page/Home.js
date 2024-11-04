@@ -76,8 +76,8 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="button">
-                    <a href="https://www.dropbox.com/scl/fi/ykraoa1h0glr3142l1z4d/HackViolet_2025_Sponsorship_Packet.pdf?rlkey=nmxsc2nqr8ootyhm3p235tdd8&st=4bhy0jrr&dl=0" target="_blank" rel="noreferrer" className="button button__sponsorship">
-                            Sponsorship Packet
+                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:b6a86bfe-a99e-4053-b10d-b450d57a437e" target="_blank" rel="noreferrer" className="button button__sponsorship">
+                        Sponsorship Packet
                     </a>
                 </div>
             </div>
@@ -85,6 +85,20 @@ const Home = () => {
             <div className="board">
                 <p className="header">Team</p>
                 <Team />
+            </div>
+
+            <div className="footer">
+                <p>
+                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:da94c2e3-f11b-40b3-9c6c-68e9507693ca" target="_blank" rel="noreferrer">
+                        <u>MLH Code of Conduct</u> |&nbsp;
+                    </a>
+                    <a href="mailto:hackvioletvt@gmail.com" target="_blank" rel="noreferrer">
+                        <u>Contact Us</u>
+                    </a>
+                </p>
+                <p>
+                    Copyright © 2025 HackViolet. All rights reserved.           
+                </p>
             </div>
         </div>
     );
