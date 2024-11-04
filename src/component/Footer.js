@@ -12,17 +12,18 @@ const Footer = () => {
                     <img src={Logo} alt="HackViolet 2025 Logo Text" />
                 </a>
             </div> */}
-            <p>
+            <p className='links'>
                 <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:da94c2e3-f11b-40b3-9c6c-68e9507693ca" target="_blank" rel="noreferrer">
                     <u>MLH Code of Conduct</u> |&nbsp;
                 </a>
                 <a href="mailto:hackvioletvt@gmail.com" target="_blank" rel="noreferrer">
                     <u>Contact Us</u>
                 </a>
+                <p>
+                    Copyright © 2025 HackViolet. All rights reserved.           
+                </p>
             </p>
-            <p>
-                Copyright © 2025 HackViolet. All rights reserved.           
-            </p>
+            
             {/* <div className="socials">
                 <a href="https://www.instagram.com/hackvioletvt/" target="_blank" rel="noreferrer" className="icon">
                     <FontAwesomeIcon icon={faInstagram} />
