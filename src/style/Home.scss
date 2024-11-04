@@ -339,9 +339,12 @@ html {
         }
     }
 
-    .footer {
-        text-align: center;
-        font-family: "PP Supply Mono";
-        margin-bottom: 1.2em;
+    .footer {        
+        .blob {
+            overflow: visible;
+            object-fit: none;
+            width: 100vw;
+            height: auto;
+        }
     }
 }
