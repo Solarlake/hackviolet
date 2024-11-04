@@ -5,6 +5,7 @@ import "../style/Home.scss";
 import Blob from "../asset/svg/blob.svg";
 import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
+import Gallery from "../component/Gallery";
 import FAQ from "../component/FAQ";
 import Team from "../component/Team";
 import Footer from "../component/Footer";
@@ -54,6 +55,10 @@ const Home = () => {
                         Through the event, we encourage all individuals to learn about and become change agents for the gender gap in technology by innovating and inspiring with code.
                     </p>
                 </div>
+            </div>
+
+            <div className="gallery">
+                <Gallery />
             </div>
 
             <div id="faq" className="faq">
