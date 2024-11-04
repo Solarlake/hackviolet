@@ -20,22 +20,22 @@ const Home = () => {
                     </div>
                     <div className="buttons">
                         {/* <a href="/" className="button button__resources">Resources</a> */}
-                        <a href="/" className="button button__register">Register</a>
+                        <a href="https://tally.so/r/3Eb0OL" target="_blank" rel="noreferrer" className="button button__register">Register</a>
                     </div>
                     <div className="socials">
-                        <a href="https://www.instagram.com/hackvioletvt/" target="_blank" rel="noreferrer" className="icon">
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        {/* <a href="/" className="icon">
-                            <FontAwesomeIcon icon={faDiscord} />
-                        </a> */}
-                        <a href="https://www.linkedin.com/company/hackviolet-vt/" target="_blank" rel="noreferrer" className="icon">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                        </a>
-                        {/* <a href="/" className="icon">
-                            <FontAwesomeIcon icon={faDev} />
-                        </a> */}
-                    </div>
+                            <a href="https://www.instagram.com/hackvioletvt/" target="_blank" rel="noreferrer" className="icon">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                            {/* <a href="/" className="icon">
+                                <FontAwesomeIcon icon={faDiscord} />
+                            </a> */}
+                            <a href="https://www.linkedin.com/company/hackviolet-vt/" target="_blank" rel="noreferrer" className="icon">
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                            </a>
+                            {/* <a href="/" className="icon">
+                                <FontAwesomeIcon icon={faDev} />
+                            </a> */}
+                        </div>
                 </div>
             </div>
 

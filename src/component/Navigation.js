@@ -18,7 +18,7 @@ const Navigation = () => {
                     <a href="#sponsors">Sponsors</a>
                 </div>
                 <div className="register">
-                    <a href="/">
+                    <a href="https://tally.so/r/3Eb0OL">
                         <p>Register</p>
                     </a>
                 </div>

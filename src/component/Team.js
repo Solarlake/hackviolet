@@ -5,6 +5,7 @@ import TeamData from "../content/team.json";
 import tessaImg from "../asset/image/board/tessa.jpg";
 import hafsaImg from "../asset/image/board/hafsa.jpg";
 import travisImg from "../asset/image/board/travis.jpg";
+import jessicaImg from "../asset/image/board/jessica.jpg";
 import shruthiImg from "../asset/image/board/shruthi.jpg";
 import jinjuImg from "../asset/image/board/jinju.jpg";
 import riaImg from "../asset/image/board/ria.jpg";
@@ -22,6 +23,7 @@ const imageMap = {
     "Tessa Ryan": tessaImg,
     "Hafsa Khan": hafsaImg,
     "Travis Chan": travisImg,
+    "Jessica May": jessicaImg,
     "Shruthi Ganapuram": shruthiImg,
     "Jinju Brown": jinjuImg,
     "Ria Rathi": riaImg,

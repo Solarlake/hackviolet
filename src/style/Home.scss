@@ -34,11 +34,15 @@ html {
                 font-weight: 400;
                 font-size: 7.6em;
                 font-size: 6.5vw;
+                
                 @media (max-width: 1360px) {
                     font-size: 11vw;
                 }
                 @media (max-width: 900px) {
                     font-size: 13vw;
+                }
+                @media (min-resolution: 1.25dppx) {
+                    font-size: 8vw;
                 }
             }
         
@@ -97,6 +101,7 @@ html {
                     }
         
                     &__register {
+                        z-index: 1;
                         color: white;
                         background-color: black;
                         // mix-blend-mode: multiply;
@@ -115,6 +120,7 @@ html {
                     margin: 0 0.4em;
                     font-size: 1.5em;
                     cursor: pointer;
+                    z-index: 1;
 
                     @media (max-width: 900px) {
                         font-size: 1.5em;
@@ -136,9 +142,15 @@ html {
         pointer-events: none;
         
         @media (max-width: 900px) {
-            // width: 500em;
+            width: 500em;
             height: 10em;
             bottom: 3em;
+        }
+
+        @media (min-resolution: 1.25dppx) {
+            width: 100vw;
+            height: 50vh;
+            bottom: -10vh;
         }
     }
     
@@ -154,6 +166,10 @@ html {
             bottom: 4em;
         }
 
+        @media (min-resolution: 1.25dppx) {
+            bottom: -30vh;
+        }
+
         .rocket {
             max-width: 32em;
             object-fit: cover;
@@ -161,6 +177,11 @@ html {
             
             @media (max-width: 900px) {
                 max-width: 15em;
+            }
+
+            @media (min-resolution: 1.25dppx) {
+                max-width: 70vw;
+                max-height: 70vh;
             }
         }
 
@@ -170,8 +191,13 @@ html {
         scroll-margin-top: 10em;
         color: #3A475A;
         padding: 0 8em;
+
         @media (max-width: 900px) {
             padding: 0 2em;
+        }
+
+        @media (min-resolution: 1.25dppx) {
+            padding: 4em 2em;
         }
 
         .copy {
@@ -228,6 +254,7 @@ html {
         scroll-margin-top: 10em;
         color: #3A475A;
         padding: 0 8em;
+        
         @media (max-width: 900px) {
             padding: 0 2em;
         }
@@ -258,7 +285,7 @@ html {
             }
 
             @media (max-width: 900px) {
-                font-size: 1.5em;
+                font-size: 1em;
             }
         }
         
@@ -268,7 +295,10 @@ html {
             justify-content: center;
             align-items: center;
 
-            cursor: pointer;
+            @media (max-width: 900px) {
+                margin-top: 1.1em;    
+                column-gap: 1em;
+            }
 
             &__sponsorship {
                 font-family: "PP Supply Mono";
@@ -283,6 +313,14 @@ html {
 
                 color: white;
                 background-color: black;
+
+                cursor: pointer;
+
+                @media (max-width: 900px) {
+                    padding: 0.6em 3em;
+                    padding-top: 0.75em;
+                    font-size: 0.8em;
+                }
             }
         }
     }
