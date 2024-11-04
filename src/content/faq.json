@@ -1,22 +1,33 @@
 [
     {
-        "question": "What is our mission?",
-        "answer": "We strive to educate as many people as we can about the obstacles females (trans and cis) and other minorities face in computing and hope to inspire more unified action through our hackathon. Above all, we believe that people of all genders working together is key to creating an inclusive environment of mutual respect."
-    },
-    {
         "question": "What is a hackathon?",
-        "answer": "A hackathon is an innovative event where teams work on developing tech projects in a limited period of time. Hackathons typically consist of workshops, activities, food, swag, meeting other awesome people in tech, and so much more to keep hackers engaged and fueled throughout the night."
+        "answer": "A hackathon is an exciting, collaborative event where teams of students innovate and code solutions to real-world problems within a limited timeframe. Participants can attend workshops, network with industry professionals, receive mentorship, and enjoy free food and swag while bringing their ideas to life!"    },
+    {
+        "question": "Who can attend? Is this event only for underrepresented students?",
+        "answer": "We welcome students of all genders, majors, and backgrounds who are 18 and older. We are not a female (trans and cis)-only event, and there is absolutely no experience necessary!"
     },
     {
-        "question": "Who can attend HackViolet?",
-        "answer": "Any student enrolled in an undergraduate or graduate program. We are not a female (trans and cis)-only event. We invite students of all genders, majors, and backgrounds. There is absolutely no experience necessary!"
+        "question": "How much does it cost?",
+        "answer": "Nothing! Registration is free, and we provide all swag, scheduled meals, workshops, and even prizes at no cost. All you need to participate is a computer!"
     },
     {
         "question": "Do I need to know how to code?",
-        "answer": "Absolutely not! We encourage participants of all skill levels to join us. We will have introductory workshops and access to mentors to teach you everything you need to know!"
+        "answer": "No! We accept participants of all experience levels. Plus, we’ll have mentors available for guidance and workshops to help you learn!"
     },
     {
         "question": "Do I need a team?",
-        "answer": "If you are planning to demo your project to compete for a prize, you must be in a team of 2-4 people. If you don't have a team yet, no worries! We'll have team formation activities and plenty of ways for you to meet other people!"
+        "answer": "If you plan to submit your project for a prize, you must be in a team of 2-4 people. If you don’t have a team yet, no worries! We'll hold team formation sessions at the start of the event to help you find teammates. Once our Discord server is set up, you'll be able to connect with others there as well!"
+    }, 
+    {
+        "question": "How do project submissions work? Are there prizes?",
+        "answer": "Participants can start working on their projects when the hackathon starts. Projects will be submitted on our DevPost page. Judges will score them and winning teams will take home big prizes! More details coming soon."
+    },
+    {
+        "question": "Can I add my project to my resume?",
+        "answer": "Yes! Many participants add their projects to their resumes to showcase their experience and new skills."
+    },
+    {
+        "question": "Do you provide travel reimbursements or housing?",
+        "answer": "Currently, we are not able to offer travel reimbursements or housing for participants."
     }
 ]
