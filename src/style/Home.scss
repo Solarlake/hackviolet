@@ -48,7 +48,7 @@ html {
                 p {
                     font-family: "Space Grotesk";
                     font-weight: 400;
-                    font-size: 1.8em;
+                    font-size: 1.2em;
                     line-height: 1.4em;
                     @media (max-width: 900px) {
                         font-size: 1em;
@@ -76,7 +76,7 @@ html {
                 .button {
                     font-family: "PP Supply Mono";
                     font-weight: 400;
-                    font-size: 1.8em;
+                    font-size: 0.9em;
                     text-decoration: none;
         
                     padding: 0.5em 4em;
@@ -113,7 +113,7 @@ html {
                 .icon {
                     color: black;
                     margin: 0 0.4em;
-                    font-size: 2.2em;
+                    font-size: 1.5em;
                     cursor: pointer;
 
                     @media (max-width: 900px) {
@@ -177,7 +177,7 @@ html {
         .copy {
             margin-top: 1em;
             font-family: "PP Editorial New";
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: 400;
             line-height: 1.5em;
 
@@ -228,6 +228,9 @@ html {
         scroll-margin-top: 10em;
         color: #3A475A;
         padding: 0 8em;
+        @media (max-width: 900px) {
+            padding: 0 2em;
+        }
     
         .header {
             text-align: center;
@@ -237,37 +240,50 @@ html {
             font-style: italic;
             color: #3A475A;
             margin-bottom: 0.5em;
-        }
 
-        .copy {
-            p {
-                font-family: "Space Grotesk";
-                font-weight: 400;
-                font-size: 1.8em;
-                line-height: 1.4em;
-                margin-bottom: 1.2em;
+            @media (max-width: 900px) {
+                font-size: 3em;
             }
         }
 
+        .copy {
+            margin-top: 1em;
+            font-family: "Space Grotesk";
+            font-size: 1.4em;
+            font-weight: 400;
+            line-height: 1.5em;
+
+            p {
+                margin-bottom: 1.2em;
+            }
+
+            @media (max-width: 900px) {
+                font-size: 1.5em;
+            }
+        }
+        
         .button {
             margin-top: 1.8em;
             display: flex;
             justify-content: center;
             align-items: center;
-            column-gap: 2em;
 
-            font-weight: 400;
-            font-size: 1.8em;
-            text-decoration: none;
-
-            padding: 0.5em 4em;
-            padding-top: 0.6em;
-            border: 1px solid black;
-            border-radius: 100em;
-
-            background-color: #ffffff;
-            
             cursor: pointer;
+
+            &__sponsorship {
+                font-family: "PP Supply Mono";
+                font-weight: 400;
+                font-size: 0.9em;
+                text-decoration: none;
+
+                padding: 0.5em 4em;
+                padding-top: 0.6em;
+                border: 1px solid black;
+                border-radius: 100em;
+
+                color: white;
+                background-color: black;
+            }
         }
     }
 

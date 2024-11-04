@@ -62,11 +62,11 @@ const Home = () => {
             </div>
 
             <div id="sponsors" className="sponsors">
-                <p className="header">Join Us as a Sponsor for HackViolet 2025!</p>
+                <p className="header">Sponsors</p>
                 <div className="copy">
-                    <p>With over <strong>500 expected participants</strong> attending this in-person hackathon, we need your help to create an incredible experience for young, future innovators!</p>
-                    <p><strong>Benefits of Sponsorship:</strong></p>
+                    <p>With over 500 expected participants attending this in-person hackathon, we need your help to create an incredible experience for young, future innovators!</p>
                     <p>
+                    <strong>Benefits of Sponsorship:</strong>
                         <ul>
                             <li>Enhance Brand Visibility</li>
                             <li>Showcase Your Technology</li>
@@ -74,10 +74,9 @@ const Home = () => {
                             <li>Demonstrate Corporate Social Responsibility</li>
                         </ul>
                     </p>
-                    <p><strong>Click the button to access the sponsorship packet</strong> and take the first step toward becoming an official HackViolet 2025 sponsor!</p>
                 </div>
                 <div className="button">
-                    <a href="https://www.dropbox.com/scl/fi/ykraoa1h0glr3142l1z4d/HackViolet_2025_Sponsorship_Packet.pdf?rlkey=nmxsc2nqr8ootyhm3p235tdd8&st=4bhy0jrr&dl=0" target="_blank" rel="noreferrer">
+                    <a href="https://www.dropbox.com/scl/fi/ykraoa1h0glr3142l1z4d/HackViolet_2025_Sponsorship_Packet.pdf?rlkey=nmxsc2nqr8ootyhm3p235tdd8&st=4bhy0jrr&dl=0" target="_blank" rel="noreferrer" className="button button__sponsorship">
                             Sponsorship Packet
                     </a>
                 </div>
