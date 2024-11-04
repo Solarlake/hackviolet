@@ -11,7 +11,7 @@ import Team from "../component/Team";
 const Home = () => {
     return (
         <div className="home">
-            <div className="landing">
+            <div id="landing" className="landing">
                 <div className="header">
                     <h1>HackViolet 2025</h1>
                     <div className="copy">
@@ -19,7 +19,7 @@ const Home = () => {
                         <p>February 1-2 • Data & Decision Sciences Building</p>
                     </div>
                     <div className="buttons">
-                        <a href="/" className="button button__resources">Resources</a>
+                        {/* <a href="/" className="button button__resources">Resources</a> */}
                         <a href="/" className="button button__register">Register</a>
                     </div>
                     <div className="socials">
@@ -44,8 +44,7 @@ const Home = () => {
                 <img className="rocket" src={Rocket} alt="" />
             </div>
 
-            <div className="about">
-                <p className="header">ABOUT HACKVIOLET</p>
+            <div id="about" className="about">
                 <div className="copy">
                     <p>
                         <span className="hv">HackViolet</span> is a 24-hour hackathon hosted by The Association of Women in Computing, a student-run, non-profit organization at Virginia Tech.
@@ -56,10 +55,32 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="faq">
+            <div id="faq" className="faq">
                 <img className="blob" src={Blob} alt="" />
                 <p className="header">Frequently Asked Questions</p>
                 <FAQ />
+            </div>
+
+            <div id="sponsors" className="sponsors">
+                <p className="header">Join Us as a Sponsor for HackViolet 2025!</p>
+                <div className="copy">
+                    <p>With over <strong>500 expected participants</strong> attending this in-person hackathon, we need your help to create an incredible experience for young, future innovators!</p>
+                    <p><strong>Benefits of Sponsorship:</strong></p>
+                    <p>
+                        <ul>
+                            <li>Enhance Brand Visibility</li>
+                            <li>Showcase Your Technology</li>
+                            <li>Engage with Top Talent</li>
+                            <li>Demonstrate Corporate Social Responsibility</li>
+                        </ul>
+                    </p>
+                    <p><strong>Click the button to access the sponsorship packet</strong> and take the first step toward becoming an official HackViolet 2025 sponsor!</p>
+                </div>
+                <div className="button">
+                    <a href="https://www.dropbox.com/scl/fi/ykraoa1h0glr3142l1z4d/HackViolet_2025_Sponsorship_Packet.pdf?rlkey=nmxsc2nqr8ootyhm3p235tdd8&st=4bhy0jrr&dl=0" target="_blank" rel="noreferrer">
+                            Sponsorship Packet
+                    </a>
+                </div>
             </div>
 
             <div className="board">

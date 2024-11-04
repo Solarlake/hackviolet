@@ -13,9 +13,9 @@ const Navigation = () => {
                     </a>
                 </div>
                 <div className="links">
-                    <a href="/">Prizes</a>
-                    <a href="/">Sponsors</a>
-                    <a href="/">Resources</a>
+                    <a href="#about">About</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#sponsors">Sponsors</a>
                 </div>
                 <div className="register">
                     <a href="/">

@@ -14,7 +14,7 @@
         }
 
         .committee_text {
-            font-size: 1.4em;
+            font-size: 2.2em;
             margin-bottom: 0.2em;
         }
 
@@ -39,7 +39,8 @@
                 justify-content: start;
                 align-items: center;
                 width: 12em;
-                height: 21em;
+                height: 22em;
+                margin-bottom: 2em;
 
                 @media screen and (max-width: 1200px) {
                     width: 11em;
@@ -75,16 +76,22 @@
                 }
 
                 .name {
+                    font-size: 1.8em;
                     font-weight: 600;
+                    text-align: center;
+                    line-height: 1em;
+                    margin-top: 0.5em;
                     @media (max-width: 900px) {
                         font-size: 0.8em;
                     }
                 }
                 
                 .role {
+                    font-size: 1.2em;
                     font-weight: 400;
                     text-align: center;
                     line-height: 1.2em;
+                    margin-top: 0.2em;
                     @media (max-width: 900px) {
                         font-size: 0.8em;
                     }

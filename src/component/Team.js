@@ -48,8 +48,7 @@ const Team = () => {
                                 <div className="image">
                                     <img
                                         // src={`${TeamData.image_root}${member.image}`}
-                                        src={imageMap[member.name]}
-                                    />
+                                        src={imageMap[member.name]}                                    />
                                 </div>
                                 <p className="name">{member.name}</p>
                                 <p className="role">{member.role}</p>

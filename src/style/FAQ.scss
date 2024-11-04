@@ -48,14 +48,15 @@
 
         .question__answer {
             overflow: hidden;
-            font-size: 1em;
+            font-size: 1.8em;
             max-height: 0;
             transition: all 0.3s ease-out;
         }
         
         .question__answer_show {
             overflow: hidden;
-            max-height: 7em;
+            font-size: 1.8em;
+            max-height: 12em;
             padding-bottom: 1em;
             transition: all 0.3s ease-out;
 
