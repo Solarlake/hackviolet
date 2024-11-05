@@ -32,7 +32,7 @@ const Gallery = () => {
             if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
                 scrollAmount = 0;
             }
-        }, 50);
+        }, 30);
 
         return () => clearInterval(interval);
     }, []);

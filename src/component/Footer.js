@@ -1,43 +1,22 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faDiscord, faDev, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../style/Footer.scss";
-import Logo from "../asset/image/logo_text_black.png";
+import Logo from "../asset/image/hackviolet_text.png";
+import Socials from "./Socials";
 
 const Footer = () => {
     return (
         <div className="footer_container">
-            {/* <div className="logo">
-                <a href="/">
-                    <img src={Logo} alt="HackViolet 2025 Logo Text" />
-                </a>
-            </div> */}
-            <p className='links'>
-                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:da94c2e3-f11b-40b3-9c6c-68e9507693ca" target="_blank" rel="noreferrer">
-                    <u>MLH Code of Conduct</u> |&nbsp;
-                </a>
-                <a href="mailto:hackvioletvt@gmail.com" target="_blank" rel="noreferrer">
-                    <u>Contact Us</u>
-                </a>
-                <p>
-                    Copyright © 2025 HackViolet. All rights reserved.           
-                </p>
-            </p>
-            
-            {/* <div className="socials">
-                <a href="https://www.instagram.com/hackvioletvt/" target="_blank" rel="noreferrer" className="icon">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="/" className="icon">
-                    <FontAwesomeIcon icon={faDiscord} />
-                </a>
-                <a href="https://www.linkedin.com/company/hackviolet-vt/" target="_blank" rel="noreferrer" className="icon">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-                <a href="/" className="icon">
-                    <FontAwesomeIcon icon={faDev} />
-                </a>
-            </div> */}
+            <div className="hackviolet">
+                <img className="logo" src={Logo} alt="" />
+                <div className="contact">
+                    <p className="label">Contact us!</p>
+                    <p className="email"><a href="mailto:hackvioletvt@gmail.com">hackvioletvt@gmail.com</a></p>
+                </div>
+            </div>
+            <div className="copyright">
+                <p>© 2025 HackViolet | <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a></p>
+            </div>
+            <Socials />
         </div>
     );
 }

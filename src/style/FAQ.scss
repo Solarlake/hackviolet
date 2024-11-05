@@ -55,12 +55,12 @@
         
         .question__answer_show {
             overflow: hidden;
-            max-height: 7em;
+            max-height: 6em;
             padding-bottom: 1em;
             transition: all 0.3s ease-out;
 
             @media (max-width: 900px) {
-                max-height: 15em;
+                max-height: 13em;
             }
         }
     }

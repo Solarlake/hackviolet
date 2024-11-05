@@ -1,56 +1,61 @@
 .footer_container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    background-color: #ECF7FF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em 1em 0 0;
+    padding: 2.5em;
+    padding-bottom: 1.8em;
+    align-items: center;
+    row-gap: 0.5em;
+    width: 100%;
 
-    // padding: 0.5em 4em;
-    // padding-top: 0.6em;
-    // border: 1px solid black;
-    // border-top-left-radius: 1em;
-    // border-top-right-radius: 1em;
-    // background-color: #ECF7FF;
-
-    text-align: center;
-    margin-bottom: 2.2em;
-
-    .links {
-        font-family: "Space Grotesk";
-        font-weight: 400;
-        font-size: 1.2em;
-        line-height: 1.4em;
-
-        @media (max-width: 900px) {
-            font-size: 0.8em;
-        }
-    }    
-
-    .logo {
-        a {
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // padding: 0.6em 0;
-
-            img {
-                width: 20em;
-            }
-        }
+    @media (max-width: 900px) {
+        font-size: 0.8em;
     }
 
-    .socials {
+    .hackviolet {
         display: flex;
         justify-content: center;
         align-items: center;
+        column-gap: 1em;
 
-        .icon {
-            color: black;
-            margin: 0 0.4em;
-            font-size: 1.5em;
-            cursor: pointer;
+        .logo {
+            width: auto;
+            height: 2em;
+        }
 
-            @media (max-width: 900px) {
+        @media (max-width: 900px) {
+            flex-direction: column;
+            row-gap: 0.8em;
+        }
+
+        .contact {
+            line-height: 1;
+
+            
+            .label {
+                @media (max-width: 900px) {
+                    visibility: hidden;
+                    height: 0;
+                }
+                font-size: 0.8em;
+            }
+            .email {
                 font-size: 1.5em;
+
+                @media (max-width: 900px) {
+                    font-size: 1.2em;
+                }
             }
         }
     }
+
+    .copyright {
+        p a {
+            text-decoration: underline;
+        }
+    }
 }
+
+
+// https://static.mlh.io/docs/mlh-code-of-conduct.pdf

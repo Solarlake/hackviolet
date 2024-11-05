@@ -1,14 +1,15 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faDiscord, faDev, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../style/Home.scss";
-import Blob from "../asset/svg/blob.svg";
+// import Blob from "../asset/svg/blob.svg";
+// import FooterBlob from "../asset/svg/footer_blob.svg";
+import FooterBlob from "../asset/image/footer_blob.png";
 import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
 import Gallery from "../component/Gallery";
 import FAQ from "../component/FAQ";
 import Team from "../component/Team";
 import Footer from "../component/Footer";
+import Socials from "../component/Socials";
 
 const Home = () => {
     return (
@@ -25,19 +26,8 @@ const Home = () => {
                         <a href="https://tally.so/r/3Eb0OL" target="_blank" rel="noreferrer" className="button button__register">Register</a>
                     </div>
                     <div className="socials">
-                            <a href="https://www.instagram.com/hackvioletvt/" target="_blank" rel="noreferrer" className="icon">
-                                <FontAwesomeIcon icon={faInstagram} />
-                            </a>
-                            {/* <a href="/" className="icon">
-                                <FontAwesomeIcon icon={faDiscord} />
-                            </a> */}
-                            <a href="https://www.linkedin.com/company/hackviolet-vt/" target="_blank" rel="noreferrer" className="icon">
-                                <FontAwesomeIcon icon={faLinkedinIn} />
-                            </a>
-                            {/* <a href="/" className="icon">
-                                <FontAwesomeIcon icon={faDev} />
-                            </a> */}
-                        </div>
+                        <Socials />
+                    </div>
                 </div>
             </div>
 
@@ -62,7 +52,7 @@ const Home = () => {
             </div>
 
             <div id="faq" className="faq">
-                <img className="blob" src={Blob} alt="" />
+                {/* <img className="blob" src={Blob} alt="" /> */}
                 <p className="header">Frequently Asked Questions</p>
                 <FAQ />
             </div>
@@ -94,8 +84,8 @@ const Home = () => {
             </div>
 
             <div className="footer">
-                <img className="blob" src={Blob} alt="" />
                 <Footer />
+                <img className="footer_blob" src={FooterBlob} alt="" />
             </div>
         </div>
     );
