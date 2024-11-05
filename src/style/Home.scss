@@ -97,11 +97,11 @@ html {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                column-gap: 2em;
+                column-gap: 1em;
                 
                 @media (max-width: 900px) {
                     margin-top: 1.1em;    
-                    column-gap: 1em;
+                    column-gap: 0.5em;
                 }
 
                 .button {
@@ -110,13 +110,13 @@ html {
                     font-size: 0.9em;
                     text-decoration: none;
         
-                    padding: 0.5em 4em;
+                    padding: 0.5em 2em;
                     padding-top: 0.6em;
                     border: 1px solid black;
                     border-radius: 100em;
 
                     @media (max-width: 900px) {
-                        padding: 0.6em 3em;
+                        padding: 0.4em 2em;
                         font-size: 0.8em;
                     }
                     

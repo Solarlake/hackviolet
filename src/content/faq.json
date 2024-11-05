@@ -28,6 +28,10 @@
         "answer": "Currently, we are not able to offer travel reimbursements or housing for participants."
     },
     {
+        "question": "Can I judge or mentor?",
+        "answer": "Yes! We are actively seeking volunteers with experience in hackathons and coding. If you're interested in joining us, please click the 'Judge' or 'Mentor' buttons at the top of this page for more information and to sign up."
+    },
+    {
         "question": "I have other questions!",
         "answer": "Feel free to contact us at hackvioletvt@gmail.com"
     }

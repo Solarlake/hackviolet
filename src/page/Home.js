@@ -24,6 +24,8 @@ const Home = () => {
                     </div>
                     <div className="buttons">
                         {/* <a href="/" className="button button__resources">Resources</a> */}
+                        <a href="https://forms.gle/DzFDNvCCFqpJXVfD6" target="_blank" rel="noreferrer" className="button button__resources">Judge</a>
+                        <a href="https://forms.gle/YgKufXUzh3Pn7UcG7" target="_blank" rel="noreferrer" className="button button__resources">Mentor</a>
                         <a href="https://tally.so/r/3Eb0OL" target="_blank" rel="noreferrer" className="button button__register">Register</a>
                     </div>
                     <div className="socials">
