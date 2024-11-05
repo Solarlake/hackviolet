@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 400%;
+    height: 600%;
     z-index: -1000;
     // background-color: #000000;
     display: flex;
@@ -34,8 +34,6 @@
         }
         
         &__gradient {
-            // width: 110em;
-            // height: 110em;
             width: 170vh;
             height: 170vh;
             top: -78.5vh;
@@ -65,14 +63,15 @@
         position: absolute;
         object-fit: none;
         overflow: visible;
-        width: 120vw;
-        top: 135em;
+        width: 170vh;
+        height: 170vh;
+        top: 80em;
         z-index: 1000;
         filter: saturate(1.1) brightness(1.1);
 
         @media (max-width: 900px) {
             width: 200vw;
-            top: 115em;
+            top: 70em;
         }
     }
 }
