@@ -9,12 +9,12 @@ import hv5 from "../asset/image/gallery/hv5.jpg";
 import hv6 from "../asset/image/gallery/hv6.jpg";
 
 const images = [
-    { src: hv5, alt: "Description of image 5" },
-    { src: hv1, alt: "Description of image 1" },
-    { src: hv4, alt: "Description of image 4" },
-    { src: hv2, alt: "Description of image 2" },
-    { src: hv3, alt: "Description of image 3" },
-    { src: hv6, alt: "Description of image 6" },
+    { src: hv5, alt: "Students coding in a workshop" },
+    { src: hv1, alt: "HackViolet 2024 opening ceromony" },
+    { src: hv4, alt: "Company panelists answering questions" },
+    { src: hv2, alt: "Students coding a hackathon project" },
+    { src: hv3, alt: "Students competing at cup stacking" },
+    { src: hv6, alt: "Student petting Virginia Tech therapy dog" },
 ];
 
 const Gallery = () => {

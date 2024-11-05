@@ -9,6 +9,7 @@ import jessicaImg from "../asset/image/board/jessica.jpg";
 import shruthiImg from "../asset/image/board/shruthi.jpg";
 import jinjuImg from "../asset/image/board/jinju.jpg";
 import riaImg from "../asset/image/board/ria.jpg";
+import johannaImg from "../asset/image/board/johanna.jpg";
 import murriumImg from "../asset/image/board/murrium.jpg";
 import rakeshImg from "../asset/image/board/rakesh.jpg";
 import sidneyImg from "../asset/image/board/sidney.jpg";
@@ -27,6 +28,7 @@ const imageMap = {
     "Shruthi Ganapuram": shruthiImg,
     "Jinju Brown": jinjuImg,
     "Ria Rathi": riaImg,
+    "Johanna Johnsen": johannaImg,
     "Murrium Mirza": murriumImg,
     "Rakesh Pillai": rakeshImg,
     "Sidney Nguyen": sidneyImg,
