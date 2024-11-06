@@ -103,36 +103,6 @@ html {
                     margin-top: 1.1em;    
                     column-gap: 0.5em;
                 }
-
-                .button {
-                    font-family: "PP Supply Mono";
-                    font-weight: 400;
-                    font-size: 0.9em;
-                    text-decoration: none;
-        
-                    padding: 0.5em 2em;
-                    padding-top: 0.6em;
-                    border: 1px solid black;
-                    border-radius: 100em;
-
-                    @media (max-width: 900px) {
-                        padding: 0.4em 2em;
-                        font-size: 0.8em;
-                    }
-                    
-                    cursor: pointer;
-        
-                    &__resources {
-                        color: black
-                    }
-        
-                    &__register {
-                        z-index: 1;
-                        color: white;
-                        background-color: black;
-                        // mix-blend-mode: multiply;
-                    }
-                }
             }
         
             .socials {

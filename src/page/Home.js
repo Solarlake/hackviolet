@@ -11,6 +11,7 @@ import FAQ from "../component/FAQ";
 import Team from "../component/Team";
 import Footer from "../component/Footer";
 import Socials from "../component/Socials";
+import Button from "../component/Button";
 
 const Home = () => {
     return (
@@ -23,10 +24,9 @@ const Home = () => {
                         <p className="p2">February 1-2 • Data & Decision Sciences Building</p>
                     </div>
                     <div className="buttons">
-                        {/* <a href="/" className="button button__resources">Resources</a> */}
-                        <a href="https://forms.gle/DzFDNvCCFqpJXVfD6" target="_blank" rel="noreferrer" className="button button__resources">Judge</a>
-                        <a href="https://forms.gle/YgKufXUzh3Pn7UcG7" target="_blank" rel="noreferrer" className="button button__resources">Mentor</a>
-                        <a href="https://tally.so/r/3Eb0OL" target="_blank" rel="noreferrer" className="button button__register">Register</a>
+                        <Button href="https://forms.gle/DzFDNvCCFqpJXVfD6" newTab clear text="Judge" />
+                        <Button href="https://forms.gle/YgKufXUzh3Pn7UcG7" newTab clear text="Mentor" />
+                        <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" />
                     </div>
                     <div className="socials">
                         <Socials />

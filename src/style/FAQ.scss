@@ -17,10 +17,10 @@
         .header {
             display: flex;
             justify-content: space-between;
-            font-family: "Space Grotesk";
+            font-family: "Neue Haas Grotesk Text Pro";
             color: #000000;
             font-style: normal;
-            font-size: 2.2em;
+            font-size: 2em;
             cursor: pointer;
 
             @media (max-width: 900px) {
@@ -48,14 +48,15 @@
 
         .question__answer {
             overflow: hidden;
-            font-size: 1em;
+            font-size: 1.2em;
             max-height: 0;
             transition: all 0.3s ease-out;
         }
         
         .question__answer_show {
             overflow: hidden;
-            max-height: 6em;
+            font-size: 1.2em;
+            max-height: 7em;
             padding-bottom: 1em;
             transition: all 0.3s ease-out;
 

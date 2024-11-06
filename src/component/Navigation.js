@@ -21,7 +21,7 @@ const Navigation = () => {
                 </div>
                 <div className="register">
                     <a href="https://tally.so/r/3Eb0OL">
-                        <p>Register</p>
+                        Register
                     </a>
                 </div>
             </div>

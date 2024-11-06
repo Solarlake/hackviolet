@@ -3,6 +3,7 @@
     flex-direction: column;
     color: #3A475A;
     text-transform: uppercase;
+    font-family: "Space Grotesk";
     
     .committee {
         display: flex;
@@ -14,8 +15,9 @@
         }
 
         .committee_text {
-            font-size: 1.4em;
+            font-size: 1.3em;
             margin-bottom: 0.2em;
+            font-family: "Neue Haas Grotesk Text Pro";
         }
 
         .members {

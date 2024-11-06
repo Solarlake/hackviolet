@@ -53,6 +53,31 @@
 }
 
 @font-face {
+    font-family: "PP Supply Sans";
+    src: url(../asset/font/PPSupplySans-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PP Supply Sans";
+    src: url(../asset/font/PPSupplySans-Ultralight.otf);
+    font-weight: 300;
+}
+
+@font-face {
     font-family: "Space Grotesk";
     src: url(../asset/font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Text Pro";
+    src: url(../asset/font/NHaasGroteskTXPro-Rg.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Text Pro";
+    src: url(../asset/font/NHaasGroteskTXPro-It.ttf);
+    font-weight: 400;
+    font-style: italic;
 }

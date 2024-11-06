@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Sponsors.scss";
+import Button from "./Button";
 
 const Sponsors = () => {
     return (
@@ -16,11 +17,7 @@ const Sponsors = () => {
                     </ul>
                 </p>
             </div>
-            <div className="button">
-                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:b6a86bfe-a99e-4053-b10d-b450d57a437e" target="_blank" rel="noreferrer" className="button button__sponsorship">
-                    Sponsorship Packet
-                </a>
-            </div>
+            <Button href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:b6a86bfe-a99e-4053-b10d-b450d57a437e" newTab text="Sponsorship Packet"/>
         </div>
     );
 }
