@@ -17,7 +17,7 @@ const Sponsors = () => {
                     </ul>
                 </p>
             </div>
-            <Button href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:b6a86bfe-a99e-4053-b10d-b450d57a437e" newTab text="Sponsorship Packet"/>
+            <Button href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:1c24652c-dbd8-45ee-afc9-156c8ebc9852" newTab text="Sponsorship Packet"/>
         </div>
     );
 }
