@@ -8,6 +8,7 @@ import Clouds from "../asset/image/clouds.png";
 import Gallery from "../component/Gallery";
 import Sponsors from "../component/Sponsors";
 import FAQ from "../component/FAQ";
+import Schedule from "../component/Schedule";
 import Team from "../component/Team";
 import Footer from "../component/Footer";
 import Socials from "../component/Socials";
@@ -58,6 +59,11 @@ const Home = () => {
             <div id="faq" className="faq">
                 <p className="header">Frequently Asked Questions</p>
                 <FAQ />
+            </div>
+
+            <div id="schedule" className="schedule">
+                <p className="header">Schedule</p>
+                <Schedule />
             </div>
 
             <div id="sponsors" className="sponsors">

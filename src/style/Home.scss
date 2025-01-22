@@ -240,6 +240,23 @@ html {
         }
     }
 
+    .schedule {
+        scroll-margin-top: 10em;
+        .header {
+            text-align: center;
+            font-family: "PP Editorial New";
+            font-size: 4em;
+            font-weight: 400;
+            font-style: italic;
+            color: #3A475A;
+            margin-bottom: 0.5em;
+
+            @media (max-width: 900px) {
+                font-size: 3em;
+            }
+        }
+    }
+
     .sponsors {
         scroll-margin-top: 10em;
         .header {
