@@ -15,25 +15,25 @@ const Sponsors = () => {
         <div className="sponsors_container">
             <div className="logo_container">
                 <a href="https://www.arcfield.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={arcfieldLogo} alt="Arcfield Logo" className="sponsor_logo" />
+                    <img src={arcfieldLogo} alt="Arcfield Logo" className="company_logo" />
                 </a>
                 <a href="https://www.mcdean.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={mcDeanLogo} alt="MC Dean Logo" className="sponsor_logo" />
+                    <img src={mcDeanLogo} alt="MC Dean Logo" className="company_logo" />
                 </a>
                 <a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={capitalOneLogo} alt="Capital One Logo" className="sponsor_logo" />
+                    <img src={capitalOneLogo} alt="Capital One Logo" className="company_logo" />
                 </a>
                 <a href="https://apex.vt.edu/" target="_blank" rel="noopener noreferrer">
-                    <img src={apexLogo} alt="Apex Logo" className="sponsor_logo" />
+                    <img src={apexLogo} alt="Apex Logo" className="company_logo" />
                 </a>
                 <a href="https://www.convergint.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={convergintLogo} alt="Convergint Logo" className="sponsor_logo" />
+                    <img src={convergintLogo} alt="Convergint Logo" className="company_logo" />
                 </a>
                 <a href="https://cyberinitiative.org/" target="_blank" rel="noopener noreferrer">
-                    <img src={cciLogo} alt="CCI Logo" className="sponsor_logo" />
+                    <img src={cciLogo} alt="CCI Logo" className="company_logo" />
                 </a>
                 <a href="https://www.codepath.org/" target="_blank" rel="noopener noreferrer">
-                    <img src={codePathLogo} alt="CodePath Logo" className="sponsor_logo" />
+                    <img src={codePathLogo} alt="CodePath Logo" className="company_logo" />
                 </a>
             </div>
             <div className="copy">
