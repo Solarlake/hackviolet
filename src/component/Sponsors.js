@@ -12,7 +12,7 @@ import mcDeanLogo from "../asset/image/logos/mc-dean.jpg";
 
 const Sponsors = () => {
     return (
-        <div id="sponsors" className="sponsors">
+        <div className="sponsors_container">
             <div className="logo_container">
                 <a href="https://www.arcfield.com/" target="_blank" rel="noopener noreferrer">
                     <img src={arcfieldLogo} alt="Arcfield Logo" className="sponsor_logo" />
