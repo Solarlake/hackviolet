@@ -51,16 +51,21 @@
             font-size: 1.2em;
             max-height: 0;
             transition: all 0.3s ease-out;
+        
+            @media (max-width: 900px) {
+                font-size: 1em;
+            }
         }
         
         .question__answer_show {
             overflow: hidden;
             font-size: 1.2em;
-            max-height: 7em;
+            max-height: 8em;
             padding-bottom: 1em;
             transition: all 0.3s ease-out;
 
             @media (max-width: 900px) {
+                font-size: 1em;
                 max-height: 13em;
             }
         }
