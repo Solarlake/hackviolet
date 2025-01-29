@@ -1,16 +1,21 @@
-#schedule {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+.schedule {
+    margin-top: 3em;
+    padding: 0 8em;
+    @media (max-width: 900px) {
+        padding: 0 1em;
+    }
 }
 
-#tabs {
+.tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    font-family: "Space Grotesk";
+    font-weight: 800;
 
     .tab_button {
         padding: 10px 20px;
-        border: 1px solid #ddd;
+        border: 1px solid #000000;
         border-radius: 5px;
         margin: 0 5px;
         cursor: pointer;
@@ -28,14 +33,7 @@
     }
 }
 
-#main_content {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 20px;
-    height: 80vh;  /* Adjusted for vertical scrolling */
-}
-
-#event_list {
+.event_list {
     width: 300px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -69,7 +67,7 @@
     }
 }
 
-#event_details {
+.event_details {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;

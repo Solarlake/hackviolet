@@ -1,0 +1,254 @@
+{
+    "saturday": [
+        {
+            "id": 1,
+            "title": "Check-In",
+            "startTime": "9:30 AM",
+            "endTime": "10:30 AM",
+            "location": "DDS Attrium",
+            "type": ""
+        },
+        {
+            "id": 2,
+            "title": "Opening Ceremony",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "location": "DDS 130",
+            "type": ""
+        },
+        {
+            "id": 3,
+            "title": "Team Formation + Brainstorming",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "location": "DDS 155",
+            "type": "HackViolet"
+        },
+        {
+            "id": 4,
+            "title": "Mentor Event (Speed Dating)",
+            "startTime": "11:00 AM",
+            "endTime": "12:30 PM",
+            "location": "DDS 132",
+            "type": "HackViolet"
+        },
+        {
+            "id": 5,
+            "title": "Introduction to Hackathons with VT Hacks",
+            "startTime": "11:30 AM",
+            "endTime": "12:30 PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 6,
+            "title": "Lunch",
+            "startTime": "12:30 PM",
+            "endTime": "1:00 PM",
+            "location": "Middle/Main Entrance (Split)",
+            "type": "Meal"
+        },
+        {
+            "id": 7,
+            "title": "Intro to API Integration with SWE",
+            "startTime": "1:00 PM",
+            "endTime": "1:30 PM",
+            "location": "DDS 155",
+            "type": "Club"
+        },
+        {
+            "id": 8,
+            "title": "Company Sponsor Fair",
+            "startTime": "1:30 PM",
+            "endTime": "2:30 PM",
+            "location": "Atrium",
+            "type": "Company"
+        },
+        {
+            "id": 9,
+            "title": "Club Fair",
+            "startTime": "1:30 PM",
+            "endTime": "2:30 PM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 10,
+            "title": "MLH GitHub Copilot",
+            "startTime": "2:30 PM",
+            "endTime": "3:00 PM",
+            "location": "DDS 155",
+            "type": "MLH"
+        },
+        {
+            "id": 11,
+            "title": "LLMs using Python with VT AIML",
+            "startTime": "3:00 PM",
+            "endTime": "4:00 PM",
+            "location": "DDS 155",
+            "type": "Club"
+        },
+        {
+            "id": 12,
+            "title": "Arcfield AI Challenge",
+            "startTime": "4:00 PM",
+            "endTime": "5:00 PM",
+            "location": "DDS 150",
+            "type": "Company"
+        },
+        {
+            "id": 13,
+            "title": "Q&A with Keynote Speaker",
+            "startTime": "5:00 PM",
+            "endTime": "5:30 PM",
+            "location": "DDS 155",
+            "type": "HackViolet"
+        },
+        {
+            "id": 14,
+            "title": "Intro to ML + Neural Networks with VT GWC",
+            "startTime": "5:30 PM",
+            "endTime": "6:30 PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 15,
+            "title": "MLH Werewolf",
+            "startTime": "6:30 PM",
+            "endTime": "7:00 PM",
+            "location": "DDS 155",
+            "type": "MLH"
+        },
+        {
+            "id": 16,
+            "title": "Neural Network Applications with VT GWC",
+            "startTime": "7:00 PM",
+            "endTime": "8:00 PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 17,
+            "title": "Dinner",
+            "startTime": "8:00 PM",
+            "endTime": "8:30 PM",
+            "location": "Middle/Main Entrance (Split)",
+            "type": "Meal"
+        },
+        {
+            "id": 18,
+            "title": "Bingo/Trivia (Jeopardy)",
+            "startTime": "8:00 PM",
+            "endTime": "8:30 PM",
+            "location": "DDS 155",
+            "type": "HackViolet"
+        },
+        {
+            "id": 19,
+            "title": "Movie Night",
+            "startTime": "8:30 PM",
+            "endTime": "11:30 PM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        }
+    ],
+    "sunday": [
+        {
+            "id": 20,
+            "title": "Devpost & How to Demo Workshop",
+            "startTime": "9:30 AM",
+            "endTime": "10:00 AM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 21,
+            "title": "Pitching and Presentation Skills Workshop",
+            "startTime": "9:30 AM",
+            "endTime": "10:00 AM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 22,
+            "title": "Brunch",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "location": "Middle/Main Entrance (Split)",
+            "type": "Meal"
+        },
+        {
+            "id": 23,
+            "title": "INITIAL SUBMISSIONS DUE @ DEVPOST",
+            "startTime": "10:30 AM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 24,
+            "title": "Intro to Cybersecurity Tools with WiCys VT",
+            "startTime": "11:00 AM",
+            "endTime": "12:30 PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 25,
+            "title": "CODING ENDS & FINAL DEMOS DUE @ DEVPOST",
+            "startTime": "12:30 PM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 26,
+            "title": "Speed Stacking",
+            "startTime": "1:00 PM",
+            "endTime": "1:30 PM",
+            "location": "DDS 155",
+            "type": "HackViolet"
+        },
+        {
+            "id": 27,
+            "title": "VT Therapy Dogs",
+            "startTime": "1:30 PM",
+            "endTime": "2:00 PM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 28,
+            "title": "Tetris",
+            "startTime": "2:00 PM",
+            "endTime": "3:30 PM",
+            "location": "DDS 155",
+            "type": ""
+        },
+        {
+            "id": 29,
+            "title": "Web Development with Entrepreneurship Club",
+            "startTime": "3:30 PM",
+            "endTime": "4:00 PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 30,
+            "title": "LinkedIn Essentials with CS Careers",
+            "startTime": "4:00 PM",
+            "endTime": "5:00 PM",
+            "location": "DDS 155",
+            "type": "Club"
+        },
+        {
+            "id": 31,
+            "title": "Closing Ceremony",
+            "startTime": "5:00 PM",
+            "endTime": "6:00 PM",
+            "location": "DDS 130",
+            "type": ""
+        }
+    ]
+}
