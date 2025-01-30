@@ -1,0 +1,298 @@
+import React, { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+import "../style/Resources.scss";
+import FooterBlob from "../asset/image/footer_blob.png";
+import Rocket from "../asset/image/rocket.png";
+import Clouds from "../asset/image/clouds.png";
+import Footer from "../component/Footer";
+import Button from "../component/Button";
+
+const Resources = () => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
+
+    return (
+        <div className="resources">
+            <div id="info" className="landing">
+                <div className="header">
+                    <h1>Resources</h1>
+                    <div className="copy">
+                        <p className="p1">Download the official HackViolet 2025 Information Sheet.</p>
+                        <p className="p2">Explore this page for additional resources.</p>
+                    </div>
+                    <div className="buttons">
+                        <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab text="Info Sheet" />
+                        <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab clear text="Discord" />
+                        <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab clear text="Devpost" />
+                    </div>
+                </div>
+            </div>
+
+            <img className="clouds" src={Clouds} alt="" />
+            <div className="rocket_container">
+                <img className="rocket" src={Rocket} alt="" />
+            </div>
+
+            <div id="rules" className="rules">
+                <p className="header">Rules & Eligibility</p>
+                <div className="text">
+                    <div className="copy">
+                    <p>
+                    <ul>
+                        <li>Any student enrolled in an undergraduate or graduate program may attend.</li>
+                        <li>We are not a female-only event. We invite students of all genders, majors, and backgrounds to participate.</li>
+                        <li>Follow our Code of Conduct (adapted from MLH).</li>
+                        <li>Most code must be written by you, but public APIs are allowed. You must cite any sources used.</li>
+                        <li>All projects will be screened for plagiarism. If your team’s project is suspected of plagiarism by the judges, HackViolet will review your submission to confirm for signs of cheating. If your submission is not found satisfactory, your project will be disqualified.</li>
+                        <li className="indented">Invalid submissions can include: missing or broken Github link, missing elements in the Devpost, using code without citing it.</li>
+                    </ul>
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="location" className="location">
+                <p className="header">Location</p>
+                <div className="text">
+                    <div className="copy">
+                        <p><strong>PHYSICAL LOCATION</strong></p>
+                        <p>Our hackathon will be held mainly at the Data and Decision Sciences building, on the Virginia Tech campus. Once inside, check-in will be inside the lobby, and then our opening ceremony will be at Goodwin Hall. Hackers will then be directed back to the Data and Decision Sciences building, where they can work on their projects! Specific room locations for all events are detailed in the schedule below.</p>
+
+                        <p><strong>Unfamiliar with Virginia Tech’s campus?</strong></p>
+                        <p>No worries! Below is the address, a link to a map of our campus, and a photo of the Data and Decision Sciences building circled in case you can’t find it.</p>
+
+                        <ul>
+                            <li><strong>Data and Decision Sciences Address:</strong> 727 Prices Fork Rd, Blacksburg, VA 24060</li>
+                            <li><strong>Virginia Tech Campus Map:</strong> <a href="https://www.google.com/maps/place/Virginia+Tech/@37.2285035,-80.4193583,15z/data=!3m1!4b1!4m6!3m5!1s0x884b296ba53d92f1:0x3693781f598e7d3c!8m2!3d37.2285035!4d-80.4193583!16zL20vMGNqaGo" target="_blank">Link to the Map</a></li>
+                        </ul>
+
+                        <p><strong>DIGITAL LOCATION</strong></p>
+                        <p>The primary communication in HackViolet 2025 will take place over the Discord Server. You must have a Discord account to join.</p>
+
+                        <p>Please reference the following guide detailing all of the Discord channels in our server:</p>
+                        <p><a href="https://docs.google.com/document/d/1eSeGhcFcXe78csKM_K0T1ZO4PS5DwWlbAE71popDaGk/edit?usp=sharing" target="_blank">HACKERS Discord Guide for HackViolet 2025</a></p>
+
+                        <p>New to Discord? This article may be helpful: <a href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord" target="_blank">Beginner's Guide to Discord</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="raffle" className="raffle">
+                <p className="header">Raffle Giveaways</p>
+                <div className="text">
+                    <div className="copy">
+                        <p><strong>Raffle System:</strong></p>
+                        <ul>
+                        <li><strong>5 tickets:</strong> Attending Company Sponsor Fair, Q&A Session (*5 tickets for each event)</li>
+                        <li><strong>3 tickets:</strong> Attending a workshop or event, Mentor Speed Dating</li>
+                        <li><strong>1 ticket:</strong> Asking a question during a workshop</li>
+                        <li><strong>1 ticket:</strong> Follow us on Instagram @hackvioletvt (subject to change)</li>
+                        </ul>
+
+                        <p><strong>Most Engaged Hacker:</strong> $150 gift card will be awarded to the hacker holding the most tickets by Sunday!</p>
+
+                        <p><strong>Raffle Winners:</strong> VT Backpack or VT Hoodie</p>
+
+                        <p>Winners will be announced at the Closing Ceremony on Sunday, Feb 2nd @ 5 PM.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="teams" className="teams">
+                <p className="header">Teams</p>
+                <div className="text">
+                    <div className="copy">
+                        <p>If you are planning to demo your project to compete for a prize, you must be in a team of 2-4 people. You can create a team beforehand or find team members in the <strong>#🔍find-a-team</strong> channel. We'll also have team formation activities and plenty of opportunities for you to meet other people!</p>
+
+                        <p><strong>First-Time Hacker Teams</strong></p>
+                        <p>First-time hacker teams are composed of majority first-time hackers, or people who are submitting to a hackathon for the first time. For example, if you have a team of 4, 3 of the members must be first-time hackers to be eligible for first-time hacker prize categories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mentors" className="mentors">
+                <p className="header">Help & Mentors</p>
+                <div className="text">
+                    <div className="copy">
+                        <p><strong>General Help</strong></p>
+                        <ul>
+                        <li>Post questions in the appropriate Question channels in the Discord Server, such as <strong>#❓-ask-organizers</strong>. You can receive help from mentors, organizers, and fellow hackers!</li>
+                        <li>Please check the <strong>#faq</strong> channel before asking your question, as it may be answered there.</li>
+                        <li>Please refrain from DMing organizers privately and use the help channels, as DMs are very hard for us to keep track of.</li>
+                        </ul>
+
+                        <p><strong>Mentor Info</strong></p>
+                        <ul>
+                        <li>Mentors are a resource for hackers during the hackathon.</li>
+                        <li>Contacting mentors will primarily take place over the Discord server using a queuing system. Instructions can be found in the <strong>#how-to-join</strong> channel.</li>
+                        <li>Learn more about mentors by referencing the <strong>#mentor-intros</strong> channel.</li>
+                        <li>Additionally, there is a Mentor Speed dating event taking place on Feb 1st from 11AM-12PM in DDS (Data and Decision Sciences) room 132.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="judging" className="judging">
+                <p className="header">Judging</p>
+                <div className="text">
+                    <div className="copy">
+                        <p><strong>Judging Preference</strong></p>
+                        <ul>
+                        <li>One person from each team must fill out the <a href="https://forms.gle/9fcnXGye34M52Dyg7" target="_blank">Judging Preference Form </a> for the entire group, which can be found in the Discord and sent out through email after the start of the Hackathon. Please note: neither option provides a distinct advantage over the other. This form is due on <strong>Feb. 2nd, at 10:30 AM</strong>.</li>
+                        </ul>
+
+                        <p><strong>Option 1️⃣: Traditional Judging</strong></p>
+                        <ul>
+                        <li>Teams create and submit a demo video, along with their code and project to Devpost.</li>
+                        <li>Judges will assess and grade the Devpost submissions.</li>
+                        </ul>
+
+                        <p><strong>Option 2️⃣: In-Person Judging</strong></p>
+                        <ul>
+                        <li>Teams have the opportunity to directly present their project to judges in person.</li>
+                        <li>Judges will evaluate projects during the presentation and have a chance to ask questions afterwards.</li>
+                        <li>Please be sure to arrive 15 minutes before your time slot!</li>
+                        <li>The in-person timeline will be emailed to you sometime between 10:30 AM - 12:30 PM, February 2nd. Please check your emails and the Discord!</li>
+                        <li>Note: For In-Person Judging, your assigned time slot can be anytime between 1:00 PM - 4:30 PM, so if you choose this option, make sure the team is free during this time block!</li>
+                        </ul>
+
+                        <p><strong>Judging Criteria:</strong></p>
+                        <ul>
+                        <li>Projects will be judged on Creativity, Design, Technology, and Completion.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="submission" className="submission">
+                <p className="header">Project Submission</p>
+                <div className="text">
+                    <div className="copy">
+                        <p><strong>Initial Project Submissions</strong></p>
+                        <ul>
+                            <li>Initial project submissions are due on Devpost by <strong>Sunday, February 2nd, 2025 at 10:30 AM EST</strong>.</li>
+                            <li>Judging preference forms are also due at this time. This can be a rough submission with random text, links, etc.</li>
+                            <li>You must submit your project to all the prize categories you'd like to be considered for.</li>
+                        </ul>
+
+                        <p><strong>Final Project Submissions</strong></p>
+                        <ul>
+                            <li>Final project submissions are due by <strong>Sunday, February 2nd, 2025 at 12:30 PM EST</strong>, including a <strong>3-minute maximum demo video</strong> and a link to a <strong>GitHub repo</strong> containing your code.</li>
+                            <li>All submissions will be made to the HackViolet 2025 Devpost page (TBD).</li>
+                            <li>New to Devpost? Check out this <a href="https://devpost.com/blog/introducing-devpost" target="_blank">submission guide</a>.</li>
+                            <li>Here is a video with <a href="https://www.youtube.com/watch?v=xx" target="_blank">tips on Devpost submissions</a>.</li>
+                        </ul>
+
+                        <p><strong>Demo Video Guidelines</strong></p>
+                        <ul>
+                            <li>All teams must submit a <strong>3-minute max. demo video</strong> along with their submission. Here are some tips:</li>
+                            <ul>
+                                <li>The demo video must describe what your project is and how it works.</li>
+                                <li>Each team member should be speaking/present at least once in the video. Don’t just have one person explain it all!</li>
+                                <li>Be creative! The judges will be looking at dozens of projects during the day, so you want to ensure the demo's first few seconds capture their attention!</li>
+                                <li>Here are some examples of projects from HackViolet 2024. Take a look at the winners – do you notice anything in common?</li>
+                            </ul>
+                        </ul>
+
+                        <p><strong>GitHub Repository</strong></p>
+                        <ul>
+                            <li>All teams must also include a link to a GitHub repository with your code.</li>
+                            <li>It’s best to create your repository early and make commits as you go so that judges can see your progress!</li>
+                            <li>New to GitHub? Check out these resources:</li>
+                            <ul>
+                                <li><a href="https://docs.github.com/en/github" target="_blank">GitHub Docs</a></li>
+                                <li><a href="https://lab.github.com/" target="_blank">GitHub Learning Lab</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="starter" className="starter">
+                <p className="header">Starter Packs & Resources</p>
+                <div className="text">
+                    <div className="copy">
+                        <p><strong>Have a resource you want to share? Let us know on Discord!</strong></p>
+
+                        <p><strong>Hackathons</strong></p>
+                        <ul>
+                            <li><a href="https://www.hackerearth.com/blog/10-tips-to-win-a-hackathon/" target="_blank">10 tips to win a hackathon - HackerEarth</a></li>
+                            <li><a href="https://medium.com/tech-at-venture/5-hackathon-roles-that-have-nothing-to-do-with-coding-7a6ec90b4e5a" target="_blank">5 Hackathon Roles That Have Nothing To Do With Coding</a></li>
+                            <li><a href="https://www.techhacks.org/hackathon-team-formation-tips/" target="_blank">How To Form A Winning Team For Hackathons: 5 Quick Tips</a></li>
+                            <li>"<a href="https://www.vthacks.org" target="_blank">Introduction to Hackathons</a>" with VT Hacks @11:30AM on Saturday, Feb 1st in Room DDS 150</li>
+                        </ul>
+
+                        <p><strong>Platforms/IDEs</strong></p>
+                        <ul>
+                            <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code (download needed)</a></li>
+                            <li><a href="https://replit.com/" target="_blank">Repl.it (on web browser, supports most languages)</a></li>
+                        </ul>
+
+                        <p><strong>Web Development</strong></p>
+                        <ul>
+                            <li><a href="https://glitch.com/" target="_blank">Glitch (on web browser)</a></li>
+                            <li><a href="https://qoom.io/" target="_blank">Qoom (on web browser)</a></li>
+                            <li><a href="https://www.figma.com/" target="_blank">Figma (on web browser, interface design tool)</a></li>
+                        </ul>
+
+                        <p><strong>Mobile App Development</strong></p>
+                        <ul>
+                            <li><a href="https://appinventor.mit.edu/" target="_blank">MIT App Inventor</a></li>
+                            <li><a href="https://flutter.dev/" target="_blank">Flutter</a></li>
+                            <li><a href="https://developer.android.com/studio" target="_blank">Android Studio</a></li>
+                            <li><a href="https://developer.apple.com/xcode/" target="_blank">Xcode (iOS, Mac computers only)</a></li>
+                        </ul>
+
+                        <p><strong>Python</strong></p>
+                        <ul>
+                            <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></li>
+                            <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+                            <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Intro to Python</a></li>
+                            <li>"<a href="https://aiml.vt.edu" target="_blank">LLMs using Python</a>" with VT AIML @3:00PM on Saturday, Feb 1st in Room DDS 155</li>
+                        </ul>
+
+                        <p><strong>Java</strong></p>
+                        <ul>
+                            <li><a href="https://replit.com/" target="_blank">Replit Intro to Java</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">Introduction to Java - GeeksforGeeks</a></li>
+                        </ul>
+
+                        <p><strong>Code Learning</strong></p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                        </ul>
+
+                        <p><strong>GitHub</strong></p>
+                        <ul>
+                            <li><a href="https://guides.github.com/" target="_blank">GitHub Guide</a></li>
+                            <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet</a></li>
+                            <li>"<a href="https://mlh.io/" target="_blank">GitHub Copilot</a>" with MLH @2:30PM on Saturday, Feb 1st in Room DDS 155</li>
+                        </ul>
+
+                        <p><strong>Ask a mentor!</strong></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer">
+                <Footer />
+                <img className="footer_blob" src={FooterBlob} alt="" />
+            </div>
+        </div>
+    );
+};
+
+export default Resources;

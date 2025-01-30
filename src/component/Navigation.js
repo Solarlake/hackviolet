@@ -3,32 +3,35 @@ import "../style/Navigation.scss";
 import Logo from "../asset/image/logo.png";
 import LogoText from "../asset/image/hackviolet_text.png";
 import { FaQuestionCircle, FaCalendarAlt, FaTrophy } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Use Link from react-router-dom
 
 const Navigation = () => {
     const [isExpanded, setIsExpanded] = useState(false);
+
+    const closeNavBar = () => setIsExpanded(false);
 
     return (
         <div className="navigation">
             <div className="bar">
                 <div className="logo">
-                    <a href="#landing">
+                    <Link to="/" id="landing">
                         <img className="icon" src={Logo} alt="HackViolet 2025 Logo" />
                         <img className="text" src={LogoText} alt="HackViolet 2025 Text" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="links">
-                    <a href="#faq" className="faq_link">
+                    <Link to="/#faq" className="faq_link" onClick={closeNavBar}>
                         <FaQuestionCircle className="nav_icon" />
                         <span className="text">FAQ</span>
-                    </a>
-                    <a href="#schedule" className="schedule_link">
+                    </Link>
+                    <Link to="/#schedule" className="schedule_link" onClick={closeNavBar}>
                         <FaCalendarAlt className="nav_icon" />
                         <span className="text">Schedule</span>
-                    </a>
-                    <a href="#prizes" className="prizes_link">
+                    </Link>
+                    <Link to="/#prizes" className="prizes_link" onClick={closeNavBar}>
                         <FaTrophy className="nav_icon" />
                         <span className="text">Prizes</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="resources">
                     <button className="resources_button" onClick={() => setIsExpanded(!isExpanded)}>
@@ -38,12 +41,18 @@ const Navigation = () => {
             </div>
 
             <div className={`expanded_section ${isExpanded ? "expanded" : "collapsed"}`}>
-                <a href="#">Guide</a>
-                <a href="#">Tools</a>
-                <a href="#">Docs</a>
-                <a href="#">Guide</a>
-                <a href="#">Tools</a>
-                <a href="#">Docs</a>
+                <Link to="/resources#info" className="resources_page_link" onClick={closeNavBar}>
+                    All Resources
+                </Link>
+                <Link to="/resources#info" onClick={closeNavBar}>Discord and Devpost</Link>
+                <Link to="/resources#rules" onClick={closeNavBar}>Rules</Link>
+                <Link to="/resources#location" onClick={closeNavBar}>Location</Link>
+                <Link to="/resources#raffle" onClick={closeNavBar}>Raffle Giveaways</Link>
+                <Link to="/resources#teams" onClick={closeNavBar}>Teams</Link>
+                <Link to="/resources#mentors" onClick={closeNavBar}>Help & Mentors</Link>
+                <Link to="/resources#judging" onClick={closeNavBar}>Judging</Link>
+                <Link to="/resources#submission" onClick={closeNavBar}>Project Submission</Link>
+                <Link to="/resources#starter" onClick={closeNavBar}>Starter Packs</Link>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/Home.scss";
+import { useLocation } from 'react-router-dom';
 // import Blob from "../asset/svg/blob.svg";
 // import FooterBlob from "../asset/svg/footer_blob.svg";
 import FooterBlob from "../asset/image/footer_blob.png";
@@ -16,6 +17,18 @@ import Socials from "../component/Socials";
 import Button from "../component/Button";
 
 const Home = () => {
+
+    const location = useLocation();
+    
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
+
     return (
         <div className="home">
             <div id="landing" className="landing">
