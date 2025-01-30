@@ -16,15 +16,23 @@
         row-gap: 1em;
         margin-bottom: 4em;
         width: 100vw;
-        max-width: 50vw;
+        max-width: 55vw;
         
-        @media (min-resolution: 1.25dppx) and (max-width: 1360px){
+        @media (max-width: 1360px){
             width: 100vw;
             max-width: 80vw;
+
+            @media (min-resolution: 1.25dppx) {
+                width: 100vw;
+                max-width: 80vw;
+            }
         }
         @media (max-width: 900px) {
             width: 100vw;
             max-width: 80vw;
+            gap: 1em;
+            row-gap: 0.5em;
+            margin-bottom: 2em;
         }
 
         .company_logo {
@@ -36,6 +44,10 @@
             &:hover {
                 transform: scale(1.05);
             }
+
+            @media (max-width: 900px) {
+                max-width: 9em;
+            }
         }
     }
 
@@ -45,13 +57,26 @@
         font-size: 1.4em;
         font-weight: 400;
         line-height: 1.4em;
+        width: 100vw;
+        max-width: 45vw;
     
         p {
             margin-bottom: 1.2em;
         }
-    
+        
+        @media (max-width: 1360px){
+            width: 100vw;
+            max-width: 65vw;
+
+            @media (min-resolution: 1.25dppx) {
+                width: 100vw;
+                max-width: 65vw;
+            }
+        }
         @media (max-width: 900px) {
             font-size: 1em;
+            width: 100vw;
+            max-width: 80vw;
         }
     }
 }

@@ -29,7 +29,11 @@ html {
 
         .header {
             margin-top: 20vh;
-        
+
+            @media (max-width: 900px) {
+                margin-top: 12vh;
+            }
+
             h1 {
                 font-family: "PP Editorial New";
                 font-weight: 400;
@@ -38,12 +42,16 @@ html {
                 
                 @media (max-width: 1360px) {
                     font-size: 11vw;
-                }
-                @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
-                    font-size: 8vw;
+
+                    @media (min-resolution: 1.25dppx) {
+                        font-size: 8vw;
+                    }
                 }
                 @media (max-width: 900px) {
-                    font-size: 13vw;
+                    font-size: 15vw;
+                    word-wrap: break-word;
+                    white-space: normal;
+                    line-height: 1.2;
                 }
             }
         
@@ -53,7 +61,7 @@ html {
                 flex-direction: column;
 
                 @media (max-width: 900px) {
-                    margin-top: -0.5em;
+                    margin-top: 1em;
                     font-size: 0.8em;
                 }
         
@@ -101,8 +109,8 @@ html {
                 
                 @media (max-width: 900px) {
                     flex-wrap: wrap;
-                    margin-top: 1.1em;   
-                    column-gap: 0.5em;
+                    margin-top: 1.2em;   
+                    column-gap: 0.8em;
                     row-gap: 1.5em
                 }
             }
@@ -111,7 +119,7 @@ html {
                 margin-top: 1em;
 
                 @media (max-width: 900px) {
-                    margin-top: 0.6em;
+                    margin-top: 0.8em;
                 }
             }
         }
@@ -189,16 +197,24 @@ html {
 
             p {
                 margin-bottom: 1.2em;
+
+                @media (max-width: 900px) {
+                    margin-bottom: 0.8em;
+                }
             }
 
             .hv {
                 color: #7441ff;
                 font-style: italic;
                 font-size: 2em;
+
+                @media (max-width: 900px) {
+                    font-size: 1.8em;
+                }
             }
 
             @media (max-width: 900px) {
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
         }
     }
@@ -222,7 +238,7 @@ html {
             color: #ffffff;
 
             @media (max-width: 900px) {
-                font-size: 3em;
+                font-size: 2.5em;
             }
         }
 

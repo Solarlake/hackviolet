@@ -35,6 +35,12 @@
                 background-color: #3A475A;
                 color: white;
             }
+
+            @media (max-width: 900px) {
+                font-size: 1em;
+                padding: 0.5em 1em;
+                margin: 0 0.2em;
+            }
         }
     }
     
@@ -53,6 +59,10 @@
         .scrollable_content {
             max-height: 80vh;  
             overflow-y: auto; 
+
+            @media (max-width: 900px) {
+                max-height: 60vh;
+            }
         }
     
         .event_item {
@@ -64,15 +74,21 @@
             border-radius: 0.5em;
             transition: background-color 0.3s ease;
             width: 100vw;
-            max-width: 50vw;
+            max-width: 55vw;
 
-            @media (min-resolution: 1.25dppx) and (max-width: 1360px){
+            @media (max-width: 1360px){
                 width: 100vw;
                 max-width: 80vw;
+
+                @media (min-resolution: 1.25dppx) {
+                    width: 100vw;
+                    max-width: 80vw;
+                }
             }
             @media (max-width: 900px) {
                 width: 100vw;
                 max-width: 80vw;
+                padding: 1em;
             }
         
             &:hover {
@@ -83,6 +99,10 @@
                 flex: 2;
                 font-weight: bold;
                 font-size: 1em;
+
+                @media (max-width: 900px) {
+                    font-size: 0.8em;
+                }
             }
         
             .event_details {
@@ -91,13 +111,19 @@
                 flex-direction: column;
                 align-items: flex-start; 
                 margin-left: 1em;
+                font-size: 1em;
+
+                @media (max-width: 900px) {
+                    font-size: 0.8em;
+                }
+
+                .event_location {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3em;
+                }
             }
         
-            .event_location {
-                display: flex;
-                align-items: center;
-                gap: 0.3em;
-            }
         }
         
     }

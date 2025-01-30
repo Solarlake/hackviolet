@@ -152,5 +152,103 @@
             "location": "DDS 150",
             "type": "HackViolet"
         }
+    ],
+    "sunday": [
+        {
+            "id": 20,
+            "title": "Devpost & How to Demo Workshop",
+            "startTime": "9:30AM",
+            "endTime": "10:00AM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 21,
+            "title": "Pitching and Presentation Skills Workshop",
+            "startTime": "9:30AM",
+            "endTime": "10:00AM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 22,
+            "title": "Brunch",
+            "startTime": "10:00AM",
+            "endTime": "10:30AM",
+            "location": "Middle/Main Entrance (Split)",
+            "type": "Meal"
+        },
+        {
+            "id": 23,
+            "title": "INITIAL SUBMISSIONS DUE @ DEVPOST",
+            "startTime": "10:30AM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 24,
+            "title": "Intro to Cybersecurity Tools with WiCys VT",
+            "startTime": "11:00AM",
+            "endTime": "12:30PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 25,
+            "title": "CODING ENDS & FINAL DEMOS DUE @ DEVPOST",
+            "startTime": "12:30PM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 26,
+            "title": "Speed Stacking",
+            "startTime": "1:00PM",
+            "endTime": "1:30PM",
+            "location": "DDS 155",
+            "type": "HackViolet"
+        },
+        {
+            "id": 27,
+            "title": "VT Therapy Dogs",
+            "startTime": "1:30PM",
+            "endTime": "2:00PM",
+            "location": "DDS 150",
+            "type": "HackViolet"
+        },
+        {
+            "id": 28,
+            "title": "Tetris",
+            "startTime": "2:00PM",
+            "endTime": "3:30PM",
+            "location": "DDS 155",
+            "type": ""
+        },
+        {
+            "id": 29,
+            "title": "Web Development with Entrepreneurship Club",
+            "startTime": "3:30PM",
+            "endTime": "4:00PM",
+            "location": "DDS 150",
+            "type": "Club"
+        },
+        {
+            "id": 30,
+            "title": "LinkedIn Essentials with CS Careers",
+            "startTime": "4:00PM",
+            "endTime": "5:00PM",
+            "location": "DDS 155",
+            "type": "Club"
+        },
+        {
+            "id": 31,
+            "title": "Closing Ceremony",
+            "startTime": "5:00PM",
+            "endTime": "6:00PM",
+            "location": "DDS 130",
+            "type": ""
+        }
     ]
 }
