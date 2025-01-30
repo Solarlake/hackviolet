@@ -24,13 +24,11 @@
             border: 1px solid #3A475A;
             border-radius: 1em;
             margin: 0 0.5em;
-    
             color: black;
             background-color: transparent;
-    
             cursor: pointer;
             transition: background-color 0.3s ease;
-    
+
             &.active {
                 background-color: #3A475A;
                 color: white;
@@ -43,7 +41,7 @@
             }
         }
     }
-    
+
     .event_list {
         display: flex;
         justify-content: center;
@@ -55,16 +53,16 @@
         @media (max-width: 900px) {
             font-size: 1em;
         }
-        
+
         .scrollable_content {
-            max-height: 80vh;  
-            overflow-y: auto; 
+            max-height: 80vh;
+            overflow-y: auto;
 
             @media (max-width: 900px) {
                 max-height: 60vh;
             }
         }
-    
+
         .event_item {
             display: flex;
             flex-direction: row;
@@ -76,25 +74,20 @@
             width: 100vw;
             max-width: 55vw;
 
-            @media (max-width: 1360px){
+            @media (max-width: 1360px) {
                 width: 100vw;
                 max-width: 80vw;
-
-                @media (min-resolution: 1.25dppx) {
-                    width: 100vw;
-                    max-width: 80vw;
-                }
             }
             @media (max-width: 900px) {
                 width: 100vw;
                 max-width: 80vw;
                 padding: 1em;
             }
-        
+
             &:hover {
                 background-color: #f1f1f1;
             }
-        
+
             .event_time {
                 flex: 2;
                 font-weight: bold;
@@ -104,12 +97,12 @@
                     font-size: 0.8em;
                 }
             }
-        
+
             .event_details {
-                flex: 3; 
+                flex: 3;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start; 
+                align-items: flex-start;
                 margin-left: 1em;
                 font-size: 1em;
 
@@ -122,9 +115,21 @@
                     align-items: center;
                     gap: 0.3em;
                 }
+
+                .event_type_marker {
+                    margin-top: 0.5em;
+                    padding: 0.5em 1em;
+                    border: 2px solid transparent;
+                    border-radius: 50%;
+                    display: inline-block;
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 1;
+                    background-color: transparent;
+                    border-color: #ddd;
+                }
             }
-        
         }
-        
     }
 }

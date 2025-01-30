@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "../style/Schedule.scss";
-import ScheduleData from "../content/schedule.json"; 
-import { FaMapMarkerAlt } from "react-icons/fa"; 
+import ScheduleData from "../content/schedule.json";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
+const eventTypeColors = {
+    HackViolet: "#6a4c9c",
+    Club: "#ff6347",
+    Meal: "#ffeb3b",
+    MLH: "#00bcd4",
+};
 
 const Schedule = () => {
     const [selectedDay, setSelectedDay] = useState("Saturday");
@@ -22,7 +29,7 @@ const Schedule = () => {
 
             <div className="event_list">
                 <div className="scrollable_content">
-                    {ScheduleData[selectedDay.toLowerCase()].map((event) => (  
+                    {ScheduleData[selectedDay.toLowerCase()].map((event) => (
                         <div key={event.id} className="event_item">
                             <div className="event_time">
                                 <p>{event.startTime}{event.endTime && ` - ${event.endTime}`}</p>
@@ -34,6 +41,17 @@ const Schedule = () => {
                                         <FaMapMarkerAlt className="location_icon" /> {event.location}
                                     </p>
                                 )}
+                                {event.type && eventTypeColors[event.type] && (
+                                    <div
+                                        className="event_type_marker"
+                                        style={{
+                                            borderColor: eventTypeColors[event.type],
+                                            color: eventTypeColors[event.type],
+                                        }}
+                                    >
+                                        {event.type}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     ))}
@@ -41,6 +59,6 @@ const Schedule = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Schedule;
