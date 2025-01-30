@@ -13,7 +13,7 @@
         margin-bottom: 1em;
         font-family: "Space Grotesk";
         font-weight: 800;
-        font-size: 1.2em;
+        font-size: 1.5em;
 
         @media (max-width: 900px) {
             font-size: 1em;
@@ -36,11 +36,60 @@
 
             @media (max-width: 900px) {
                 font-size: 1em;
-                padding: 0.5em 1em;
+                padding: 0.6em 1em;
                 margin: 0 0.2em;
             }
         }
     }
+
+    .event_filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+        font-family: "Space Grotesk";
+        font-weight: 800;
+        font-size: 1.2em;
+        flex-wrap: wrap;  
+        
+        @media (max-width: 900px) {
+            font-size: 1em;
+            justify-content: center; 
+        }
+    
+        .filter_button {
+            padding: 0.5em 1.2em;
+            border: 1px solid #3A475A;
+            border-radius: 1.2em;
+            margin: 0.2em;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+            &.active {
+                background-color: #5d7291;
+                color: white;
+            }
+
+            &.HackViolet.active {
+                background-color: #6a4c9c;
+                color: white;
+            }
+            &.Club.active {
+                background-color: #ff6347;
+                color: white;
+            }
+            &.Meal.active {
+                background-color: #28a745;
+                color: white;
+            }
+            &.MLH.active {
+                background-color: #00bcd4;
+                color: white;
+            }
+        }
+    }
+    
 
     .event_list {
         display: flex;

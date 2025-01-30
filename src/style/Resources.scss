@@ -183,7 +183,14 @@ html {
             max-width: 45vw;
         
             p {
-                margin-bottom: 1.2em;
+                margin: 1.2em 1.2em;
+            }
+
+            ul {
+                margin-top: 1.2em;
+            }
+            li {
+                margin-bottom: 0.8em;
             }
 
             .indented {
@@ -215,7 +222,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -233,7 +240,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -249,7 +256,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -265,7 +272,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -281,7 +288,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -297,7 +304,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -313,7 +320,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -329,7 +336,7 @@ html {
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
-            color: #3A475A;
+            color: black;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
