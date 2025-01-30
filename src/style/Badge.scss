@@ -1,0 +1,15 @@
+.mlh-trust-badge {
+    display: block;
+    max-width: 74px;
+    min-width: 30px;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    width: 10%;
+    z-index: 10000;
+
+    @media (max-width: 900px) {
+        right: 20px;
+    }
+}
+

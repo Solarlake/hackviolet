@@ -6,9 +6,10 @@ import FooterBlob from "../asset/image/footer_blob.png";
 import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
 import Gallery from "../component/Gallery";
-import Sponsors from "../component/Sponsors";
 import FAQ from "../component/FAQ";
 import Schedule from "../component/Schedule";
+import Prizes from "../component/Prizes";
+import Sponsors from "../component/Sponsors";
 import Team from "../component/Team";
 import Footer from "../component/Footer";
 import Socials from "../component/Socials";
@@ -64,6 +65,11 @@ const Home = () => {
             <div id="schedule" className="schedule">
                 <p className="header">Schedule</p>
                 <Schedule />
+            </div>
+
+            <div id="prizes" className="prizes">
+                <p className="header">Prizes</p>
+                <Prizes />
             </div>
 
             <div id="sponsors" className="sponsors">

@@ -6,6 +6,17 @@
     font-family: "Neue Haas Grotesk Text Pro";
     z-index: 1000;
 
+    @media (max-width: 1360px) {
+        padding: 0 11.875%;
+        @media (min-resolution: 1.25dppx) {
+            padding: 0 21.875%;
+        }
+    }
+    @media (max-width: 900px) {
+        padding: 0 15.875%;
+        top: 1em;
+    }
+
     
     .bar {
         display: flex;
@@ -18,14 +29,15 @@
         border-radius: 1em;
         border: 1px solid #0000001A;
         backdrop-filter: blur(16px) saturate(120%);
-        background-color: #7441FF0D;
-        
-        @media (max-width: 900px) {
-            visibility: hidden;
-        }
+        background-color: #7441FF0D; 
 
         .logo {
             font-weight: 800;
+
+            @media (max-width: 900px) {
+                display: none;
+            }
+
             a {
                 display: flex;
                 justify-content: center;
@@ -60,12 +72,28 @@
             a {
                 padding: 0.6em 1em;
             }
+
+            .icon {
+                display: none; 
+            }
+
+            @media (max-width: 900px) {
+                .icon {
+                    display: inline-block;
+                    font-size: 1em;
+                }
+                .text {
+                    display: none;
+                }
+            }
         }
 
-        .register {
+        .resources {
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             a {
                 padding: 0.5em 2.3em;
                 padding-top: 0.6em;
@@ -78,6 +106,14 @@
 
                 font-size: 0.9em;
                 color: #ffffff;
+            }
+
+            @media (max-width: 900px) {
+                a {
+                    font-family: "PP Supply Sans";
+                    font-size: 0.8em;
+                    padding: 0.5em 1.5em;
+                }
             }
         }
     }

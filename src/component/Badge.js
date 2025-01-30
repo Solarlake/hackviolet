@@ -1,19 +1,11 @@
 import React from "react";
+import "../style/Badge.scss";
 
 const Badge = () => {
     return (
         <a
             id="mlh-trust-badge"
-            style={{
-                display: 'block',
-                maxWidth: '74px',
-                minWidth: '30px',
-                position: 'fixed',
-                right: '50px',
-                top: 0,
-                width: '10%',
-                zIndex: 10000,
-            }}
+            className="mlh-trust-badge"
             href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
             target="_blank"
             rel="noopener noreferrer"
