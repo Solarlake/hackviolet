@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/Navigation.scss";
 import Logo from "../asset/image/logo.png";
 import LogoText from "../asset/image/hackviolet_text.png";
-import { FaQuestionCircle, FaCalendarAlt, FaTrophy } from "react-icons/fa"; 
+import { FaQuestionCircle, FaCalendarAlt, FaTrophy } from "react-icons/fa";
 
 const Navigation = () => {
+    const [isExpanded, setIsExpanded] = useState(false);
+
     return (
         <div className="navigation">
             <div className="bar">
@@ -16,23 +18,32 @@ const Navigation = () => {
                 </div>
                 <div className="links">
                     <a href="#faq" className="faq_link">
-                        <FaQuestionCircle className="icon" />
+                        <FaQuestionCircle className="nav_icon" />
                         <span className="text">FAQ</span>
                     </a>
                     <a href="#schedule" className="schedule_link">
-                        <FaCalendarAlt className="icon" />
+                        <FaCalendarAlt className="nav_icon" />
                         <span className="text">Schedule</span>
                     </a>
                     <a href="#prizes" className="prizes_link">
-                        <FaTrophy className="icon" />
+                        <FaTrophy className="nav_icon" />
                         <span className="text">Prizes</span>
                     </a>
                 </div>
                 <div className="resources">
-                    <a href="https://tally.so/r/3Eb0OL">
+                    <button className="resources_button" onClick={() => setIsExpanded(!isExpanded)}>
                         Resources
-                    </a>
+                    </button>
                 </div>
+            </div>
+
+            <div className={`expanded_section ${isExpanded ? "expanded" : "collapsed"}`}>
+                <a href="#">Guide</a>
+                <a href="#">Tools</a>
+                <a href="#">Docs</a>
+                <a href="#">Guide</a>
+                <a href="#">Tools</a>
+                <a href="#">Docs</a>
             </div>
         </div>
     );
