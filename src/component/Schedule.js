@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../style/Schedule.scss";
-import ScheduleData from "../content/schedule.json";  // Import the JSON file
+import ScheduleData from "../content/schedule.json"; 
+import { FaMapMarkerAlt } from "react-icons/fa"; 
 
 const Schedule = () => {
     const [selectedDay, setSelectedDay] = useState("Saturday");
@@ -20,16 +21,19 @@ const Schedule = () => {
             </div>
 
             <div className="event_list">
-                <div className="scrollable_content">
+            <div className="scrollable_content">
                     {ScheduleData[selectedDay.toLowerCase()].map((event) => (  
                         <div key={event.id} className="event_item">
-                            <h4>{event.title}</h4>
-                            <p>
-                                {event.startTime}
-                                {event.endTime && ` - ${event.endTime}`} {/* Conditionally add the hyphen if endTime exists */}
-                            </p>
-                            <p>{event.location}</p>
-                        </div>
+                          <div className="event_time">
+                              <p>{event.startTime}{event.endTime && ` - ${event.endTime}`}</p>
+                          </div>
+                          <div className="event_details">
+                              <h4>{event.title}</h4>
+                              <p className="event_location">
+                                  <FaMapMarkerAlt className="location_icon" /> {event.location}
+                              </p>
+                          </div>
+                      </div>
                     ))}
                 </div>
             </div>

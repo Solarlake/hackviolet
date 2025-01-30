@@ -21,7 +21,6 @@
     
         .tab_button {
             padding: 0.9em 1.5em;
-            padding-top: 1em;
             border: 1px solid #3A475A;
             border-radius: 1em;
             margin: 0 0.5em;
@@ -57,14 +56,49 @@
         }
     
         .event_item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
             padding: 1.5em;
             border: 1px solid #ddd;
             border-radius: 0.5em;
             transition: background-color 0.3s ease;
-    
+            width: 100vw;
+            max-width: 50vw;
+
+            @media (min-resolution: 1.25dppx) and (max-width: 1360px){
+                width: 100vw;
+                max-width: 80vw;
+            }
+            @media (max-width: 900px) {
+                width: 100vw;
+                max-width: 80vw;
+            }
+        
             &:hover {
                 background-color: #f1f1f1;
             }
+        
+            .event_time {
+                flex: 2;
+                font-weight: bold;
+                font-size: 1em;
+            }
+        
+            .event_details {
+                flex: 3; 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; 
+                margin-left: 1em;
+            }
+        
+            .event_location {
+                display: flex;
+                align-items: center;
+                gap: 0.3em;
+            }
         }
+        
     }
 }
