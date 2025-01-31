@@ -7,95 +7,109 @@
         padding: 0 1em;
     }
 
-    .tabs {
+    .buttons_container {
         display: flex;
-        justify-content: center;
-        margin-bottom: 1em;
-        font-family: "Space Grotesk";
-        font-weight: 800;
-        font-size: 1.5em;
-
-        @media (max-width: 900px) {
-            font-size: 1em;
-        }
-    
-        .tab_button {
-            padding: 0.9em 1.5em;
-            border: 1px solid #3A475A;
-            border-radius: 1em;
-            margin: 0 0.5em;
-            color: black;
-            background-color: transparent;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-
-            &.active {
-                background-color: #3A475A;
-                color: white;
-            }
-
+        justify-content: space-between;
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            font-family: "Space Grotesk";
+            font-weight: 800;
+            font-size: 1.5em;
+            
+            
             @media (max-width: 900px) {
                 font-size: 1em;
-                padding: 0.6em 1em;
-                margin: 0 0.2em;
             }
-        }
-    }
-
-    .event_filters {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1em;
-        font-family: "Space Grotesk";
-        font-weight: 800;
-        font-size: 1.2em;
-        flex-wrap: wrap;  
-        
-        @media (max-width: 900px) {
-            font-size: 1em;
-            justify-content: center; 
+            
+            
+            .tab_button {
+                &:first-child {
+                    border-radius: 0.5em 0 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 0.5em 0 0;
+                }
+                
+                // padding: 0.9em 1.5em;
+                padding: 0.4em 1.4em;
+                border: 1px solid #0000001A;
+                // margin: 0 0.5em;
+                color: black;
+                background-color: transparent;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                
+                &.active {
+                    background-color: #3A475A;
+                    color: white;
+                }
+                
+                @media (max-width: 900px) {
+                    font-size: 1em;
+                    padding: 0.6em 1em;
+                }
+            }
         }
     
-        .filter_button {
-            padding: 0.5em 1.2em;
-            border: 1px solid #3A475A;
-            border-radius: 1.2em;
-            margin: 0.2em;
-            background-color: transparent;
-            color: black;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+        .event_filters {
+            display: flex;
+            justify-content: center;
+            // margin: 1em 0em;
+            font-family: "Space Grotesk";
+            font-weight: 800;
+            font-size: 1.2em;
+            flex-wrap: wrap;  
             
-            &.active {
-                background-color: #5d7291;
-                color: white;
+            @media (max-width: 900px) {
+                font-size: 1em;
+                justify-content: center; 
             }
-
-            &.HackViolet.active {
-                background-color: #6a4c9c;
-                color: white;
-            }
-            &.Club.active {
-                background-color: #ff6347;
-                color: white;
-            }
-            &.Meal.active {
-                background-color: #28a745;
-                color: white;
-            }
-            &.MLH.active {
-                background-color: #00bcd4;
-                color: white;
+        
+            .filter_button {
+                padding: 0.2em 1.2em;
+                border: 1px solid #0000001A;
+                border-radius: 1.2em;
+                margin: 0.4em 0.2em;
+                background-color: transparent;
+                color: black;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                
+                &.active {
+                    background-color: #5d7291;
+                    color: white;
+                }
+    
+                &.HackViolet.active {
+                    background-color: #6a4c9c;
+                    color: white;
+                }
+                &.Club.active {
+                    background-color: #ff6347;
+                    color: white;
+                }
+                &.Meal.active {
+                    background-color: #28a745;
+                    color: white;
+                }
+                &.MLH.active {
+                    background-color: #00bcd4;
+                    color: white;
+                }
             }
         }
+        
     }
+
     
 
     .event_list {
         display: flex;
         justify-content: center;
-        border: 1px solid #3A475A;
-        border-radius: 0.5em;
+        border: 1px solid #0000001A;
+        border-radius: 0 0.5em 0.5em 0.5em;
         background-color: #ffffff;
         font-size: 1.2em;
 
@@ -113,12 +127,18 @@
         }
 
         .event_item {
+            &:first-child {
+                border-radius: 0 0.5em 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 0.5em 0.5em;
+            }
+
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            padding: 1.5em;
-            border: 1px solid #ddd;
-            border-radius: 0.5em;
+            padding: 1em 1.5em;
+            border: 1px solid #0000001A;
             transition: background-color 0.3s ease;
             width: 100vw;
             max-width: 55vw;

@@ -24,29 +24,31 @@ const Schedule = () => {
 
     return (
         <div className="schedule">
-            <div className="tabs">
-                {["Saturday", "Sunday"].map((day) => (
-                    <button
-                        key={day}
-                        className={`tab_button ${selectedDay === day ? "active" : ""}`}
-                        onClick={() => setSelectedDay(day)}
-                    >
-                        {day}
-                    </button>
-                ))}
-            </div>
+            <div className="buttons_container">
+                <div className="tabs">
+                    {["Saturday", "Sunday"].map((day) => (
+                        <button
+                            key={day}
+                            className={`tab_button ${selectedDay === day ? "active" : ""}`}
+                            onClick={() => setSelectedDay(day)}
+                        >
+                            {day}
+                        </button>
+                    ))}
+                </div>
 
-            {/* Filter buttons */}
-            <div className="event_filters">
-                {["All", "HackViolet", "Club", "Meal", "MLH"].map((eventType) => (
-                    <button
-                        key={eventType}
-                        className={`filter_button ${selectedEventType === eventType ? "active" : ""} ${eventType}`}
-                        onClick={() => handleEventTypeFilter(eventType)}
-                    >
-                        {eventType}
-                    </button>
-                ))}
+                {/* Filter buttons */}
+                <div className="event_filters">
+                    {["All", "HackViolet", "Club", "Meal", "MLH"].map((eventType) => (
+                        <button
+                            key={eventType}
+                            className={`filter_button ${selectedEventType === eventType ? "active" : ""} ${eventType}`}
+                            onClick={() => handleEventTypeFilter(eventType)}
+                        >
+                            {eventType}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             <div className="event_list">

@@ -177,7 +177,6 @@ html {
                 max-width: 15em;
             }
         }
-
     }
 
     .about {
@@ -189,7 +188,7 @@ html {
         }
 
         .copy {
-            margin-top: 6em;
+            margin-top: 3em;
             font-family: "PP Editorial New";
             font-size: 2em;
             font-weight: 400;
@@ -219,11 +218,49 @@ html {
         }
     }
 
+    .island_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -4em;
+        margin-bottom: 6em;
+
+        .island {
+            max-width: 32em;
+            object-fit: cover;
+            pointer-events: none;
+            
+            @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
+                max-width: 70vw;
+                max-height: 70vh;
+            }
+            @media (max-width: 900px) {
+                max-width: 15em;
+            }
+        }
+    }
+
     .gallery {
         width: 100%;
 
         @media (max-width: 900px) {
             width: 100vw;            
+        }
+    }
+
+    .blob {
+        position: absolute;
+        overflow: visible;
+        object-fit: none;
+        width: 100vw;
+        height: auto;
+        margin-top: 10em;
+        z-index: -1000;
+        filter: saturate(1.1) brightness(1.1);
+
+        @media (max-width: 900px) {
+            margin-bottom: -6em;
         }
     }
 
@@ -239,19 +276,6 @@ html {
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
-            }
-        }
-
-        .blob {
-            overflow: visible;
-            object-fit: none;
-            width: 100vw;
-            height: auto;
-            margin-bottom: -13em;
-            // filter: saturate(1.2) brightness(1.2);
-
-            @media (max-width: 900px) {
-                margin-bottom: -6em;
             }
         }
     }

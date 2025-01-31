@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "../style/Home.scss";
 import { useLocation } from 'react-router-dom';
-// import Blob from "../asset/svg/blob.svg";
-// import FooterBlob from "../asset/svg/footer_blob.svg";
+import Blob from "../asset/svg/blob.svg";
 import FooterBlob from "../asset/image/footer_blob.png";
 import Rocket from "../asset/image/rocket.png";
+import Island from "../asset/image/island.png";
 import Clouds from "../asset/image/clouds.png";
 import Gallery from "../component/Gallery";
 import FAQ from "../component/FAQ";
@@ -66,13 +66,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="gallery">
-                <Gallery />
-            </div>
-
-            <div id="faq" className="faq">
-                <p className="header">Frequently Asked Questions</p>
-                <FAQ />
+            <div className="island_container">
+                <img className="island" src={Island} alt="" />
             </div>
 
             <div id="schedule" className="schedule">
@@ -83,6 +78,20 @@ const Home = () => {
             <div id="prizes" className="prizes">
                 <p className="header">Prizes</p>
                 <Prizes />
+            </div>
+
+
+            <div id="faq" className="faq">
+                <p className="header">Frequently Asked Questions</p>
+                <FAQ />
+            </div>
+
+            <img src={Blob} alt="" className="blob" />
+
+            
+
+            <div className="gallery">
+                <Gallery />
             </div>
 
             <div id="sponsors" className="sponsors">
