@@ -20,10 +20,6 @@ const Navigation = () => {
                     </Link>
                 </div>
                 <div className="links">
-                    <Link to="/#faq" className="faq_link" onClick={closeNavBar}>
-                        <FaQuestionCircle className="nav_icon" />
-                        <span className="text">FAQ</span>
-                    </Link>
                     <Link to="/#schedule" className="schedule_link" onClick={closeNavBar}>
                         <FaCalendarAlt className="nav_icon" />
                         <span className="text">Schedule</span>
@@ -31,6 +27,10 @@ const Navigation = () => {
                     <Link to="/#prizes" className="prizes_link" onClick={closeNavBar}>
                         <FaTrophy className="nav_icon" />
                         <span className="text">Prizes</span>
+                    </Link>
+                    <Link to="/#faq" className="faq_link" onClick={closeNavBar}>
+                        <FaQuestionCircle className="nav_icon" />
+                        <span className="text">FAQ</span>
                     </Link>
                 </div>
                 <div className="resources">
