@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../style/Navigation.scss";
 import Logo from "../asset/image/logo.png";
 import LogoText from "../asset/image/hackviolet_text.png";
-import { FaQuestionCircle, FaCalendarAlt, FaTrophy } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Use Link from react-router-dom
 
 const Navigation = () => {
@@ -20,16 +19,13 @@ const Navigation = () => {
                     </Link>
                 </div>
                 <div className="links">
-                    <Link to="/#schedule" className="schedule_link" onClick={closeNavBar}>
-                        <FaCalendarAlt className="nav_icon" />
+                    <Link to="/#schedule" className="schedule_link">
                         <span className="text">Schedule</span>
                     </Link>
-                    <Link to="/#prizes" className="prizes_link" onClick={closeNavBar}>
-                        <FaTrophy className="nav_icon" />
+                    <Link to="/#prizes" className="prizes_link">
                         <span className="text">Prizes</span>
                     </Link>
-                    <Link to="/#faq" className="faq_link" onClick={closeNavBar}>
-                        <FaQuestionCircle className="nav_icon" />
+                    <Link to="/#faq" className="faq_link">
                         <span className="text">FAQ</span>
                     </Link>
                 </div>
