@@ -49,14 +49,26 @@
 
                 .category_name {
                     font-size: 3em;
+
+                    @media (max-width: 900px) {
+                        font-size: 1.5em;
+                    }
                 }
 
                 .description {
                     font-size: 1.2em;
+
+                    @media (max-width: 900px) {
+                        font-size: 1em;
+                    }
                 }
 
                 .prize_description {
                     font-size: 1.2em;
+
+                    @media (max-width: 900px) {
+                        font-size: 1em;
+                    }
                 }
             }
     
@@ -66,14 +78,26 @@
 
                 .category_name {
                     font-size: 2em;
+
+                    @media (max-width: 900px) {
+                        font-size: 1.3em;
+                    }
                 }
 
                 .description {
                     font-size: 1em;
+
+                    @media (max-width: 900px) {
+                        font-size: 0.9em;
+                    }
                 }
 
                 .prize_description {
                     font-size: 1em;
+
+                    @media (max-width: 900px) {
+                        font-size: 0.9em;
+                    }
                 }
             }
 
@@ -83,14 +107,26 @@
 
                 .category_name {
                     font-size: 2em;
+
+                    @media (max-width: 900px) {
+                        font-size: 1.3em;
+                    }
                 }
 
                 .description {
                     font-size: 1em;
+
+                    @media (max-width: 900px) {
+                        font-size: 0.9em;
+                    }
                 }
 
                 .prize_description {
                     font-size: 1em;
+
+                    @media (max-width: 900px) {
+                        font-size: 0.9em;
+                    }
                 }
             }
         }
