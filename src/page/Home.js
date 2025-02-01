@@ -47,6 +47,7 @@ const Home = () => {
                         <Button href="https://forms.gle/YgKufXUzh3Pn7UcG7" newTab clear text="Mentor" /> */}
                         {/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLScA4kTd2vr5kAVaItUHcuA63ve9774q_UaV3UUaCl93pRMzEQ/viewform" newTab clear text="Volunteer" /> */}
                         <Button href="https://discord.gg/Dak2ahxF" newTab clear text="Join the Discord!" />
+                        <Button href="https://hackviolet-2025.devpost.com/" newTab clear text="View the Devpost!" />
                         <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" />
                     </div>
                     <div className="socials">
