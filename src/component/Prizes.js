@@ -67,7 +67,7 @@ const Prizes = () => {
                             <p className="prize_description">Prize: Ardunio Tiny MLH Kit</p>
                         </div>
                         <div className="cell cell__size_2_small">
-                            <h1 className="category_name">MLH: Best Use of Terraform</h1>
+                            <h1 className="category_name">MLH: Best Use of Hashicorp Terraform</h1>
                             <p className="description"></p>
                             <p className="prize_description">Prize: Hashicorp Wireless Mechanical Keyboard</p>
                         </div>
