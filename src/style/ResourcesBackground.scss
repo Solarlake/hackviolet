@@ -17,6 +17,10 @@
         linear-gradient(90deg, #0000000F 1px, transparent 1px),
         linear-gradient(0deg, #0000000F 1px, transparent 1px);
 
+    @media (max-width: 900px) {
+        background-image: none;
+    }
+
     .circle {
         position: absolute;
         border-radius: 1000em;
