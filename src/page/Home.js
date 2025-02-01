@@ -3,6 +3,7 @@ import "../style/Home.scss";
 import { useLocation } from 'react-router-dom';
 import Blob from "../asset/svg/blob.svg";
 import FooterBlob from "../asset/image/footer_blob.png";
+import HeaderText from "../asset/image/hackviolet_text_gradient.png";
 import Rocket from "../asset/image/rocket.png";
 import Island from "../asset/image/island.png";
 import Clouds from "../asset/image/clouds.png";
@@ -33,10 +34,13 @@ const Home = () => {
         <div className="home">
             <div id="landing" className="landing">
                 <div className="header">
-                    <h1>HackViolet 2025</h1>
+                    {/* <h1>HackViolet 2025</h1> */}
+                    <div className="header_text_container">
+                        <img src={HeaderText} alt="" className="header_logo" />
+                    </div>
                     <div className="copy">
-                        <p className="p1">Virginia Tech's premier female-empowerment hackathon</p>
-                        <p className="p2">February 1-2 • Data & Decision Sciences Building</p>
+                        <p className="location">February 1-2, 2025 • <a href="https://maps.app.goo.gl/wVmMAS4uwaYnDMhw5">Data & Decision Sciences Building</a></p>
+                        <p className="tagline">Virginia Tech's premier female-empowerment hackathon</p>
                     </div>
                     <div className="buttons">
                         {/* <Button href="https://forms.gle/DzFDNvCCFqpJXVfD6" newTab clear text="Judge" />

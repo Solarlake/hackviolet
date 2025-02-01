@@ -9,7 +9,7 @@ const Socials = () => {
             <a href="https://www.instagram.com/hackvioletvt/" target="_blank" rel="noreferrer" className="icon">
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://discord.gg/Dak2ahxF" className="icon">
+            <a href="https://discord.gg/Dak2ahxF" target="_blank" rel="noreferrer" className="icon">
                 <FontAwesomeIcon icon={faDiscord} />
             </a>
             <a href="https://hackviolet-2025.devpost.com/" target="_blank" rel="noreferrer" className="icon">

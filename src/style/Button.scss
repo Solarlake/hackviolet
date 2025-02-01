@@ -4,12 +4,12 @@
     font-size: 1em;
     text-decoration: none;
 
-    padding: 0.9em 1.5em;
+    padding: 0.8em 1.5em;
     padding-top: 1em;
-    border: 1px solid black;
+    border: 1px solid #3a475a;
     border-radius: 100em;
     color: white;
-    background-color: black;
+    background-color: #3a475a;
     
     @media (max-width: 900px) {
         padding-top: 0.8em;
@@ -19,7 +19,7 @@
     cursor: pointer;
 
     &__clear {
-        color: black;
+        color: #3a475a;
         background-color: transparent;
     }
 }
