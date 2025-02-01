@@ -86,13 +86,13 @@
 
                     transition: all 0.1s ease-out;
                     opacity: 0;
-                    transform: translate(0, 0.2em);
+                    transform: translate(0, 0.2em) scaleX(0.98);
                 }
                 
                 &:hover:after {
                     transition: all 0.1s ease-out;
                     opacity: 1;
-                    transform: translate(0, -0.05em);
+                    transform: translate(0, -0.05em) scaleX(0.98);
                 }
             }
 
@@ -122,7 +122,7 @@
                 font-size: 0.9em;
                 color: #ffffff;
 
-                transition: all 0.1s ease-out;
+                transition: background-color 0.1s ease-out;
 
                 &:hover {
                     background-color: #6c42e0DD;
