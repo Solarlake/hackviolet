@@ -6,6 +6,7 @@ import Home from './page/Home';
 import Resources from './page/Resources';
 import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
+import Countdown from './page/Countdown';
 
 function App() {
     useEffect(() => {
@@ -15,19 +16,25 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Navigation />
                 <Badge />
                 <Routes>
                     <Route path="/" element={
                         <div>
+                            <Navigation />
                             <Background />
                             <Home />
                         </div>
                     } />
                     <Route path="/resources" element={
                         <div>
+                            <Navigation />
                             <ResourcesBackground />
                             <Resources />
+                        </div>
+                    } />
+                    <Route path="/countdown" element={
+                        <div>
+                            <Countdown />
                         </div>
                     } />
                 </Routes>

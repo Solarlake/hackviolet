@@ -83,9 +83,6 @@ const Resources = () => {
                         <p><strong>PHYSICAL LOCATION</strong></p>
                         <p>Our hackathon will be held mainly at the Data and Decision Sciences building, on the Virginia Tech campus. Once inside, check-in will be inside the lobby, and then our opening ceremony will be at Goodwin Hall. Hackers will then be directed back to the Data and Decision Sciences building, where they can work on their projects! Specific room locations for all events are detailed in the schedule below.</p>
 
-                        <p><strong>Unfamiliar with Virginia Tech’s campus?</strong></p>
-                        <p>No worries! Below is the address, a link to a map of our campus, and a photo of the Data and Decision Sciences building circled in case you can’t find it.</p>
-
                         <ul>
                             <li><strong>Data and Decision Sciences Address:</strong> 727 Prices Fork Rd, Blacksburg, VA 24060</li>
                             <li><strong>Virginia Tech Campus Map:</strong> <a href="https://www.google.com/maps/place/Virginia+Tech/@37.2285035,-80.4193583,15z/data=!3m1!4b1!4m6!3m5!1s0x884b296ba53d92f1:0x3693781f598e7d3c!8m2!3d37.2285035!4d-80.4193583!16zL20vMGNqaGo" target="_blank">Link to the Map</a></li>
