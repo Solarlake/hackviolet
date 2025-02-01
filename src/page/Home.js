@@ -87,13 +87,10 @@ const Home = () => {
 
 
             <div id="faq" className="faq">
+                <img src={Blob} alt="" className="blob" />
                 <p className="header">Frequently Asked Questions</p>
                 <FAQ />
             </div>
-
-            <img src={Blob} alt="" className="blob" />
-
-            
 
             <div className="gallery">
                 <Gallery />
