@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "../style/Home.scss";
 import { useLocation } from 'react-router-dom';
+import CountdownTimer from "react-countdown";
+
 import Blob from "../asset/svg/blob.svg";
 import FooterBlob from "../asset/image/footer_blob.png";
 import HeaderText from "../asset/image/hackviolet_text_gradient.png";
@@ -18,8 +20,18 @@ import Socials from "../component/Socials";
 import Button from "../component/Button";
 
 const Home = () => {
-
     const location = useLocation();
+    const targetDate = new Date("2025-02-02T12:30:00-05:00").getTime();
+
+    const countdownRenderer = ({ hours, minutes, seconds, completed }) => {
+        const format = (num) => String(num).padStart(2, "0");
+
+        return (
+            <div className="countdown_timer">
+                {format(hours)}:{format(minutes)}:{format(seconds)}
+            </div>
+        );
+    }
     
     useEffect(() => {
         if (location.hash) {
@@ -42,17 +54,22 @@ const Home = () => {
                         <p className="location">February 1-2, 2025 • <a href="https://maps.app.goo.gl/wVmMAS4uwaYnDMhw5">Data & Decision Sciences Building</a></p>
                         <p className="tagline">Virginia Tech's premier female-empowerment hackathon</p>
                     </div>
+                    <div className="countdown">
+                        <a href="/countdown">
+                            <CountdownTimer date={targetDate} renderer={countdownRenderer}/>
+                        </a>
+                    </div>
                     <div className="buttons">
                         {/* <Button href="https://forms.gle/DzFDNvCCFqpJXVfD6" newTab clear text="Judge" />
                         <Button href="https://forms.gle/YgKufXUzh3Pn7UcG7" newTab clear text="Mentor" /> */}
                         {/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLScA4kTd2vr5kAVaItUHcuA63ve9774q_UaV3UUaCl93pRMzEQ/viewform" newTab clear text="Volunteer" /> */}
-                        <Button href="https://discord.gg/Dak2ahxF" newTab clear text="Join the Discord!" />
-                        <Button href="https://hackviolet-2025.devpost.com/" newTab clear text="View the Devpost!" />
-                        <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" />
+                        <Button href="https://discord.gg/Dak2ahxF" newTab clear text="Discord" />
+                        <Button href="https://hackviolet-2025.devpost.com/" newTab text="Devpost" />
+                        {/* <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" /> */}
                     </div>
-                    <div className="socials">
+                    {/* <div className="socials">
                         <Socials />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

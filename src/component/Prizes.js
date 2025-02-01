@@ -44,7 +44,7 @@ const Prizes = () => {
                             <h1 className="category_name">Arcfield: Best UI/UX for AI Data Labeling</h1>
                             <p className="description">Awarded to the project with the best user interface design for AI data labeling. Solutions may incorporate features like automated labeling or metadata tagging to improve data organization, user experience, and traceability within AI ecosystems.
                             </p>
-                            <p className="prize_description">Prize: $300 Amazon Gift Card</p>
+                            <p className="prize_description">Prize: One $300 Amazon Gift Card for the team</p>
                         </div>
                         <div className="cell cell__size_2_small">
                             <h1 className="category_name">Capital One: Best Financial Hack</h1>
@@ -89,6 +89,7 @@ const Prizes = () => {
                     {/* </div>
                 </div> */}
             </div>
+            <p className="disclaimer">*prizes listed are awarded to each team member unless otherwise specified</p>
         </div>
     );
 };
