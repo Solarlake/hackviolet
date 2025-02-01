@@ -22,7 +22,7 @@
             font-style: normal;
             font-size: 2em;
             cursor: pointer;
-
+            
             @media (max-width: 900px) {
                 font-size: 1.2em;
             }
@@ -32,21 +32,21 @@
                 font-weight: 400;
                 text-align: left;
             }
-
+            
             .arrow {
                 width: 0.8em;
                 transform: rotate(0deg);
                 transition: all 0.3s ease-out;
             }
-
+            
             .arrow__down {
                 transform: rotate(90deg);
                 transition: all 0.3s ease-out;
             }
         }
-
-
+        
         .question__answer {
+            color: #000000;
             overflow: hidden;
             font-size: 1.2em;
             max-height: 0;
@@ -68,6 +68,7 @@
         }
         
         .question__answer_show {
+            color: #000000;
             overflow: hidden;
             font-size: 1.2em;
             max-height: 16em;
