@@ -50,16 +50,16 @@ const Resources = () => {
                         <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab text="Info Sheet" />
                         <Button href="https://forms.gle/9fcnXGye34M52Dyg7" newTab clear text="Judging Preference Form" />
                     </div>
-                    <div className="socials">
+                    {/* <div className="socials">
                         <Socials />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
-            <img className="clouds" src={Clouds} alt="" />
+            {/* <img className="clouds" src={Clouds} alt="" />
             <div className="rocket_container">
                 <img className="rocket" src={Rocket} alt="" />
-            </div>
+            </div> */}
 
             <div id="rules" className="rules">
                 <p className="header">Rules & Eligibility</p>

@@ -28,7 +28,7 @@ html {
         }
 
         .header {
-            margin-top: 20vh;
+            margin-top: 21vh;
 
             @media (max-width: 900px) {
                 // margin-top: 15vh;
@@ -160,14 +160,14 @@ html {
 
     .clouds {
         width: 1000em;
-        height: 35em;
+        height: 40em;
         object-fit: cover;
         justify-self: center;
         position: absolute;  
         left: 0;
         right: 0;
         // top: 38em;
-        top: 60vh;
+        top: 52vh;
         pointer-events: none;
         
         @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
@@ -177,7 +177,7 @@ html {
         }
         @media (max-width: 900px) {
             width: 500em;
-            height: 10em;
+            height: 15em;
             // bottom: 3em;
         }
     }
@@ -188,7 +188,7 @@ html {
         justify-content: center;
         align-items: center;
         width: 100%;
-        top: 50vh;
+        top: 52vh;
 
         @media (min-resolution: 1.25dppx) and (max-width: 1360px){
             top: 60vh;

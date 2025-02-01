@@ -4,6 +4,7 @@ import Navigation from './component/Navigation';
 import Background from './component/Background';
 import Home from './page/Home';
 import Resources from './page/Resources';
+import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
                     } />
                     <Route path="/resources" element={
                         <div>
-                            <Background />
+                            <ResourcesBackground />
                             <Resources />
                         </div>
                     } />

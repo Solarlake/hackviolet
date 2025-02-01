@@ -6,7 +6,7 @@ import FooterBlob from "../asset/image/footer_blob.png";
 import HeaderText from "../asset/image/hackviolet_text_gradient.png";
 import Rocket from "../asset/image/rocket.png";
 import Island from "../asset/image/island.png";
-import Clouds from "../asset/image/clouds.png";
+import Clouds from "../asset/image/clouds_plenty.png";
 import Gallery from "../component/Gallery";
 import FAQ from "../component/FAQ";
 import Schedule from "../component/Schedule";
@@ -45,7 +45,8 @@ const Home = () => {
                     <div className="buttons">
                         {/* <Button href="https://forms.gle/DzFDNvCCFqpJXVfD6" newTab clear text="Judge" />
                         <Button href="https://forms.gle/YgKufXUzh3Pn7UcG7" newTab clear text="Mentor" /> */}
-                        <Button href="https://docs.google.com/forms/d/e/1FAIpQLScA4kTd2vr5kAVaItUHcuA63ve9774q_UaV3UUaCl93pRMzEQ/viewform" newTab clear text="Volunteer" />
+                        {/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLScA4kTd2vr5kAVaItUHcuA63ve9774q_UaV3UUaCl93pRMzEQ/viewform" newTab clear text="Volunteer" /> */}
+                        <Button href="https://discord.gg/Dak2ahxF" newTab clear text="Join the Discord!" />
                         <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" />
                     </div>
                     <div className="socials">
