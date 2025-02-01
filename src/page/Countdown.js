@@ -5,6 +5,18 @@ import LogoWhite from "../asset/image/logo_white_full.png";
 import "../style/Countdown.scss";
 
 const Countdown = () => {
+    const location = useLocation();
+    
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
+
+
     const targetDate = new Date("2025-02-02T12:30:00-05:00").getTime();
 
     const renderer = ({ hours, minutes, seconds, completed }) => {
