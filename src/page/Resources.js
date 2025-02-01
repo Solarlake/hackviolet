@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import "../style/Resources.scss";
+import Socials from "../component/Socials";
 import FooterBlob from "../asset/image/footer_blob.png";
 import Rocket from "../asset/image/rocket.png";
 import Clouds from "../asset/image/clouds.png";
 import Footer from "../component/Footer";
 import Button from "../component/Button";
+import StarterData from "../content/starter.json";
+import SubmissionData from "../content/submission.json";
+import AngleRight from "../asset/svg/angle-right.svg";
 
 const Resources = () => {
 
@@ -20,6 +24,19 @@ const Resources = () => {
         }
     }, [location]);
 
+    const [active, setActive] = React.useState([]);
+    
+        const toggle = (index) => {
+            console.log(index)
+            if (active.includes(index)) {
+                setActive(active.filter(item => item !== index));
+            }
+            else {
+                setActive([...active, index]);
+            }
+            console.log(active)
+        }
+
     return (
         <div className="resources">
             <div id="info" className="landing">
@@ -31,8 +48,10 @@ const Resources = () => {
                     </div>
                     <div className="buttons">
                         <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab text="Info Sheet" />
-                        <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab clear text="Discord" />
-                        <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab clear text="Devpost" />
+                        <Button href="https://forms.gle/9fcnXGye34M52Dyg7" newTab clear text="Judging Preference Form" />
+                    </div>
+                    <div className="socials">
+                        <Socials />
                     </div>
                 </div>
             </div>
@@ -175,116 +194,40 @@ const Resources = () => {
             </div>
 
             <div id="submission" className="submission">
-                <p className="header">Project Submission</p>
-                <div className="text">
-                    <div className="copy">
-                        <p><strong>Initial Project Submissions</strong></p>
-                        <ul>
-                            <li>Initial project submissions are due on Devpost by <strong>Sunday, February 2nd, 2025 at 10:30 AM EST</strong>.</li>
-                            <li>Judging preference forms are also due at this time. This can be a rough submission with random text, links, etc.</li>
-                            <li>You must submit your project to all the prize categories you'd like to be considered for.</li>
-                        </ul>
-
-                        <p><strong>Final Project Submissions</strong></p>
-                        <ul>
-                            <li>Final project submissions are due by <strong>Sunday, February 2nd, 2025 at 12:30 PM EST</strong>, including a <strong>3-minute maximum demo video</strong> and a link to a <strong>GitHub repo</strong> containing your code.</li>
-                            <li>All submissions will be made to the HackViolet 2025 Devpost page (TBD).</li>
-                            <li>New to Devpost? Check out this <a href="https://devpost.com/blog/introducing-devpost" target="_blank">submission guide</a>.</li>
-                            <li>Here is a video with <a href="https://www.youtube.com/watch?v=xx" target="_blank">tips on Devpost submissions</a>.</li>
-                        </ul>
-
-                        <p><strong>Demo Video Guidelines</strong></p>
-                        <ul>
-                            <li>All teams must submit a <strong>3-minute max. demo video</strong> along with their submission. Here are some tips:</li>
-                            <ul>
-                                <li>The demo video must describe what your project is and how it works.</li>
-                                <li>Each team member should be speaking/present at least once in the video. Don’t just have one person explain it all!</li>
-                                <li>Be creative! The judges will be looking at dozens of projects during the day, so you want to ensure the demo's first few seconds capture their attention!</li>
-                                <li>Here are some examples of projects from HackViolet 2024. Take a look at the winners – do you notice anything in common?</li>
-                            </ul>
-                        </ul>
-
-                        <p><strong>GitHub Repository</strong></p>
-                        <ul>
-                            <li>All teams must also include a link to a GitHub repository with your code.</li>
-                            <li>It’s best to create your repository early and make commits as you go so that judges can see your progress!</li>
-                            <li>New to GitHub? Check out these resources:</li>
-                            <ul>
-                                <li><a href="https://docs.github.com/en/github" target="_blank">GitHub Docs</a></li>
-                                <li><a href="https://lab.github.com/" target="_blank">GitHub Learning Lab</a></li>
-                            </ul>
-                        </ul>
+                <p className="submission_header">Project Submission</p>
+                <div className="questions">
+                {SubmissionData.map((question, index) => (
+                    <div key={index} className="question">
+                        <div className="header" onClick={() => toggle(index)}>
+                            <p className="question__title">{question.question}</p>
+                            <img src={AngleRight} alt="" className={active.includes(index) ? "arrow arrow__down" : "arrow"} />
+                        </div>
+                        <p 
+                            className={active.includes(index) ? "question__answer_show" : "question__answer"} 
+                            dangerouslySetInnerHTML={{ __html: question.answer }} 
+                        />
                     </div>
+                ))}
                 </div>
             </div>
 
             <div id="starter" className="starter">
-                <p className="header">Starter Packs & Resources</p>
-                <div className="text">
-                    <div className="copy">
-                        <p><strong>Have a resource you want to share? Let us know on Discord!</strong></p>
-
-                        <p><strong>Hackathons</strong></p>
-                        <ul>
-                            <li><a href="https://www.hackerearth.com/blog/10-tips-to-win-a-hackathon/" target="_blank">10 tips to win a hackathon - HackerEarth</a></li>
-                            <li><a href="https://medium.com/tech-at-venture/5-hackathon-roles-that-have-nothing-to-do-with-coding-7a6ec90b4e5a" target="_blank">5 Hackathon Roles That Have Nothing To Do With Coding</a></li>
-                            <li><a href="https://www.techhacks.org/hackathon-team-formation-tips/" target="_blank">How To Form A Winning Team For Hackathons: 5 Quick Tips</a></li>
-                            <li>"<a href="https://www.vthacks.org" target="_blank">Introduction to Hackathons</a>" with VT Hacks @11:30AM on Saturday, Feb 1st in Room DDS 150</li>
-                        </ul>
-
-                        <p><strong>Platforms/IDEs</strong></p>
-                        <ul>
-                            <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code (download needed)</a></li>
-                            <li><a href="https://replit.com/" target="_blank">Repl.it (on web browser, supports most languages)</a></li>
-                        </ul>
-
-                        <p><strong>Web Development</strong></p>
-                        <ul>
-                            <li><a href="https://glitch.com/" target="_blank">Glitch (on web browser)</a></li>
-                            <li><a href="https://qoom.io/" target="_blank">Qoom (on web browser)</a></li>
-                            <li><a href="https://www.figma.com/" target="_blank">Figma (on web browser, interface design tool)</a></li>
-                        </ul>
-
-                        <p><strong>Mobile App Development</strong></p>
-                        <ul>
-                            <li><a href="https://appinventor.mit.edu/" target="_blank">MIT App Inventor</a></li>
-                            <li><a href="https://flutter.dev/" target="_blank">Flutter</a></li>
-                            <li><a href="https://developer.android.com/studio" target="_blank">Android Studio</a></li>
-                            <li><a href="https://developer.apple.com/xcode/" target="_blank">Xcode (iOS, Mac computers only)</a></li>
-                        </ul>
-
-                        <p><strong>Python</strong></p>
-                        <ul>
-                            <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></li>
-                            <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
-                            <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Intro to Python</a></li>
-                            <li>"<a href="https://aiml.vt.edu" target="_blank">LLMs using Python</a>" with VT AIML @3:00PM on Saturday, Feb 1st in Room DDS 155</li>
-                        </ul>
-
-                        <p><strong>Java</strong></p>
-                        <ul>
-                            <li><a href="https://replit.com/" target="_blank">Replit Intro to Java</a></li>
-                            <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">Introduction to Java - GeeksforGeeks</a></li>
-                        </ul>
-
-                        <p><strong>Code Learning</strong></p>
-                        <ul>
-                            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                            <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
-                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                        </ul>
-
-                        <p><strong>GitHub</strong></p>
-                        <ul>
-                            <li><a href="https://guides.github.com/" target="_blank">GitHub Guide</a></li>
-                            <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet</a></li>
-                            <li>"<a href="https://mlh.io/" target="_blank">GitHub Copilot</a>" with MLH @2:30PM on Saturday, Feb 1st in Room DDS 155</li>
-                        </ul>
-
-                        <p><strong>Ask a mentor!</strong></p>
-
+                <p className="starter_header">Starter Packs & Resources</p>
+                <div className="questions">
+                {StarterData.map((question, index) => (
+                    <div key={index} className="question">
+                        <div className="header" onClick={() => toggle(index)}>
+                            <p className="question__title">{question.question}</p>
+                            <img src={AngleRight} alt="" className={active.includes(index) ? "arrow arrow__down" : "arrow"} />
+                        </div>
+                        <p 
+                            className={active.includes(index) ? "question__answer_show" : "question__answer"} 
+                            dangerouslySetInnerHTML={{ __html: question.answer }} 
+                        />
                     </div>
-                </div>
+                ))}
+            </div>
+                
             </div>
 
             <div className="footer">

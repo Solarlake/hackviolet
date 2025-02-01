@@ -12,9 +12,12 @@ const Socials = () => {
             <a href="https://discord.gg/Dak2ahxF" className="icon">
                 <FontAwesomeIcon icon={faDiscord} />
             </a>
-            <a href="https://www.linkedin.com/company/hackviolet-vt/" target="_blank" rel="noreferrer" className="icon">
-                <FontAwesomeIcon icon={faLinkedinIn} />
+            <a href="https://hackviolet-2025.devpost.com/" target="_blank" rel="noreferrer" className="icon">
+                <FontAwesomeIcon icon={faDev} />
             </a>
+            {/* <a href="https://www.linkedin.com/company/hackviolet-vt/" target="_blank" rel="noreferrer" className="icon">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+            </a> */}
             {/* <a href="/" className="icon">
                 <FontAwesomeIcon icon={faDev} />
             </a> */}

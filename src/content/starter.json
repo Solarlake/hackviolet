@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Hackathons",
+        "answer": "<ul><li><a href=\"https://www.hackerearth.com/blog/developers/10-tips-win-hackathon/\" target=\"_blank\">10 Tips to Win a Hackathon - HackerEarth</a></li><li><a href=\"https://eventornado.com/blog/5-hackathon-roles-that-have-nothing-to-do-with-coding\" target=\"_blank\">5 Hackathon Roles That Have Nothing To Do With Coding</a></li><li><a href=\"https://eventornado.com/blog/how-to-form-a-winning-team-for-hackathons\" target=\"_blank\">How To Form A Winning Team For Hackathons: 5 Quick Tips</a></li><li>\"Introduction to Hackathons\" with VT Hacks @11:30AM on Saturday, Feb 1st in Room DDS 150</li><li>\"Devpost and How to Demo Workshop\" with HackViolet @11:30AM on Saturday, Feb 1st in Room DDS 150</li></ul>"
+    },
+    {
+        "question": "General Platforms/IDEs",
+        "answer": "<ul><li><a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code (download needed)</a></li><li><a href=\"https://replit.com/\" target=\"_blank\">Repl.it (on web browser, supports most languages)</a></li></ul>"
+    },
+    {
+        "question": "Web Development Platforms/IDEs",
+        "answer": "<ul><li><a href=\"https://glitch.com/\" target=\"_blank\">Glitch (on web browser)</a></li><li><a href=\"https://www.qoom.io/\" target=\"_blank\">Qoom (on web browser)</a></li><li><a href=\"https://www.figma.com/\" target=\"_blank\">Figma (on web browser, interface design tool)</a></li></ul>"
+    },
+    {
+        "question": "Mobile App Development Platforms/IDEs",
+        "answer": "<ul><li><a href=\"https://appinventor.mit.edu/\" target=\"_blank\">MIT App Inventor</a></li><li><a href=\"https://flutter.dev/\" target=\"_blank\">Flutter</a></li><li><a href=\"https://developer.android.com/studio\" target=\"_blank\">Android Studio</a></li><li>Xcode (iOS, Mac computers only)</li></ul>"
+    },
+    {
+        "question": "Python Platforms/IDEs",
+        "answer": "<ul><li><a href=\"https://www.jetbrains.com/pycharm/\" target=\"_blank\">PyCharm</a></li><li><a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li></ul>"
+    },
+    {
+        "question": "Java Platforms/IDEs",
+        "answer": "<ul><li><a href=\"https://www.eclipse.org/\" target=\"_blank\">Eclipse</a></li><li><a href=\"https://www.jetbrains.com/idea/\" target=\"_blank\">IntelliJ IDEA</a></li></ul>"
+    },
+    {
+        "question": "GitHub",
+        "answer": "<ul><li><a href=\"https://docs.github.com/en/get-started/quickstart/hello-world\" target=\"_blank\">GitHub Guide</a></li><li><a href=\"https://training.github.com/\" target=\"_blank\">Git Cheat Sheet</a></li><li>\"GitHub Copilot\" with MLH @2:30PM on Saturday, Feb 1st in Room DDS 155</li></ul>"
+    },
+    {
+        "question": "Python",
+        "answer": "<ul><li><a href=\"https://www.w3schools.com/python/python_intro.asp\" target=\"_blank\">W3Schools Intro to Python</a></li><li>\"LLMs using Python\" with VT AIML @3:00PM on Saturday, Feb 1st in Room DDS 155</li><li>Ask a mentor!</li></ul>"
+    },
+    {
+        "question": "Java",
+        "answer": "<ul><li><a href=\"https://docs.replit.com/teaching-curriculum/intro-java\" target=\"_blank\">Replit Intro to Java</a></li><li><a href=\"https://www.geeksforgeeks.org/introduction-to-java/\" target=\"_blank\">Introduction to Java - GeeksforGeeks</a></li><li>Ask a mentor!</li></ul>"
+    },
+    {
+        "question": "Code Learning",
+        "answer": "<ul><li><a href=\"https://www.w3schools.com/\" target=\"_blank\">W3Schools</a></li><li><a href=\"https://www.geeksforgeeks.org/\" target=\"_blank\">GeeksforGeeks</a></li><li><a href=\"https://www.freecodecamp.org/\" target=\"_blank\">freeCodeCamp</a></li></ul>"
+    }
+]

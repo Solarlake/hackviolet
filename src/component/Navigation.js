@@ -40,7 +40,7 @@ const Navigation = () => {
                 <Link to="/resources#info" className="resources_page_link" onClick={closeNavBar}>
                     All Resources
                 </Link>
-                <Link to="/resources#info" onClick={closeNavBar}>Discord and Devpost</Link>
+                <Link to="/resources#info" onClick={closeNavBar}>Judging Preference Form</Link>
                 <Link to="/resources#rules" onClick={closeNavBar}>Rules</Link>
                 <Link to="/resources#location" onClick={closeNavBar}>Location</Link>
                 <Link to="/resources#raffle" onClick={closeNavBar}>Raffle Giveaways</Link>

@@ -1,0 +1,18 @@
+[
+    {
+        "question": "Initial Project Submission",
+        "answer": "<i>Initial project submissions</i> are due on Devpost by Sunday, February 2nd, 2025 at 10:30 AM EST. Judging preference forms are also due at this time. This can be a rough submission with random text, links, etc. You must submit your project to all the prize categories you'd like to be considered for."
+    },
+    {
+        "question": "Final Project Submission",
+        "answer": "Final project submissions are due by <b>Sunday, February 2nd, 2025 at 12:30 PM EST</b> including a 3-minute maximum demo video and link to a GitHub repo containing your code. All submissions will be made to the <a href=\"https://hackviolet-2025.devpost.com/\" target=\"_blank\">HackViolet 2025 Devpost page</a>. <ul><li>New to Devpost? Check out this <a href=\"https://help.devpost.com/hc/en-us/articles/360054999651-How-to-enter-a-submission/\" target=\"_blank\">submission guide</a>.</li> <li><a href=\"https://www.youtube.com/watch?v=0c_ARsh51lk&t/\" target=\"_blank\">Here is a video</a> with tips on Devpost submission</li></ul>"
+    },
+    {
+        "question": "Demo Video",
+        "answer": "All teams must submit a <b>3-min max. demo video</b> along with their submission. Here are some tips: <ul><li>The demo video must describe what your project is and how it works</li><li>Each team member should be speaking/present at least once in the video. Don’t just have one person explain it all!</li><li>Be creative! The judges will be looking at dozens of projects during the day, so you want to ensure the demo's first few seconds capture their attention!</li><li><a href=\"https://hackviolet2024.devpost.com/?ref_feature=challenge&ref_medium=discover/\" target=\"_blank\">Here are some examples of projects from HackViolet 2024.</a>Take a look at the winners – do you notice anything in common? </li></ul>"
+    },
+    {
+        "question": "Link to GitHub Repository",
+        "answer": "All teams must also include a link to a GitHub repository with your code. <ul><li>It’s best to <i>create your repository early and make commits as you go</i> so that judges can see your progress!</li><li>New to GitHub? Check out these <a href=\"https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit#bookmark=id.fx37sa5bt4bj/\" target=\"_blank\">resources</a></li></ul>"
+    }
+]

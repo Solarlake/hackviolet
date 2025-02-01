@@ -51,7 +51,17 @@
             font-size: 1.2em;
             max-height: 0;
             transition: all 0.3s ease-out;
-        
+
+            a {
+                color: #007BFF; 
+                text-decoration: underline; 
+                transition: color 0.3s ease;
+            }
+
+            a:hover {
+                color: #0056b3; 
+            }
+
             @media (max-width: 900px) {
                 font-size: 1em;
             }
@@ -60,13 +70,23 @@
         .question__answer_show {
             overflow: hidden;
             font-size: 1.2em;
-            max-height: 8em;
+            max-height: 16em;
             padding-bottom: 1em;
             transition: all 0.3s ease-out;
 
+            a {
+                color: #007BFF; 
+                text-decoration: underline; 
+                transition: color 0.3s ease;
+            }
+
+            a:hover {
+                color: #0056b3; 
+            }
+
             @media (max-width: 900px) {
                 font-size: 1em;
-                max-height: 13em;
+                max-height: 26em;
             }
         }
     }
