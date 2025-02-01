@@ -5,7 +5,7 @@
             "title": "Check-In",
             "startTime": "9:30AM",
             "endTime": "10:30AM",
-            "location": "DDS Attrium",
+            "location": "Goodwin 145",
             "type": ""
         },
         {
@@ -13,7 +13,7 @@
             "title": "Opening Ceremony",
             "startTime": "10:30AM",
             "endTime": "11:00AM",
-            "location": "DDS 130",
+            "location": "Goodwin Auditorium",
             "type": ""
         },
         {
@@ -42,10 +42,10 @@
         },
         {
             "id": 6,
-            "title": "Lunch",
+            "title": "Lunch - Cafe Mekong",
             "startTime": "12:30PM",
             "endTime": "1:00PM",
-            "location": "Middle/Main Entrance (Split)",
+            "location": "TBA",
             "type": "Meal"
         },
         {
@@ -61,7 +61,7 @@
             "title": "Company Sponsor Fair",
             "startTime": "1:30PM",
             "endTime": "2:30PM",
-            "location": "Atrium",
+            "location": "DDS Atrium",
             "type": "Company"
         },
         {
@@ -130,15 +130,15 @@
         },
         {
             "id": 17,
-            "title": "Dinner",
+            "title": "Dinner- Dominos",
             "startTime": "8:00PM",
             "endTime": "8:30PM",
-            "location": "Middle/Main Entrance (Split)",
+            "location": "TBA",
             "type": "Meal"
         },
         {
             "id": 18,
-            "title": "Bingo/Trivia (Jeopardy)",
+            "title": "Jeopardy",
             "startTime": "8:00PM",
             "endTime": "8:30PM",
             "location": "DDS 155",
@@ -172,10 +172,10 @@
         },
         {
             "id": 22,
-            "title": "Brunch",
+            "title": "Brunch - Panera",
             "startTime": "10:00AM",
             "endTime": "10:30AM",
-            "location": "Middle/Main Entrance (Split)",
+            "location": "TBA",
             "type": "Meal"
         },
         {
@@ -188,7 +188,7 @@
         },
         {
             "id": 24,
-            "title": "Intro to Cybersecurity Tools with WiCys VT",
+            "title": "Hack With Us (Legally!) - SQL Injection with WiCys VT",
             "startTime": "11:00AM",
             "endTime": "12:30PM",
             "location": "DDS 150",
@@ -228,7 +228,7 @@
         },
         {
             "id": 29,
-            "title": "Web Development with Entrepreneurship Club",
+            "title": "React with Entrepreneurship Club",
             "startTime": "3:30PM",
             "endTime": "4:00PM",
             "location": "DDS 150",
@@ -247,7 +247,7 @@
             "title": "Closing Ceremony",
             "startTime": "5:00PM",
             "endTime": "6:00PM",
-            "location": "DDS 130",
+            "location": "Hitt 338",
             "type": ""
         }
     ]
