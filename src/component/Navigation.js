@@ -13,7 +13,7 @@ const Navigation = () => {
         <div className="navigation">
             <div className="bar">
                 <div className="logo">
-                    <Link to="/" id="landing">
+                    <Link to="/#landing" >
                         <img className="icon" src={Logo} alt="HackViolet 2025 Logo" />
                         <img className="text" src={LogoText} alt="HackViolet 2025 Text" />
                     </Link>

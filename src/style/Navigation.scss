@@ -77,6 +77,23 @@
 
             a {
                 padding: 0.6em 1em;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    background: #3a475a;
+
+                    transition: all 0.1s ease-out;
+                    opacity: 0;
+                    transform: translate(0, 0.2em);
+                }
+                
+                &:hover:after {
+                    transition: all 0.1s ease-out;
+                    opacity: 1;
+                    transform: translate(0, -0.05em);
+                }
             }
 
             @media (max-width: 900px) {
@@ -101,9 +118,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                
                 font-size: 0.9em;
                 color: #ffffff;
+
+                transition: all 0.1s ease-out;
+
+                &:hover {
+                    background-color: #6c42e0DD;
+                }
 
                 @media (max-width: 900px) {
                     font-family: "PP Supply Sans";
@@ -129,7 +152,6 @@
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 
         @media (max-width: 900px) {
-            font-family: "PP Supply Sans";
             font-size: 1em;
         }
 
@@ -145,7 +167,11 @@
     .collapsed {
         opacity: 0; 
         pointer-events: none;
-        height: 0;
+        touch-action: none;
+        
+        @media (max-width: 900px) {
+            height: 0;
+        }
     }
        
 }
