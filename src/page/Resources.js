@@ -61,7 +61,7 @@ const Resources = () => {
                 <img className="rocket" src={Rocket} alt="" />
             </div> */}
 
-            <div id="rules" className="rules">
+            <div id="rules" className="section">
                 <p className="header">Rules & Eligibility</p>
                 <div className="text">
                     <div className="copy">
@@ -79,7 +79,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div id="location" className="location">
+            <div id="location" className="section">
                 <p className="header">Location</p>
                 <div className="text">
                     <div className="copy">
@@ -105,7 +105,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div id="raffle" className="raffle">
+            <div id="raffle" className="section">
                 <p className="header">Raffle Giveaways</p>
                 <div className="text">
                     <div className="copy">
@@ -126,7 +126,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div id="teams" className="teams">
+            <div id="teams" className="section">
                 <p className="header">Teams</p>
                 <div className="text">
                     <div className="copy">
@@ -138,7 +138,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div id="mentors" className="mentors">
+            <div id="mentors" className="section">
                 <p className="header">Help & Mentors</p>
                 <div className="text">
                     <div className="copy">
@@ -160,7 +160,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div id="judging" className="judging">
+            <div id="judging" className="section">
                 <p className="header">Judging</p>
                 <div className="text">
                     <div className="copy">

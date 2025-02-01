@@ -214,24 +214,8 @@ html {
             }
         }
     }
-    
-    .rules {
-        .header {
-            margin-top: 0.2em;
-            text-align: center;
-            font-family: "PP Editorial New";
-            font-size: 4em;
-            font-weight: 400;
-            font-style: italic;
-            color: black;
 
-            @media (max-width: 900px) {
-                font-size: 2.5em;
-            }
-        }
-    }
-
-    .location {
+    .section {
         scroll-margin-top: 10em;
 
         .header {
@@ -246,69 +230,9 @@ html {
                 font-size: 2.5em;
             }
         }
-    }
 
-    .raffle {
-        scroll-margin-top: 10em;
-        .header {
-            text-align: center;
-            font-family: "PP Editorial New";
-            font-size: 4em;
-            font-weight: 400;
-            font-style: italic;
-            color: black;
-
-            @media (max-width: 900px) {
-                font-size: 2.5em;
-            }
-        }
-    }
-
-    .teams {
-        scroll-margin-top: 10em;
-        .header {
-            text-align: center;
-            font-family: "PP Editorial New";
-            font-size: 4em;
-            font-weight: 400;
-            font-style: italic;
-            color: black;
-
-            @media (max-width: 900px) {
-                font-size: 2.5em;
-            }
-        }
-    }
-
-    .mentors {
-        scroll-margin-top: 10em;
-        .header {
-            text-align: center;
-            font-family: "PP Editorial New";
-            font-size: 4em;
-            font-weight: 400;
-            font-style: italic;
-            color: black;
-
-            @media (max-width: 900px) {
-                font-size: 2.5em;
-            }
-        }
-    }
-
-    .judging {
-        scroll-margin-top: 10em;
-        .header {
-            text-align: center;
-            font-family: "PP Editorial New";
-            font-size: 4em;
-            font-weight: 400;
-            font-style: italic;
-            color: black;
-
-            @media (max-width: 900px) {
-                font-size: 2.5em;
-            }
+        .text {
+            font-size: 0.9em;
         }
     }
 
