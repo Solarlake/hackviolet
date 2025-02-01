@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import "../style/Resources.scss";
-import Socials from "../component/Socials";
 import FooterBlob from "../asset/image/footer_blob.png";
-import Rocket from "../asset/image/rocket.png";
-import Clouds from "../asset/image/clouds.png";
 import Footer from "../component/Footer";
 import Button from "../component/Button";
 import StarterData from "../content/starter.json";
@@ -114,7 +111,7 @@ const Resources = () => {
                         <li><strong>5 tickets:</strong> Attending Company Sponsor Fair, Q&A Session (*5 tickets for each event)</li>
                         <li><strong>3 tickets:</strong> Attending a workshop or event, Mentor Speed Dating</li>
                         <li><strong>1 ticket:</strong> Asking a question during a workshop</li>
-                        <li><strong>1 ticket:</strong> Follow us on Instagram @hackvioletvt (subject to change)</li>
+                        <li><strong>1 ticket:</strong> Follow us on Instagram @hackvioletvt</li>
                         </ul>
 
                         <p><strong>Most Engaged Hacker:</strong> $150 gift card will be awarded to the hacker holding the most tickets by Sunday!</p>
