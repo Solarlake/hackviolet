@@ -168,10 +168,7 @@
         opacity: 0; 
         pointer-events: none;
         touch-action: none;
-        
-        @media (max-width: 900px) {
-            height: 0;
-        }
+        height: 0;
     }
        
 }
