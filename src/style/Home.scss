@@ -218,6 +218,8 @@ html {
         align-items: center;
         width: 100%;
         top: 52vh;
+        pointer-events: none;
+        touch-action: none;
 
         @media (min-resolution: 1.25dppx) and (max-width: 1360px){
             top: 60vh;

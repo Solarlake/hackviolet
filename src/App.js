@@ -4,9 +4,9 @@ import Navigation from './component/Navigation';
 import Background from './component/Background';
 import Home from './page/Home';
 import Resources from './page/Resources';
+import Countdown from './page/Countdown';
 import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
-import Countdown from './page/Countdown';
 
 function App() {
     useEffect(() => {
@@ -18,7 +18,7 @@ function App() {
             <div className="App">
                 <Badge />
                 <Routes>
-                    <Route path="/" element={
+                    <Route path="/*" element={
                         <div>
                             <Navigation />
                             <Background />

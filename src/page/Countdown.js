@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import CountdownTimer from "react-countdown";
 import LogoWhite from "../asset/image/logo_white_full.png";
 import "../style/Countdown.scss";

@@ -20,18 +20,19 @@ import Socials from "../component/Socials";
 import Button from "../component/Button";
 
 const Home = () => {
-    const location = useLocation();
     const targetDate = new Date("2025-02-02T12:30:00-05:00").getTime();
-
+    
     const countdownRenderer = ({ hours, minutes, seconds, completed }) => {
         const format = (num) => String(num).padStart(2, "0");
-
+        
         return (
             <div className="countdown_timer">
                 {format(hours)}:{format(minutes)}:{format(seconds)}
             </div>
         );
     }
+    
+    const location = useLocation();
     
     useEffect(() => {
         if (location.hash) {
