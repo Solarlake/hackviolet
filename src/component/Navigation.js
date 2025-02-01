@@ -28,6 +28,9 @@ const Navigation = () => {
                     <Link to="/#faq" className="faq_link">
                         <span className="text">FAQ</span>
                     </Link>
+                    <Link to="/#sponsors" className="faq_link">
+                        <span className="text">Sponsors</span>
+                    </Link>
                 </div>
                 <div className="resources">
                     <button className="resources_button" onClick={() => setIsExpanded(!isExpanded)}>
