@@ -35,20 +35,55 @@ const Prizes = () => {
 
                 {/* <div className="cell cell__size_4 subtable_container">
                     <div className="subtable"> */}
-                        <div className="cell cell__size_4_small">
+                        <div className="cell cell__size_2_small">
                             <h1 className="category_name">Best Hack to Support Women</h1>
                             <p className="description">Awarded to the project that best empowers and supports women by creatively addressing issues that women face, such as combating the gender gap in tech or aiding female-empowerment</p>
                             <p className="prize_description">Prize: Mac Mini</p>
                         </div>
-                        <div className="cell cell__size_4_small">
+                        <div className="cell cell__size_2_small">
                             <h1 className="category_name">Arcfield: Best UI/UX for AI Data Labeling</h1>
                             <p className="description">Awarded to the project with the best user interface design for AI data labeling, making the process for efficient, intuitive, and effective</p>
                             <p className="prize_description">Prize: $300 Amazon Gift Card</p>
                         </div>
-                        <div className="cell cell__size_4_small">
+                        <div className="cell cell__size_2_small">
                             <h1 className="category_name">Capital One: Best Financial Hack</h1>
                             <p className="description">Awarded to the most innovative and creative fintech solution</p>
                             <p className="prize_description">Prize: $250 Amazon Gift Card</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">Apex Center: Best Startup Hack</h1>
+                            <p className="description">Awarded to the project with the strongest potential to become a successful startup, showcasing innovation, scalability, and market impact</p>
+                            <p className="prize_description">Prize: $100 Best Buy Gift Card</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">MLH: Best Use of MongoDB Atlas</h1>
+                            <p className="description"></p>
+                            <p className="prize_description">Prize: M5GO IoT Starter Kit</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">MLH: Best Use of Streamlit</h1>
+                            <p className="description"></p>
+                            <p className="prize_description">Prize: Ardunio Tiny MLH Kit</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">MLH: Best Use of Terraform</h1>
+                            <p className="description"></p>
+                            <p className="prize_description">Prize: Hashicorp Wireless Mechanical Keyboard</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">MLH: Best Use of AI-Powered by Reach Capital</h1>
+                            <p className="description"></p>
+                            <p className="prize_description">Prize: Logitech Webcam & Meeting with Co-Founding Partner at Reach Capital</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">MLH: Best Use of Gen AI</h1>
+                            <p className="description"></p>
+                            <p className="prize_description">Prize: Mechanical Keyboard & Fitbit</p>
+                        </div>
+                        <div className="cell cell__size_2_small">
+                            <h1 className="category_name">MLH: Best Domain Name from GoDaddy</h1>
+                            <p className="description"></p>
+                            <p className="prize_description">Prize: Hack From Home Kit </p>
                         </div>
                     {/* </div>
                 </div> */}

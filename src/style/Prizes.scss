@@ -111,6 +111,40 @@
                 }
             }
 
+            &__size_2_small {
+                grid-column: span 2 / span 2;
+                background-color: transparent;
+                // background: linear-gradient(90deg, #f8d3f870 0%, #eeddf870 100%);
+
+                @media (max-width: 900px) {
+                    grid-column: span 4 / span 4;
+                }
+
+                .category_name {
+                    font-size: 2em;
+
+                    @media (max-width: 900px) {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .description {
+                    font-size: 1em;
+
+                    @media (max-width: 900px) {
+                        font-size: 0.9em;
+                    }
+                }
+
+                .prize_description {
+                    font-size: 1em;
+
+                    @media (max-width: 900px) {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+
             &__size_4_small {
                 grid-column: span 4 / span 4;
                 background-color: transparent;
