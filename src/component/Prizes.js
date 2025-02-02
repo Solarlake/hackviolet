@@ -79,7 +79,7 @@ const Prizes = () => {
                         <div className="cell cell__size_2_small">
                             <h1 className="category_name">MLH: Best Use of Gen AI</h1>
                             <p className="description"></p>
-                            <p className="prize_description">Prize: Mechanical Keyboard & Fitbit</p>
+                            <p className="prize_description">Prize: Raspberry Pi & Wacom Tablet</p>
                         </div>
                         <div className="cell cell__size_2_small">
                             <h1 className="category_name">MLH: Best Domain Name from GoDaddy</h1>
