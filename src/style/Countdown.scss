@@ -29,6 +29,8 @@
         // font-family: "PP Supply Mono";
         display: flex;
         font-size: 8em;
+        pointer-events: none;
+        touch-action: none;
 
         @media (max-width: 900px) {
             // margin-top: 2em;
@@ -89,6 +91,16 @@
         font-weight: 600;
         margin-top: -2em;
         text-align: center;
+
+        a {
+            color: #ecf7ff;
+            text-decoration: underline;
+            transition: color 0.1s ease-out;
+
+            &:hover {
+                color: #ecf7ffD0;
+            }
+        }
         
         @media (max-width: 900px) {
             margin-top: -0.6em;
@@ -104,6 +116,11 @@
         .logo_white {
             width: 6em;
             z-index: 2;
+            transition: opacity 0.1s ease-out;
+
+            &:hover {
+                opacity: 0.82;
+            }
         }
     }
 }

@@ -52,7 +52,7 @@ const Home = () => {
                         <img src={HeaderText} alt="" className="header_logo" />
                     </div>
                     <div className="copy">
-                        <p className="location">February 1-2, 2025 • <a href="https://maps.app.goo.gl/wVmMAS4uwaYnDMhw5">Data & Decision Sciences Building</a></p>
+                        <p className="location">February 1-2, 2025 • <a href="https://maps.app.goo.gl/wVmMAS4uwaYnDMhw5" target="_blank" rel="noreferrer">Data & Decision Sciences Building</a></p>
                         <p className="tagline">Virginia Tech's premier female-empowerment hackathon</p>
                     </div>
                     <div className="countdown">

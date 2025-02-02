@@ -83,7 +83,7 @@ const Countdown = () => {
         <div className="countdown_container">
             <CountdownTimer date={targetDate} renderer={renderer}/>
             <p className="subtext">
-                until coding stops and final submissions are due @ Devpost (Feb. 2 @ 12:30pm)
+                until hacking ends and final submissions are due @ <a href="https://hackviolet-2025.devpost.com/" target="_blank" rel="noreferrer">Devpost</a> (Feb. 2 @ 12:30pm)
             </p>
             <a href="/" className="logo_link">
                 <img src={LogoWhite} alt="" className="logo_white" />

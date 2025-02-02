@@ -124,6 +124,11 @@ html {
                     a {
                         color: #3a475a;
                         text-decoration: underline;
+                        transition: color 0.1s ease-out;
+
+                        &:hover {
+                            color: #3a475aD0;
+                        }
                     }
                 }
                 
@@ -142,6 +147,7 @@ html {
                     color: #3a475a;
                     font-weight: 600;
                     font-size: 5em;
+                    transition: color 0.1s ease-out;
 
                     @media (max-width: 900px) {
                         // margin-top: 2em;
@@ -153,12 +159,13 @@ html {
                         display: block;
                         font-size: 0.2em;
                         margin-top: -1.4em;
-                        margin-right: -10.4em;
+                        margin-left: 10.4em;
+                        width: 10em;
                     }
-                    // .countdown_subtext {
-                    //     font-size: 0.2em;
-                    //     text-align: right;
-                    // }
+                    
+                    &:hover {
+                        color: #3a475aD0;
+                    }
                 }
             }
         
