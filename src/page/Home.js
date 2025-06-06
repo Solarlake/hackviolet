@@ -52,21 +52,22 @@ const Home = () => {
                         <img src={HeaderText} alt="" className="header_logo" />
                     </div>
                     <div className="copy">
-                        <p className="location">February 1-2, 2025 • <a href="https://maps.app.goo.gl/wVmMAS4uwaYnDMhw5" target="_blank" rel="noreferrer">Data & Decision Sciences Building</a></p>
+                        <p className="location">Jan. 31 - Feb. 1, 2026 • <a href="https://maps.app.goo.gl/DgFgkjvSVCVpsTXB7" target="_blank" rel="noreferrer">Squires Student Center</a></p>
                         <p className="tagline">Virginia Tech's premier female-empowerment hackathon</p>
                     </div>
-                    <div className="countdown">
+                    {/* <div className="countdown">
                         <a href="/countdown">
                             <CountdownTimer date={targetDate} renderer={countdownRenderer}/>
                         </a>
-                    </div>
+                    </div> */}
                     <div className="buttons">
                         {/* <Button href="https://forms.gle/DzFDNvCCFqpJXVfD6" newTab clear text="Judge" />
                         <Button href="https://forms.gle/YgKufXUzh3Pn7UcG7" newTab clear text="Mentor" /> */}
                         {/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLScA4kTd2vr5kAVaItUHcuA63ve9774q_UaV3UUaCl93pRMzEQ/viewform" newTab clear text="Volunteer" /> */}
-                        <Button href="https://discord.gg/YyEXbq8zpD" newTab clear text="Discord" />
-                        <Button href="https://hackviolet-2025.devpost.com/" newTab text="Devpost" />
+                        {/* <Button href="https://discord.gg/YyEXbq8zpD" newTab clear text="Discord" /> */}
+                        {/* <Button href="https://hackviolet-2025.devpost.com/" newTab text="Devpost" /> */}
                         {/* <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" /> */}
+                        <Button href="https://tally.so/r/n0gdr6" newTab clear text="Register" />
                     </div>
                     {/* <div className="socials">
                         <Socials />
