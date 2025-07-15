@@ -2,7 +2,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Installs all libraries used for this project.
+Installs all packages used for this project.
 
 ### `npm start`
 
