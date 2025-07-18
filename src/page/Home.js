@@ -68,6 +68,8 @@ const Home = () => {
                         {/* <Button href="https://hackviolet-2025.devpost.com/" newTab text="Devpost" /> */}
                         {/* <Button href="https://tally.so/r/3Eb0OL" newTab text="Register" /> */}
                         <Button href="https://tally.so/r/n0gdr6" newTab clear text="Register" />
+                        <Button to="/sponsorship" newTab clear text="Sponsor us for 2026"/>
+                        
                     </div>
                     {/* <div className="socials">
                         <Socials />
