@@ -7,10 +7,12 @@ import Resources from './page/Resources';
 import Countdown from './page/Countdown';
 import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
+import Sponsors from './component/Sponsors';
 
 function App() {
     useEffect(() => {
         document.title = "HackViolet 2025";
+           <Sponsors />  
     }, []);
 
     return (

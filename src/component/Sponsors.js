@@ -14,6 +14,44 @@ const Sponsors = () => {
     return (
         <div className="sponsors_container">
             <div className="tier_container">
+                <div className="sponsor_letter">
+    <h2>Dear Future Sponsor,</h2>
+    <h3>We are <span className="highlight">HackViolet</span>!</h3>
+    <p>
+        HackViolet is an annual 24-hour <strong>female-empowerment hackathon</strong> at Virginia Tech, 
+        scheduled for <strong>February 1–2, 2025</strong>. While we operate and are funded independently, 
+        we share a mission with our sister organization, the Association for Women in Computing (AWC), 
+        to support and uplift women in technology.
+    </p>
+    <p>
+        HackViolet serves as a unique platform to empower young women in the male-dominated field of 
+        technology. Our organization offers participants invaluable opportunities to acquire 
+        <strong>new skills</strong>, establish <strong>mentor relationships</strong>, and engage in a 
+        <strong>supportive community</strong>. We warmly welcome all participants—regardless of gender 
+        identity—to showcase their creativity and make an impact in the field of technology.
+    </p>
+    <p>
+        With over 500 expected participants attending this in-person hackathon, we need your help to 
+        create an incredible experience for all of our future innovators in a safe, inclusive environment!
+    </p>
+
+    <h4>Why Sponsor HackViolet?</h4>
+    <ul>
+        <li>Enhance brand visibility through event materials</li>
+        <li>Showcase your technology</li>
+        <li>Engage with top talent</li>
+        <li>Demonstrate Corporate Social Responsibility</li>
+    </ul>
+
+    <h4>Join us in 2025!</h4>
+    <p>
+        Help us shape the lives of young, future innovators and prepare them for the field of emerging technologies! 
+        Please have a look at our sponsorship tiers above and reach out if you are interested in becoming an 
+        official HackViolet 2025 sponsor!
+    </p>
+
+    <p><strong>Thank you for your time,<br />HackViolet Board</strong></p>
+</div>
                 <div className="tier orchid">
                     <p>Orchid</p>
                     <div className="logo_container">
