@@ -8,11 +8,13 @@ import Countdown from './page/Countdown';
 import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
 import Sponsors from './component/Sponsors';
+import SponsorPage from './page/SponsorPage';
+
 
 function App() {
     useEffect(() => {
         document.title = "HackViolet 2025";
-           <Sponsors />  
+           <Sponsors />
     }, []);
 
     return (
@@ -39,6 +41,13 @@ function App() {
                             <Countdown />
                         </div>
                     } />
+                    <Route path="/sponsorship" element={
+                        <div>
+                            <Navigation />
+                            <Background />
+                            <SponsorPage />
+                        </div>
+    } />
                 </Routes>
             </div>
         </Router>

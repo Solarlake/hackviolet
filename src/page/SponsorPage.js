@@ -1,12 +1,10 @@
-// SponsorPage.js
 import React from 'react';
-import './SponsorPage.scss';
 
 const SponsorPage = () => {
     return (
         <div className="container">
             <main className="row justify-content-center">
-                <section className="col-lg-8">
+                <section className="col-lg-10">
                     <section className="SupportSection">
                         <a href="/" className="home-link">
                             <img src="../assets/img/icons/go-back.svg" alt="Go Back" />
@@ -53,93 +51,87 @@ const SponsorPage = () => {
                         <p><strong>Thank you for your time,<br />HackViolet Board</strong></p>
 
                         <hr className="divider" />
-                        <h1>Sponsorship Tiers</h1>
-                        <br />
                     </section>
 
-                    <section className="Rtable js-RtableTabs">
-                        <div className="Rtable-grid">
-                            <div className="Rtable-cell Rtable-cell-blank"></div>
-                            <div className="Rtable-cell Rtable-cell--head Rtable-cell-Byte">Byte<br />$2,000</div>
-                            <div className="Rtable-cell Rtable-cell--head Rtable-cell-Kilo">Kilo<br />$3,000</div>
-                            <div className="Rtable-cell Rtable-cell--head Rtable-cell-Mega">Mega<br />$5,000</div>
-                            <div className="Rtable-cell Rtable-cell--head Rtable-cell-Giga">Giga<br />$7,000</div>
-                            <div className="Rtable-cell Rtable-cell--head Rtable-cell-Tera">Tera<br />$10,000</div>
-                            <div className="Rtable-cell Rtable-cell--head Rtable-cell-Peta">Peta<br />$16,000</div>
+                    <h1 className="tier-header">Sponsorship Tiers</h1>
 
-                            {/* Contribution Row */}
-                            <div className="Rtable-category-cell Rtable-category-cell-full">Contribution</div>
-                            <div className="Rtable-cell">$2,000</div>
-                            <div className="Rtable-cell">$3,000</div>
-                            <div className="Rtable-cell">$5,000</div>
-                            <div className="Rtable-cell">$7,000</div>
-                            <div className="Rtable-cell">$10,000</div>
-                            <div className="Rtable-cell">$16,000</div>
-
-                            {/* General Section Header */}
-                            <div className="Rtable-category-cell">General</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div>
-
-                            {/* Mentors at Event */}
-                            <div className="Rtable-category-cell">Mentors at Event</div>
-                            <div className="Rtable-cell">✔️</div>
-                            <div className="Rtable-cell">✔️</div>
-                            <div className="Rtable-cell">✔️</div>
-                            <div className="Rtable-cell">✔️</div>
-                            <div className="Rtable-cell">✔️</div>
-                            <div className="Rtable-cell">✔️</div>
-
-                            {/* Opening Session Talk */}
-                            <div className="Rtable-category-cell">Opening Session Talk</div>
-                            <div className="Rtable-cell"></div>
-                            <div className="Rtable-cell">1 min</div>
-                            <div className="Rtable-cell">2 min</div>
-                            <div className="Rtable-cell">3 min</div>
-                            <div className="Rtable-cell">5 min</div>
-                            <div className="Rtable-cell">10 min</div>
-
-                            {/* Provide a Prize */}
-                            <div className="Rtable-category-cell">Provide a Prize</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell">✔️</div><div className="Rtable-cell">✔️</div><div className="Rtable-cell">✔️</div><div className="Rtable-cell">✔️</div>
-
-                            {/* Panel Discussion */}
-                            <div className="Rtable-category-cell">Panel Discussion</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell">✔️</div><div className="Rtable-cell">✔️</div><div className="Rtable-cell">✔️</div>
-
-                            {/* Closing Ceremony Talk */}
-                            <div className="Rtable-category-cell">Closing Ceremony Talk</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell">5 min</div><div className="Rtable-cell">8 min</div><div className="Rtable-cell">12 min</div>
-
-                            {/* Sponsored Side Event */}
-                            <div className="Rtable-category-cell">Sponsored Side Event (Limited Slots)</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell">30 min</div><div className="Rtable-cell">60 min</div>
-
-                            {/* Branded Mini Game */}
-                            <div className="Rtable-category-cell">Branded Mini Game</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell">✔️</div>
-
-                            {/* Provide Additional Prize */}
-                            <div className="Rtable-category-cell">Provide Additional Prize</div>
-                            <div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell"></div><div className="Rtable-cell">✔️</div>
+                    <div className="tier-table">
+                        <div className="row header">
+                            <div className="cell header-cell blank"></div>
+                            <div className="cell header-cell byte">Byte<br />$2,000</div>
+                            <div className="cell header-cell kilo">Kilo<br />$3,000</div>
+                            <div className="cell header-cell mega">Mega<br />$5,000</div>
+                            <div className="cell header-cell giga">Giga<br />$7,000</div>
+                            <div className="cell header-cell tera">Tera<br />$10,000</div>
+                            <div className="cell header-cell peta">Peta<br />$16,000</div>
                         </div>
 
-                        <hr className="divider" />
-                        <section className="ConnectSection">
-                            <h2>Connect</h2>
-                            <div>
-                                <img src="../assets/img/icons/globe.svg" alt="HackViolet Homepage" />
-                                <a href="https://hackviolet.org">https://hackviolet.org</a>
-                            </div>
-                            <div>
-                                <img src="../assets/img/icons/email.svg" alt="Email" />
-                                <a className="SponsorEmail" href="mailto:sponsorship@hackviolet.org">sponsorship@hackviolet.org</a>
-                            </div>
-                        </section>
-                    </section>
+                        {/* Contribution */}
+                        <div className="row category-row">
+                            <div className="cell category">Contribution</div>
+                            <div className="cell">$2,000</div>
+                            <div className="cell">$3,000</div>
+                            <div className="cell">$5,000</div>
+                            <div className="cell">$7,000</div>
+                            <div className="cell">$10,000</div>
+                            <div className="cell">$16,000</div>
+                        </div>
+
+                        {/* General Section */}
+                        <div className="row category-label">
+                            <div className="cell section-label" colSpan="7">General</div>
+                        </div>
+                        <FeatureRow title="Mentors at Event" values={["✔️", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Opening Session Talk" values={["", "1 min", "2 min", "3 min", "5 min", "10 min"]} />
+                        <FeatureRow title="Provide a Prize" values={["", "", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Panel Discussion" values={["", "", "", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Closing Ceremony Talk" values={["", "", "", "5 min", "8 min", "12 min"]} />
+                        <FeatureRow title="Sponsored Side Event (Limited Slots)" values={["", "", "", "", "30 min", "60 min"]} />
+                        <FeatureRow title="Branded Mini Game" values={["", "", "", "", "", "✔️"]} />
+                        <FeatureRow title="Provide Additional Prize" values={["", "", "", "", "", "✔️"]} />
+
+                        {/* Recruiting Section */}
+                        <div className="row category-label">
+                            <div className="cell section-label" colSpan="7">Recruiting</div>
+                        </div>
+                        <FeatureRow title="Reserved Table" values={["✔️", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Access to Hacker Contact Info" values={["", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Recruiters Present (active recruitment)" values={["", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Access to Resumes" values={["", "", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Bootcamp Sponsorship Fair" values={["", "", "", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Recruitment Event Shoutout (on social media)" values={["", "✔️", "✔️", "✔️", "1 event", "2 events"]} />
+                        <FeatureRow title="Pre-Event Email to All Hackers" values={["", "", "✔️", "✔️", "✔️", "✔️"]} />
+
+                        {/* Marketing Section */}
+                        <div className="row category-label">
+                            <div className="cell section-label" colSpan="7">Marketing</div>
+                        </div>
+                        <FeatureRow title="Logo on Shirt & Website" values={["✔️", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Distribute Marketing Materials & Merch" values={["✔️", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Social Media Shoutout" values={["", "✔️", "✔️", "✔️", "✔️", "✔️"]} />
+                        <FeatureRow title="Cohosted By" values={["", "", "", "", "", "✔️"]} />
+
+                        {/* Add-ons Section */}
+                        <div className="row category-label">
+                            <div className="cell section-label" colSpan="7">Restricted Add-Ons</div>
+                        </div>
+                        <FeatureRow title="Custom Sponsor Marketing Video" values={["", "", "", "2 min ($350)", "2 min (✔️)", "4 min (✔️)"]} />
+                    </div>
                 </section>
             </main>
         </div>
     );
 };
+
+const FeatureRow = ({ title, values }) => (
+    <div className="row">
+        <div className="cell feature-label">
+            <span>{title}</span>
+        </div>
+        {values.map((val, index) => (
+            <div className="cell" key={index}>{val}</div>
+        ))}
+    </div>
+);
 
 export default SponsorPage;
