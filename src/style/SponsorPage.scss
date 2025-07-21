@@ -1,0 +1,72 @@
+.sponsor-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; 
+    margin-bottom: 18em;
+    margin-top: 5em;
+}
+
+h1 {
+    font-family: "PP Editorial New", Times, serif !important;
+    font-weight: 400;
+    font-size: 7.6em;
+    font-size: 6.5vw;
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    margin: 0;
+    max-width: 900px;
+}
+.sponsor-blob {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 1; 
+    width: 100%; 
+    height: auto;
+    opacity: 0.9; 
+}
+
+
+.SponsorPage {
+    // background-color: #ECF7FF;
+    min-height: 100vh;
+    position: relative
+
+    }
+
+.sponsor-footer-comp {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:950px;
+    height: 90%; 
+    border-radius: 10px 10px 0 0;
+    z-index: 2;
+    box-sizing: border-box;
+}
+.sponsor-footer {
+    padding-top: 200px;
+    position: relative;
+    margin-top: 40em;
+    width: 100%;
+
+}
+    
+    .sponsor-footer_blob {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50em;
+    width: 1000em;
+    z-index: 1; 
+    filter: saturate(1.1) brightness(1.1);
+    overflow: visible;
+    object-fit: none;
+    height: 50em;
+}

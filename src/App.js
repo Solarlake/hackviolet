@@ -8,6 +8,7 @@ import Countdown from './page/Countdown';
 import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
 import Sponsors from './component/Sponsors';
+import SponsorPage from './page/SponsorPage';
 
 function App() {
     useEffect(() => {
@@ -37,6 +38,12 @@ function App() {
                     <Route path="/countdown" element={
                         <div>
                             <Countdown />
+                        </div>
+                    } />
+                    <Route path="/sponsorpage" element={
+                        <div>
+                            <Navigation />
+                            <SponsorPage />
                         </div>
                     } />
                 </Routes>
