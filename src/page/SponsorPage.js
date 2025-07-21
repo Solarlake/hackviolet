@@ -412,4 +412,15 @@ const SponsorPage = () => {
   );
 };
 
+const FeatureRow = ({ title, values }) => (
+    <div className="row">
+        <div className="cell feature-label">
+            <span>{title}</span>
+        </div>
+        {values.map((val, index) => (
+            <div className="cell" key={index}>{val}</div>
+        ))}
+    </div>
+);
+
 export default SponsorPage;

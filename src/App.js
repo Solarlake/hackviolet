@@ -13,7 +13,7 @@ import SponsorPage from './page/SponsorPage';
 function App() {
     useEffect(() => {
         document.title = "HackViolet 2025";
-           <Sponsors />  
+           <Sponsors />
     }, []);
 
     return (
