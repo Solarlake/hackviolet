@@ -20,7 +20,7 @@ import Socials from "../component/Socials";
 import Button from "../component/Button";
 
 const Home = () => {
-    const targetDate = new Date("2025-02-02T12:30:00-05:00").getTime();
+    const targetDate = new Date("2026-02-31T12:30:00-05:00").getTime();
     
     const countdownRenderer = ({ hours, minutes, seconds, completed }) => {
         const format = (num) => String(num).padStart(2, "0");
@@ -47,7 +47,7 @@ const Home = () => {
         <div className="home">
             <div id="landing" className="landing">
                 <div className="header">
-                    {/* <h1>HackViolet 2025</h1> */}
+                    {/* <h1>HackViolet 2026</h1> */}
                     <div className="header_text_container">
                         <img src={HeaderText} alt="" className="header_logo" />
                     </div>
@@ -55,11 +55,11 @@ const Home = () => {
                         <p className="location">Jan. 31 - Feb. 1, 2026 • <a href="https://maps.app.goo.gl/DgFgkjvSVCVpsTXB7" target="_blank" rel="noreferrer">Squires Student Center</a></p>
                         <p className="tagline">Virginia Tech's premier female-empowerment hackathon</p>
                     </div>
-                    {/* <div className="countdown">
+                    {/*<div className="countdown">
                         <a href="/countdown">
                             <CountdownTimer date={targetDate} renderer={countdownRenderer}/>
                         </a>
-                    </div> */}
+                    </div>*/}
                     <div className="buttons">
                         {/* <Button href="https://forms.gle/DzFDNvCCFqpJXVfD6" newTab clear text="Judge" />
                         <Button href="https://forms.gle/YgKufXUzh3Pn7UcG7" newTab clear text="Mentor" /> */}
@@ -97,15 +97,16 @@ const Home = () => {
                 <img className="island" src={Island} alt="" />
             </div>
 
+            {/* 
             <div id="schedule" className="schedule">
-                <p className="header">Schedule</p>
-                <Schedule />
+            <p className="header">Schedule</p>
+             <Schedule />
             </div>
-
             <div id="prizes" className="prizes">
-                <p className="header">Prizes</p>
-                <Prizes />
+            <p className="header">Prizes</p>
+            <Prizes />
             </div>
+            */}
 
 
             <div id="faq" className="faq">
@@ -116,12 +117,14 @@ const Home = () => {
 
             <div className="gallery">
                 <Gallery />
-            </div>
+            </div>{/*
+
 
             <div id="sponsors" className="sponsors">
                 <p className="header">Sponsors</p>
                 <Sponsors />
             </div>
+           */ }
 
             <div className="board">
                 <p className="header">Team</p>

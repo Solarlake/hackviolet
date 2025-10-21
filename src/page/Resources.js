@@ -51,7 +51,8 @@ const Resources = () => {
                         <Socials />
                     </div> */}
                 </div>
-            </div>
+                </div>
+            
 
             {/* <img className="clouds" src={Clouds} alt="" />
             <div className="rocket_container">
