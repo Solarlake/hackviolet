@@ -9,10 +9,14 @@ import ResourcesBackground from './component/ResourcesBackground';
 import Badge from './component/Badge';
 import Sponsors from './component/Sponsors';
 import SponsorPage from './page/SponsorPage';
+import Maintenance from "./component/Maintenance";
+
+{/* When done developing Home.js, reroute Maintenance to path="/*" */}
+{/* Go to /dev-home to see the developing home page*/}
 
 function App() {
     useEffect(() => {
-        document.title = "HackViolet 2025";
+        document.title = "HackViolet 2026";
            <Sponsors />
     }, []);
 
@@ -21,7 +25,11 @@ function App() {
             <div className="App">
                 <Badge />
                 <Routes>
-                    <Route path="/*" element={
+                    {/* maintenance Route */}
+                    <Route path="/*" element={<Maintenance />} />
+
+                    {/* dev home route */}
+                    <Route path="dev-home" element={
                         <div>
                             <Navigation />
                             <Background />
@@ -42,7 +50,7 @@ function App() {
                     } />
                     <Route path="/sponsorpage" element={
                         <div>
-                            <Navigation />
+                            
                             <SponsorPage />
                         </div>
                     } />
