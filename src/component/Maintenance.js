@@ -26,13 +26,15 @@ export default function Maintenance() {
             <img src={websiteInDev} alt="Website in Development" className="maintenance-website-in-dev" />
             <div className="maintenance-divider">
                 <img src={halfflower} alt="HackViolet Logo" className="maintenance-logo" />
-                <div className="date-time">
-                    <p>Jan. 31-Feb. 1, 2026</p>
-                    <p>Squires Student Center</p>
-                </div>
+                <div className="date-time-header">
+                    <div className="date-time">
+                        <p>Jan. 31-Feb. 1, 2026</p>
+                        <p>Squires Student Center</p>
+                    </div>
 
-                <h1 style={{fontSize: '96pt', marginTop: '-3rem'}}>HACKVIOLET</h1>
-                <p style={{marginTop: '-1rem'}}>Virginia Tech’s premier female-empowerment hackathon</p>
+                    <h1 className='hackvioletHeader'>HACKVIOLET</h1>
+                </div>
+                <p className='sub-title'>Virginia Tech’s premier female-empowerment hackathon</p>
 
                 <div className='register-sponsor'>
                     <a
