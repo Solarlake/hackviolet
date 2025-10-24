@@ -1,0 +1,97 @@
+body {
+    background-color: #F7FBFF;
+    color: #03212B;
+    font-family: 'Funnel Sans', sans-serif;
+    
+}
+h1 {
+  font-family: "obviously-narrow", sans-serif;
+  font-weight: 700;
+}
+
+.date-time {
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.maintenance-divider {
+    margin-top: 11rem;
+    margin-left: 6rem;
+
+}
+
+.register-sponsor {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.register-button {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: #03212B solid 0px;
+    border-radius: 99px;
+    background: #9094FF;
+    color: #03212B;
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: auto;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sponsor-button {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: #9094FF solid 2px;
+    border-radius: 99px;
+    background: #F7FBFF;
+    color: #03212B;
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: auto;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.maintenance-page{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.maintenance-be-back-soon {
+    position:absolute;
+    top: 10%;
+}
+
+.maintenance-website-in-dev {
+    position:absolute;
+    
+}
+
+.maintenance-faded-pinwheel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pinwheel-container {
+  position: absolute;    
+  bottom: -300px;             
+  right: -300px;            
+  width: 900px; 
+  height: 900px;              
+  pointer-events: none;  
+}
