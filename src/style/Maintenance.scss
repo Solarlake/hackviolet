@@ -14,7 +14,7 @@ h1 {
     height: auto;
 
     @media (max-width: 900px) {
-        width: 180px;
+        width: 160px;
     }
 }
 
@@ -133,16 +133,18 @@ h1 {
 .maintenance-be-back-soon {
     position:absolute;
     top: 10%;
+    width: 100%;
     
 
     @media screen and (max-width: 1000px) {
-            top: 55%;
+            top: 60%;
             transform: scale(190%)
         }
 }
 
 .maintenance-website-in-dev {
     position:absolute;
+    width: 100%;
 
     @media screen and (max-width: 1000px) {
             
@@ -153,14 +155,14 @@ h1 {
 
 .pinwheel-container {
   position: absolute;    
-  bottom: -300px;             
+  bottom: -400px;             
   right: -300px;            
   width: 900px; 
   height: 900px;              
   pointer-events: none;  
   @media (max-width: 900px) {
-        bottom: -100px;             
-        right: -100px;
+        bottom: -200px;             
+        right: -200px;
         width: 500px;
         height: 500px;
     }
