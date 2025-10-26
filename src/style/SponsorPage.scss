@@ -1,3 +1,7 @@
+body {
+    background-color: #F7FBFF;
+}
+
 .sponsor-header {
     position: relative;
     display: flex;
@@ -8,9 +12,240 @@
     margin-top: 5em;
 }
 
+.sponsor-header-comp {
+    margin: 5%;
+}
+
+.become-partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.become-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.hackviolet-partner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    white-space: nowrap;
+    gap: .3rem;
+}
+
+.hackviolet-partner h1 {
+    margin-right: 15%;
+}
+
+.partner-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 0.5rem;
+}
+
+.PartnerEmblem,
+.navyHVlogo {
+    height: auto;
+    max-width: 100%;
+    width: 35%;
+}
+
+.longPartnerImg {
+    height: auto;
+    width: 60%;
+}
+
+.informations {
+    max-width: '800px';
+    margin: '0 auto 40px auto';
+    padding: '0 20px';
+    line-height: '1.6';
+    margin-top: '100px';
+}
+
+.start-paragraph {
+    background: #9094FF;
+    background: linear-gradient(148deg, rgba(144, 148, 255, 1) 64%, rgba(205, 164, 252, 1) 100%);
+    color: #FFF6FD;
+    border-radius: 50px;
+    padding: 150px 300px 150px 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14pt;
+    margin-bottom: 10%;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px 50px 0px;
+        font-size: 12pt;
+        
+    }
+    
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.intro-img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    margin-right: 100px;
+    margin-left: 100px;
+    @media screen and (max-width: 1000px) {
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+
+
+.why-sponsor {
+    margin-bottom: 5%;
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    justify-content: center;
+    position: relative;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 50px 20px;
+        font-size: 12pt;
+    }
+}
+
+.why-sponsor h1 {
+
+    font-weight: 700;
+    font-size: 64pt;
+    line-Height: '80px';
+    max-width: 100%; 
+    white-space: normal;
+    line-height: 80px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 42pt;
+        line-height: 55px; 
+        width: 100%;
+        white-space: normal; 
+        padding: 0 20px;
+    }
+    
+}
+
+.why-sponsor p {
+    font-size: 16pt;
+    line-height: 28px;
+    max-width: 600px;
+    margin-Bottom: 10px;
+    font-Weight: 500;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 14pt;
+        line-height: 24px;
+        max-width: 50%;
+        padding: 0px 50px 0px 50px;
+    }
+}
+
+.why-sponsor ul {
+    color: #03212B;
+    font-size: 14pt;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 12pt;
+        line-height: 24px;
+        max-width: 90%;
+        padding: 0px 50px 0px 50px;
+        
+    }
+}
+
+.sponsor-underline {
+    min-width: 500px;
+}
+
+.join-us-2026{
+    margin-bottom: 5%;
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 50px 20px;
+        font-size: 12pt;
+    }
+}
+
+.join-us-2026 h1 {
+    font-weight: 700;
+    font-size: 64pt;
+    line-Height: '80px';
+    text-align: left;
+    max-width: 100%; 
+    white-space: normal;
+    line-height: 80px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 42pt;
+        line-height: 55px; 
+        width: 100%;
+        white-space: normal; 
+        padding: 0 20px;
+    }
+}
+
+.join-us-2026 p {
+    font-size: 14pt;
+    line-height: 28px;
+    width: 600px;
+    text-align: left;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 12pt;
+        line-height: 24px;
+        max-width: 90%;
+        padding: 0px 50px 0px 50px;
+        text-align: left;
+        
+    }
+}
+
+
 h1 {
-    font-family: "PP Editorial New", Times, serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 7.6em;
     font-size: 6.5vw;
     position: relative;

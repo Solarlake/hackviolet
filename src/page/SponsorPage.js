@@ -5,6 +5,10 @@ import Logo from "../asset/image/hackviolet_text.png";
 import Footer from "../component/Footer";
 import "../style/SponsorPage.scss";
 import Blob from "../asset/svg/blob.svg";
+import longPartner from "../asset/image/long-pill-partnerpg.png";
+import navyHVlogo from "../asset/image/navy-hv-split-logo.png";
+import partneEmblem from "../asset/image/hackviolet-partner-emblem.png";
+import logo_white from "../asset/image/logo_white.png";
 
 const SponsorPage = () => {
   const [hoveredRow, setHoveredRow] = useState(null);
@@ -213,55 +217,85 @@ const SponsorPage = () => {
         .theme-group-3-last td:first-child { border-bottom-left-radius: 10px; }
         .theme-group-3-last td:last-child { border-bottom-right-radius: 10px; }
       `}</style>
-
+{/* ------ Sponsor Page Content ----------------------------------------------------------------------------------------------- */}
       { /* Header section */}
 
       <div className="sponsor-header">
-        <h1>Become a HackViolet Partner</h1>
-        <img src={Blob} alt="" className="sponsor-blob" />
+        <div className="sponsor-header-comp">
+          <div className="become-partner">
+
+            <div className="become-a">
+              <h1>BECOME A</h1>
+                <div className="longPartnerImg">
+                  <img src={longPartner} alt="HackViolet Partner" />
+                </div>
+            </div>
+
+            <div className="hackviolet-partner">
+              <div className="partner-logos">
+                <img src={partneEmblem} alt="Partner Emblem" className="PartnerEmblem" />
+                <img src={navyHVlogo} alt="HackViolet Logo" className="navyHVlogo" />
+                </div> 
+              
+              <h1>HACKVIOLET PARTNER</h1>
+            </div> 
+
+          </div>
+        </div>
         </div>
 
-        <div style={{ 
-          maxWidth: '800px', 
-          margin: '0 auto 40px auto', 
-          padding: '0 20px',
-          lineHeight: '1.6',
-          color: '#02060bff',
-          marginTop: '100px',
-          
-        }}>
-            <p style={{ marginBottom: '10px' }}>HackViolet is an annual 24-hour female-empowerment in-person hackathon at Virginia Tech, scheduled for 
-                January 31 to February 1, 2026. While we operate and are funded independently, we share a mission with our
-                 sister organization, Association for Women in Computing (AWC): to support and uplift women in technology.
-            </p>
-            <p style={{ marginBottom: '10px' }}>
-                HackViolet serves as a unique platform to empower young women in the traditionally male-dominated tech industry.
-                 Our event offers participants invaluable opportunities to develop new skills, build mentor relationships, and engage within a 
-                 supportive community. We warmly welcome all participants — regardless of gender identity and field of study — to showcase
-                  their creativity and make an impact in the world of technology.
-            </p>
-            <p style={{ marginBottom: '10px',fontSize: '1.2em' }}>
-                <strong>WHY SPONSOR HACKVIOLET?</strong>
-            </p>
-            <p style={{ marginBottom: '10px' }}>
-                As a sponsor, you'll have the opportunity to:
-            </p>
-            <ul style={{ color:"blue"}}>
-                <li>Increase brand visibility through event promotional materials</li>
-                <li>Showcase your technology and services to engaged participants</li>
-                <li>Connect directly with top emerging talent</li>
-                <li>Demonstrate your commitment to corporate social responsibility</li>
-            </ul>
-            <p style={{ marginBottom: '10px', marginTop: '20px', fontSize: '1.2em' }}><strong>JOIN US IN 2026!</strong></p>
-            <p style={{ marginBottom: '10px' }}>Partner with us to help shape the careers of young innovators and drive the
+
+        <div className="informations">
+
+          <div className="info-text">
+          <div className="start-paragraph">
+
+            <div className="intro-text">
+              <p style={{ marginBottom: '10px' }}>HackViolet is an annual 24-hour female-empowerment in-person hackathon at Virginia Tech, scheduled for 
+                  January 31 to February 1, 2026. While we operate and are funded independently, we share a mission with our
+                  sister organization, Association for Women in Computing (AWC): to support and uplift women in technology.
+              </p>
+              <p style={{ marginBottom: '10px' }}>
+                  HackViolet serves as a unique platform to empower young women in the traditionally male-dominated tech industry.
+                  Our event offers participants invaluable opportunities to develop new skills, build mentor relationships, and engage within a 
+                  supportive community. We warmly welcome all participants — regardless of gender identity and field of study — to showcase
+                    their creativity and make an impact in the world of technology.
+              </p>
+            </div>
+
+            <div className="intro-img-logo">
+              <img src={logo_white} alt="logo_white" className="logo_white" />
+            </div>
+
+          </div>
+          {/* end purple div-------------- */}
+
+          <div className="why-sponsor">
+            <h1 style={{ marginBottom: '10px', width:'600px', textAlign: 'left' }}>
+                WHY SPONSOR HACKVIOLET?
+            </h1>
+            <div className="sponsor-underline">
+              <p>
+                  As a sponsor, you'll have the opportunity to:
+              </p>
+              <ul>
+                  <li>Increase brand visibility through event promotional materials</li>
+                  <li>Showcase your technology and services to engaged participants</li>
+                  <li>Connect directly with top emerging talent</li>
+                  <li>Demonstrate your commitment to corporate social responsibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="join-us-2026">
+
+            <h1>JOIN US IN 2026!</h1>
+            <p>Partner with us to help shape the careers of young innovators and drive the
                  future of technology in a safe, inclusive direction!  Explore our sponsorship
-                  tiers and reach out to become an official HackViolet 2026 sponsor!</p>
-            <p>
-              Thank you for your time,
-            </p>
-            <p>
-              HackViolet Board
-            </p>
+                  tiers and reach out to become an official HackViolet 2026 sponsor! Email us at hackvioletvt@gmail.com</p>
+          </div>
+
+        </div>
         </div>
 
       <table style={tableStyle}>
