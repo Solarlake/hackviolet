@@ -83,7 +83,7 @@ html {
                 }
         
                 p {
-                    font-family: "Neue Haas Grotesk Text Pro";
+                    font-family: "Funnel Sans", sans-serif;
                     font-weight: 400;
                     font-size: 1em;
                     line-height: 1.4em;
@@ -320,17 +320,18 @@ html {
         }
     }
 
-    .blob {
+    .FAQGrid {
         position: absolute;
         overflow: visible;
         object-fit: none;
         width: 100vw;
+        transform: scale(70%);
         height: auto;
         // margin-top: 10em;
-        margin-top: -20em;
-        z-index: -1000;
+        margin-top: -35em;
+        z-index: -1;
         left: 0;
-        filter: saturate(1.1) brightness(1.1);
+        pointer-events: none;
 
         @media (max-width: 900px) {
             margin-bottom: -6em;
@@ -341,15 +342,28 @@ html {
         }
     }
 
+    .FAQShape {
+        transform: scale(70%);
+        margin-bottom: -120px;
+    }
+
     .faq {
         scroll-margin-top: 10em;
+        margin-top: -3em;
+        
+        .marquee-wrapper {
+        width: 100%;
+        overflow: hidden; // Contain the marquee overflow
+        margin-bottom: 2em; // Add spacing
+    }
+
         .header {
             text-align: center;
-            font-family: "PP Editorial New";
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
             color: #ffffff;
+            z-index: 2;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;

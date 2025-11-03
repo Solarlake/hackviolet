@@ -18,6 +18,9 @@ import Team from "../component/Team";
 import Footer from "../component/Footer";
 import Socials from "../component/Socials";
 import Button from "../component/Button";
+import FAQGrid from "../asset/image/FAQ-grid.png";
+import Marquee from "../component/Marquee";
+import FAQShape from "../asset/image/FAQShape.png";
 
 const Home = () => {
     const targetDate = new Date("2026-02-31T12:30:00-05:00").getTime();
@@ -108,11 +111,18 @@ const Home = () => {
             </div>
             */}
 
+            <div className="faqshape">
+                <img src={FAQShape} alt="" className="FAQShape" />
+                </div>
+
+            <Marquee 
+                text=" FREQUENTLY ASKED QUESTIONS /" 
+                speed={50}
+            />
 
             <div id="faq" className="faq">
-                <img src={Blob} alt="" className="blob" />
-                <p className="header">Frequently Asked Questions</p>
-                <FAQ />
+                <img src={FAQGrid} alt="" className="FAQGrid" />
+            <FAQ />
             </div>
 
             <div className="gallery">
