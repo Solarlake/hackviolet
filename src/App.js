@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './component/Navigation';
-import Background from './component/Background';
+
 import Home from './page/Home';
 import Resources from './page/Resources';
 import Countdown from './page/Countdown';
@@ -32,7 +32,7 @@ function App() {
                     <Route path="dev-home" element={
                         <div>
                             <Navigation />
-                            <Background />
+                            
                             <Home />
                         </div>
                     } />

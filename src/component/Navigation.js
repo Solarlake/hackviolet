@@ -3,6 +3,7 @@ import "../style/Navigation.scss";
 import Logo from "../asset/image/logo.png";
 import LogoText from "../asset/image/hackviolet_text.png";
 import { Link } from "react-router-dom"; // Use Link from react-router-dom
+import registericon from "../asset/image/register-icon.png"
 
 const Navigation = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -12,6 +13,7 @@ const Navigation = () => {
     return (
         <div className="navigation">
             <div className="bar">
+                <div className="nav-left">
                 <div className="logo">
                     <Link to="/#landing" >
                         <img className="icon" src={Logo} alt="HackViolet 2025 Logo" />
@@ -19,24 +21,45 @@ const Navigation = () => {
                     </Link>
                 </div>
                 <div className="links">
+                    <Link to="/#about" className="about_link">
+                        <span className="text">About</span>
+                    </Link>
+                    {/* 
                     <Link to="/#schedule" className="schedule_link">
                         <span className="text">Schedule</span>
-                    </Link>
+                    </Link> 
+                    */}
+                    {/* 
                     <Link to="/#prizes" className="prizes_link">
                         <span className="text">Prizes</span>
-                    </Link>
+                    </Link> 
+                    */}
                     <Link to="/#faq" className="faq_link">
                         <span className="text">FAQ</span>
                     </Link>
                     <Link to="/#sponsors" className="faq_link">
                         <span className="text">Sponsors</span>
                     </Link>
+                    <div className="resources">
+                        <button className="resources_button" onClick={() => setIsExpanded(!isExpanded)}>
+                            Resources
+                        </button>
+                    </div>
+                 </div>
                 </div>
-                <div className="resources">
-                    <button className="resources_button" onClick={() => setIsExpanded(!isExpanded)}>
-                        Resources
-                    </button>
+                <div className="Register-btn">
+                    
+                    <img className="registericon" src={registericon} alt="register icon" />
+                    <a
+                            href="https://tally.so/r/n0gdr6"
+                            target="_blank"  
+                            rel="noopener noreferrer" 
+                            className="register-button"
+                            >
+                            Register for 2026
+                        </a>
                 </div>
+                
             </div>
 
             <div className={`expanded_section ${isExpanded ? "expanded" : "collapsed"}`}>

@@ -5,14 +5,14 @@
             "name": "Directors",
             "members": [
                 {
-                    "name": "Tessa Ryan",
+                    "name": "Jinju Brown",
                     "role": "Executive Director",
-                    "image": "tessa.jpg"
+                    "image": "jinju.png"
                 },
                 {
-                    "name": "Hafsa Khan",
+                    "name": "Mia Nguyen",
                     "role": "Executive Director",
-                    "image": "hafsa.jpg"
+                    "image": "mia.png"
                 }
             ]
         },
@@ -20,19 +20,19 @@
             "name": "Internal",
             "members": [
                 {
-                    "name": "Travis Chan",
-                    "role": "Internal Director",
-                    "image": "travis.jpg"
-                },
-                {
                     "name": "Jessica May",
-                    "role": "Logistics",
-                    "image": "jessica.jpg"
+                    "role": "Internal Director",
+                    "image": "jessica.png"
                 },
                 {
-                    "name": "Shruthi Ganapuram",
+                    "name": "Maryann Putnam",
+                    "role": "Logistics",
+                    "image": "maryann.png"
+                },
+                {
+                    "name": "Riya Nilawar",
                     "role": "Events",
-                    "image": "shruthi.jpg"
+                    "image": "riya.png"
                 }
             ]
         },
@@ -40,24 +40,24 @@
             "name": "External",
             "members": [
                 {
-                    "name": "Jinju Brown",
-                    "role": "External Director",
-                    "image": "jinju.jpg"
-                },
-                {
-                    "name": "Ria Rathi",
-                    "role": "Mentorship",
-                    "image": "ria.jpg"
-                },
-                {
-                    "name": "Johanna Johnsen",
-                    "role": "Judging",
-                    "image": "johanna.jpg"
-                },
-                {
                     "name": "Murrium Mirza",
+                    "role": "External Director",
+                    "image": "murrium.png"
+                },
+                {
+                    "name": "Rishita Jain",
+                    "role": "Mentorship",
+                    "image": "rishita.png"
+                },
+                {
+                    "name": "Vidhi Shah",
                     "role": "Judging",
-                    "image": "Murrium.jpg"
+                    "image": "vidhi.png"
+                },
+                {
+                    "name": "Lihi Ancikovsky",
+                    "role": "Judging",
+                    "image": "lihi.png"
                 }
             ]
         },
@@ -65,24 +65,24 @@
             "name": "Sponsorship",
             "members": [
                 {
-                    "name": "Rakesh Pillai",
-                    "role": "Sponsorship Director",
-                    "image": "rakesh.jpg"
-                },
-                {
                     "name": "Sidney Nguyen",
-                    "role": "Company Relations",
-                    "image": "sidney.jpg"
+                    "role": "Sponsorship Director",
+                    "image": "sidney.png"
                 },
                 {
-                    "name": "Sahithi Sarva",
+                    "name": "Krishna Reddy",
                     "role": "Company Relations",
-                    "image": "sahithi.jpg"
+                    "image": "krishna.png"
                 },
                 {
-                    "name": "Varsha Manickam",
+                    "name": "Tanishqa Gautam",
+                    "role": "Company Relations",
+                    "image": "tanishqa.png"
+                },
+                {
+                    "name": "Roscoe Lin",
                     "role": "Finance",
-                    "image": "varsha.jpg"
+                    "image": "roscoe.png"
                 }
             ]
         },
@@ -90,24 +90,20 @@
             "name": "Marketing",
             "members": [
                 {
-                    "name": "Mia Nguyen",
+                    "name": "Sahithi Sarva",
                     "role": "Marketing Director",
-                    "image": "mia.jpg"
+                    "image": "sahithi.png"
                 },
                 {
-                    "name": "Jasmine Varma",
+                    "name": "Byron Streit",
                     "role": "Technology",
-                    "image": "jasmine.jpg"
+                    "image": "byron.png"
                 },
+                
                 {
-                    "name": "Annie Tran",
-                    "role": "Webmaster",
-                    "image": "annie.jpg"
-                },
-                {
-                    "name": "Ken Lin",
+                    "name": "Lexy Altieri",
                     "role": "Graphic Design Webmaster",
-                    "image": "ken.jpg"
+                    "image": "lexy.png"
                 }
             ]
         }

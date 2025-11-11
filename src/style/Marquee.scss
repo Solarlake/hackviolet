@@ -1,0 +1,41 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: scroll var(--marquee-speed, 40s) linear infinite;
+  font-family: 'obviously-narrow', sans-serif;
+  font-size: 64pt;
+  font-weight: var(--marquee-weight, 700);
+  color: var(--marquee-color, #03212B);
+  
+  span {
+    padding-right: 2rem;
+
+    @media (max-width: 480px) {
+    padding-right: 0.5rem;
+  }
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 32pt;
+  }
+  
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    font-size: 28pt;
+    
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -8,7 +8,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 21.875%;
+    padding: 0 10%;
     @media (max-width: 1360px) {
         padding: 0 8%;
     }
@@ -19,9 +19,39 @@ html {
 
     overflow-x: hidden;
     
+    .purpleGradContainer {
+        position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -5;
+                pointer-events: none;
+                background: radial-gradient(156.65% 76.86% at 50% 1.99%, rgba(144, 148, 255, 0.65) 2.27%, rgba(226, 201, 255, 0.87) 15.46%, #F7FBFF 43.78%);
+            }
+
+    .godraysContainer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 6;
+                pointer-events: none;
+                
+                
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                }
+
     .landing {
         text-align: center;
         height: 100vh;
+        position: relative;
 
         @media (max-width: 900px) {
             height: 70vh;
@@ -29,15 +59,68 @@ html {
 
         .header {
             margin-top: 21vh;
+            position: relative;
+            z-index: 1;
 
             @media (max-width: 900px) {
                 // margin-top: 15vh;
+            }
+
+            
+            .flowerContainer {
+                position: absolute;
+                top: -320px;
+                left: -500px;
+                width: 120%;
+                height: 120%;
+                z-index: 3;
+                pointer-events: none;
+                
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                }
+
+            .pinwheelContainer {
+                position: absolute;
+                bottom: 40px;
+                right: -500px;
+                width: 120%;
+                height: 120%;
+                z-index: 3;
+                pointer-events: none;
+                
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                }
+
+            .halfFlowerContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -9em;
+                margin-top: -3em;
+
+                img {
+                    justify-content: center;
+                }
             }
 
             .header_text_container {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                pointer-events: none;
+                z-index: 1;
+                transform: scale(80%);
+                margin-top: -15px;
 
                 .header_logo {
                     width: 48vw;
@@ -49,9 +132,63 @@ html {
                 }
             }
 
+            .rotating_text_container {
+                width: 100vw;
+                position: relative;
+                z-index: 100;
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+                
+                
+                }
+
+            .register-button {
+                display: flex;
+                padding: 10px 50px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border: #03212B solid 0px;
+                border-radius: 99px;
+                background: #27E8AE;
+                color: #03212B;
+                font-size: 1rem;
+                font-weight: 500;
+                pointer-events: auto;
+                z-index: 2;
+                cursor: pointer;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 0.9rem;
+                    padding: 10px 30px;
+                }
+            }
+
+            .sponsor-button {
+                display: flex;
+                padding: 10px 50px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border: #27E8AE solid 2px;
+                border-radius: 99px;
+                background: #F7FBFF;
+                color: #03212B;
+                font-size: 1rem;
+                font-weight: 500;
+                pointer-events: auto;
+                z-index: 2;
+                cursor: pointer;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 0.9rem;
+                    padding: 10px 30px;
+                }
+            }
+
             h1 {
-                font-family: "PP Editorial New";
-                font-weight: 400;
+                font-family: "Obviously Narrow", sans-serif;
+                font-weight: 700;
                 font-size: 7.6em;
                 font-size: 6.5vw;
                 
@@ -70,12 +207,13 @@ html {
                 }
             }
         
-            .copy {
+            .hero-copy {
                 color: #3a475a;
                 // margin-top: -1.6em; // for text header
-                margin-top: 0.4em; // for image header
+                margin-top: 5em; // for image header
                 display: flex;
                 flex-direction: column;
+                gap: 20px;
 
                 @media (max-width: 900px) {
                     margin-top: 1em;
@@ -112,6 +250,9 @@ html {
                     // animation-delay: 50ms;
                     font-size: 1.2em;
                     font-weight: 600;
+                    gap: 20px;
+                    margin-bottom: 0.5em;
+                    margin-top: 4em;
                     
                     @media (max-width: 1360px) {
                         font-size: 1.2em;
@@ -122,9 +263,10 @@ html {
                     }
 
                     a {
-                        color: #3a475a;
+                        color: #03212B;
                         text-decoration: underline;
                         transition: color 0.1s ease-out;
+                        margin-left: 5em;
 
                         &:hover {
                             color: #3a475aD0;
@@ -135,6 +277,7 @@ html {
                 .tagline {
                     // animation-delay: 0s;
                     margin-top: 0.2em;
+                    font-size: 14pt !important;
                 }
             }
 
@@ -193,6 +336,8 @@ html {
             }
         }
     }
+    
+    
 
     .clouds {
         width: 1000em;
@@ -252,40 +397,100 @@ html {
 
     .about {
         color: #3A475A;
-        padding: 0 8em;
+        padding: 0 0em;
+        margin-top: 5em;
 
         @media (max-width: 900px) {
             padding: 0 1em;
             margin-top: 4em;
         }
+        .Welcome {
+                background: linear-gradient(269deg, #6118FF 34.07%, #9094FF 91.09%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 20pt;
+                margin-bottom: -50px;
+                
+            }
+        .What-hackathon {
+            background: linear-gradient(139deg, #6118FF -54.85%, #9094FF 62.19%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 20pt;
+            margin-bottom: -50px;
+            
+        }
+
+        .about-container {
+                display: flex;
+                flex-direction: row;
+
+                .about-images {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    pointer-events: none;
+                    
+                }
+
+                .about-photos {
+                    transform: scale(80%);
+                    margin-top: -150px;
+                }
+            }
+
+        .copy-container {
+            margin-top: 6em;
+            width: 70%;
+        }
 
         .copy {
             margin-top: 6em;
-            font-family: "PP Editorial New";
-            font-size: 2em;
+            font-family: "Funnel Sans";
+            font-size: 1em;
             font-weight: 400;
             line-height: 1.5em;
-
+            margin-bottom: 6em;
+            
+            
             p {
                 margin-bottom: 1.2em;
+                
+                display: flex;
+                justify-content: flex-start;
 
                 @media (max-width: 900px) {
                     margin-bottom: 0.8em;
                 }
             }
 
-            .hv {
-                color: #7441ff;
-                font-style: italic;
-                font-size: 2em;
-
-                @media (max-width: 900px) {
-                    font-size: 1.8em;
-                }
-            }
+            
 
             @media (max-width: 900px) {
                 font-size: 1.2em;
+            }
+        }
+        .what-copy {
+            margin-top: 6em;
+            font-family: "Funnel Sans";
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.5em;
+            margin-bottom: 6em;
+            
+
+            p {
+                margin-bottom: 1.2em;
+                
+                display: flex;
+                justify-content: flex-start;
+
+                @media (max-width: 900px) {
+                    margin-bottom: 0.8em;
+                }
             }
         }
     }
@@ -342,6 +547,119 @@ html {
         }
     }
 
+    .SponsorsSection {
+        
+        overflow: visible;
+        object-fit: none;
+        width: 100vw;
+        margin: 2em;
+        
+        border-radius: 40px;
+        background: linear-gradient(123deg, #767BFF 36.51%, #C6A7FF 94.42%);
+
+    }
+
+    .sponsors-text {
+        padding: 2em 20em 0em 20em;
+        
+        @media screen and (max-width: 1100px) {
+            padding: 2em 4em 0em 4em;
+            
+        }
+    }
+
+    .sponsors-text p {
+        color: white;
+        font-weight: 400;
+        font-size: 14pt;
+        padding-bottom: 10px;
+        margin-top: 5em;
+    }
+
+    .sponsor-buttons {
+        padding: 6em 10em 0em 20em;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        
+
+        @media screen and (max-width: 900px) {
+            padding: 2em 4em 0em 4em;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+    .sponsor-button-container {
+        display: flex;
+        gap: 20px;
+
+        @media screen and (max-width: 900px) {
+            
+            flex-direction: column;
+        }
+    }
+
+    
+    .sponsor-button-container .become-sponsor-btn {
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    
+    padding: 0.3em 1.5em;
+    padding-top: 0.5em;
+    border: 0px solid rgba(118, 123, 255, 1);
+    border-radius: 100em;
+    color: rgba(118, 123, 255, 1) !important;
+    background-color: #FFF6FD;
+    
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #FFF6FDD0;
+    }
+    
+    @media (max-width: 900px) {
+        
+        font-size: 1em;
+    }
+}
+
+    .sponsor-button-container .view-packet-btn{
+        font-family: "Funnel Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        text-decoration: none;
+        padding: 0.3em 1.5em;
+        text-align: center;
+
+        padding-top: 0.5em;
+        border: 2px solid #FFF6FD;
+        color: #FFF6FD !important;
+        border-radius: 100em;
+
+        transition: all 0.1s ease-out;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #fff6fd2a;
+    }
+    
+    @media (max-width: 900px) {
+        
+        font-size: 1em;
+    }
+    }
+
+    .pinkFlower {
+        @media screen and (max-width: 900px) {
+            transform: scale(70%);
+        }
+    }
+
     .FAQShape {
         transform: scale(70%);
         margin-bottom: -120px;
@@ -350,6 +668,8 @@ html {
     .faq {
         scroll-margin-top: 10em;
         margin-top: -3em;
+        margin-left: 10%;
+        margin-right: 10%;
         
         .marquee-wrapper {
         width: 100%;

@@ -1,9 +1,9 @@
 .navigation {
-    padding: 0 21.875%;
+    padding: 0 2%;
     top: 1em;
     position: fixed;
     width: 100%;
-    font-family: "Neue Haas Grotesk Text Pro";
+    font-family: "Funnel Sans";
     z-index: 1000;
 
     @media (max-width: 1360px) {
@@ -35,6 +35,13 @@
             padding: 0 1em;
         }
 
+        .nav-left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2em;
+        }
+
         .logo {
             font-weight: 800;
 
@@ -45,12 +52,12 @@
                 padding: 0.6em 0;
 
                 .icon {
-                    width: 2em;
+                    width: 1.5em;
                 }
 
                 .text {
-                    width: 8em;
-                    padding-left: 0.5em;
+                    width: 6em;
+                    padding-left: 1em;
 
                     @media (max-width: 900px) {
                         width: 5em;
@@ -69,11 +76,12 @@
         .links {
             cursor: pointer;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             margin-top: 0.2em;
             margin-left: 0.4em;
             font-size: 1.05em;
+            color: rgba(3, 33, 43, 1);
 
             a {
                 padding: 0.6em 1em;
@@ -111,7 +119,7 @@
                 cursor: pointer;
                 padding: 0.5em 2.3em;
                 padding-top: 0.6em;
-                background-color: #6c42e0;
+                //background-color: #6c42e0;
                 border-radius: 100em;
                 border-color: transparent;
                 
@@ -120,7 +128,7 @@
                 align-items: center;
                 
                 font-size: 0.9em;
-                color: #ffffff;
+                color: rgba(3, 33, 43, 1);
 
                 transition: background-color 0.1s ease-out;
 
@@ -129,10 +137,32 @@
                 }
 
                 @media (max-width: 900px) {
-                    font-family: "PP Supply Sans";
+                    font-family: "Funnel Sans";
                     font-size: 0.8em;
                     padding: 0.5em 1.5em;
                 }
+            }
+        }
+        .Register-btn {
+            display: flex;
+            flex-direction: row;
+            margin-right: 4em;
+            height: 46px;
+            border-radius: 99px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            background: linear-gradient(82deg, #2718FF 5.98%, #9094FF 104.18%);
+            box-shadow: 0 2px 7.6px 0 rgba(0, 0, 0, 0.25);
+
+            .register-button {
+                background-color: #00000000;
+                color: #ECF7FF;
+                font-weight: 400;
+                padding: 0px 40px 0px 10px;
+            }
+
+            img {
+                transform: scale(70%);
             }
         }
     }

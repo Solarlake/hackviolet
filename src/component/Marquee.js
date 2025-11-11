@@ -1,10 +1,9 @@
 import React from 'react';
+import '../style/Marquee.scss';
 
 const Marquee = ({ 
   text, 
   speed = 40, 
-  fontFamily = 'obviously-narrow, sans-serif',
-  fontSize = '3rem',
   fontWeight = '700',
   color = '#03212B',
   backgroundColor = 'transparent',
@@ -16,45 +15,24 @@ const Marquee = ({
       style={{
         backgroundColor,
         padding,
-        overflow: 'hidden',
-        whiteSpace: 'nowrap',
-        position: 'relative'
+        '--marquee-speed': `${speed}s`,
+        '--marquee-color': color,
+        '--marquee-weight': fontWeight
       }}
     >
-      <div 
-        className="marquee-content"
-        style={{
-          display: 'inline-block',
-          animation: `scroll ${speed}s linear infinite`,
-          fontFamily: 'obviously-narrow, sans-serif',
-          fontSize: '64pt',
-          fontWeight,
-          color
-        }}
-      >
+      <div className="marquee-content">
         {/* repeat text multiple times for looping */}
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
-        <span style={{ paddingRight: '2rem' }}>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
       </div>
-      
-      <style>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </div>
   );
 };

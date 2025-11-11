@@ -2,27 +2,30 @@
     display: flex;
     flex-direction: column;
     color: #3A475A;
-    text-transform: uppercase;
-    font-family: "Space Grotesk";
+    font-family: "Funnel Sans";
     
     .committee {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
         @media screen and (max-width: 900px) {
             margin-bottom: 1em;            
         }
 
         .committee_text {
-            font-size: 1.3em;
+            text-transform: uppercase;
+            font-size: 3em;
             margin-bottom: 0.2em;
-            font-family: "Neue Haas Grotesk Text Pro";
+            font-family: "Obviously Narrow", sans-serif;
+            font-weight: 700;
+            color: #9094FF;
         }
 
         .members {
             display: flex;
-            column-gap: 4em;
+            column-gap: 2em;
             align-items: center;
             justify-content: center;
 
@@ -41,23 +44,23 @@
                 justify-content: start;
                 align-items: center;
                 width: 12em;
-                height: 21em;
+                height: 17em;
 
                 @media screen and (max-width: 1200px) {
                     width: 11em;
-                    height: 18em;
+                    height: 16em;
                 }
                 @media screen and (max-width: 900px) {
                     width: 10em;
-                    height: 14em;
+                    height: 13em;
                 }
                 
                 .image {
-                    width: 14em;
-                    height: 14em;
-                    border-radius: 100%;
+                    width: 11em;
+                    height: 11em;
+                    
                     overflow: hidden;
-                    background-color: #d9d9d9;
+                    background-color: #F7FBFF;
                     margin-bottom: 0.6em;
 
                     @media screen and (max-width: 1200px) {

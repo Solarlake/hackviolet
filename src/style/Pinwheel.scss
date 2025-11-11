@@ -1,8 +1,12 @@
 .pinwheel {
 
-  animation: spin 12s linear infinite; 
+  animation: spin 20s linear infinite; 
   display: block;
-  margin: 0 auto;    
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; 
+  object-fit: contain;  
+  transform-origin: center center;
 }
 
 @keyframes spin {
