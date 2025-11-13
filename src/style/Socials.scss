@@ -4,7 +4,7 @@
     align-items: center;
 
     .icon {
-        color: #3a475a;
+        color: #FFF6FD;
         margin: 0 0.4em;
         font-size: 1.5em;
         cursor: pointer;
@@ -13,7 +13,7 @@
         transition: color 0.1s ease-out;
 
         &:hover {
-            color: #3a475aD0;
+            color: #FFF6FD;
         }
 
         @media (max-width: 900px) {

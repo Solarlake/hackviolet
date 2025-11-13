@@ -21,6 +21,10 @@
             font-family: "Obviously Narrow", sans-serif;
             font-weight: 700;
             color: #9094FF;
+
+            @media screen and (max-width: 900px) {
+                font-size: 2em;
+            }
         }
 
         .members {

@@ -108,8 +108,16 @@ html {
                 margin-bottom: -9em;
                 margin-top: -3em;
 
+                @media (max-width: 900px) {
+                        margin: -4em
+                    }
+
                 img {
                     justify-content: center;
+
+                    @media (max-width: 900px) {
+                        transform: scale(80%);
+                    }
                 }
             }
 
@@ -127,7 +135,7 @@ html {
                     object-fit: cover;
 
                     @media (max-width: 900px) {
-                        width: 20em;
+                        width: 28em;
                     }
                 }
             }
@@ -260,6 +268,7 @@ html {
                     
                     @media (max-width: 900px) {
                         font-size: 1em;
+                        margin-bottom: 1.2em;
                     }
 
                     a {
@@ -339,61 +348,6 @@ html {
     
     
 
-    .clouds {
-        width: 1000em;
-        height: 40em;
-        object-fit: cover;
-        justify-self: center;
-        position: absolute;  
-        left: 0;
-        right: 0;
-        // top: 38em;
-        top: 52vh;
-        pointer-events: none;
-        
-        @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
-            width: 100vw;
-            height: 50vh;
-            // bottom: -10vh;
-        }
-        @media (max-width: 900px) {
-            width: 500em;
-            height: 15em;
-            // bottom: 3em;
-        }
-    }
-    
-    .rocket_container {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        top: 52vh;
-        pointer-events: none;
-        touch-action: none;
-
-        @media (min-resolution: 1.25dppx) and (max-width: 1360px){
-            top: 60vh;
-        }
-        @media (max-width: 900px) {
-            top: 50vh;
-        }
-
-        .rocket {
-            max-width: 32em;
-            object-fit: cover;
-            pointer-events: none;
-            
-            @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
-                max-width: 70vw;
-                max-height: 70vh;
-            }
-            @media (max-width: 900px) {
-                max-width: 15em;
-            }
-        }
-    }
 
     .about {
         color: #3A475A;
@@ -403,6 +357,7 @@ html {
         @media (max-width: 900px) {
             padding: 0 1em;
             margin-top: 4em;
+            
         }
         .Welcome {
                 background: linear-gradient(269deg, #6118FF 34.07%, #9094FF 91.09%);
@@ -411,6 +366,12 @@ html {
                 -webkit-text-fill-color: transparent;
                 font-size: 20pt;
                 margin-bottom: -50px;
+
+                @media (max-width: 900px) {
+                    font-size: 16pt;
+                    
+                    margin-top: 4em;
+                }
                 
             }
         .What-hackathon {
@@ -427,24 +388,42 @@ html {
                 display: flex;
                 flex-direction: row;
 
+                 @media (max-width: 900px) {
+                    flex-direction: column;
+                 }
+
                 .about-images {
                     display: flex;
                     justify-content: flex-start;
                     align-items: flex-start;
                     flex-direction: column;
                     pointer-events: none;
+
+                    @media (max-width: 900px) {
+                        margin-top: 100px;
+                        
+                    }
                     
                 }
 
                 .about-photos {
                     transform: scale(80%);
                     margin-top: -150px;
+
+                    @media (max-width: 900px) {
+                        transform: scale(95%);
+                        
+                    }
                 }
             }
 
         .copy-container {
             margin-top: 6em;
             width: 70%;
+
+            @media (max-width: 900px) {
+            width: 100%;
+        }
         }
 
         .copy {
@@ -464,6 +443,9 @@ html {
 
                 @media (max-width: 900px) {
                     margin-bottom: 0.8em;
+                    font-size: 12pt;
+                    line-height: 1.4em;
+                    
                 }
             }
 
@@ -490,40 +472,15 @@ html {
 
                 @media (max-width: 900px) {
                     margin-bottom: 0.8em;
+                    font-size: 12pt;
+                    line-height: 1.4em;
+                    
                 }
             }
         }
     }
 
-    .island_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 4em;
 
-        .island {
-            max-width: 32em;
-            object-fit: cover;
-            pointer-events: none;
-            
-            @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
-                max-width: 70vw;
-                max-height: 70vh;
-            }
-            @media (max-width: 900px) {
-                max-width: 15em;
-            }
-        }
-    }
-
-    .gallery {
-        width: 100%;
-
-        @media (max-width: 900px) {
-            width: 100vw;            
-        }
-    }
 
     .FAQGrid {
         position: absolute;
@@ -536,14 +493,12 @@ html {
         margin-top: -35em;
         z-index: -1;
         left: 0;
-        pointer-events: none;
+        pointer-events: none; 
 
-        @media (max-width: 900px) {
-            margin-bottom: -6em;
-        }
 
-        @media (max-width: 762px) {
+        @media screen and (max-width: 962px) {
             margin-bottom: 45em;
+            margin-top: 0em;
         }
     }
 
@@ -767,7 +722,7 @@ html {
 
     .footer {
         margin-top: 15em;
-        width: 100%;
+        width: 100vw;
     }
 
     .footer_blob {
