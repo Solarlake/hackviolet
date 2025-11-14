@@ -152,7 +152,7 @@ const Home = () => {
             </div>
 
 
-            <div className= "SponsorsSection">
+            <div className= "sponsors" id="sponsors">
                 <Marquee 
                     text=" SPONSORS /" 
                     speed={30}
@@ -224,10 +224,7 @@ const Home = () => {
            
 
 
-            <div id="sponsors" className="sponsors">
-                <p className="header">Sponsors</p>
-                <Sponsors />
-            </div>
+            
            */ }
             <Marquee 
                 text="MEET THE TEAM /" 

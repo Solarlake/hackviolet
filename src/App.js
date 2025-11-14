@@ -51,7 +51,7 @@ function App() {
                     } />
                     <Route path="/sponsorpage" element={
                         <div>
-                            
+                            <Navigation />
                             <SponsorPage />
                         </div>
                     } />
