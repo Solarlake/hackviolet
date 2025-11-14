@@ -16,7 +16,7 @@
 
         @media screen and (max-width: 900px) {
             font-size: 2em;
-            width: 170px;
+            width: 150px;
         }
 
         }
@@ -24,6 +24,7 @@
 
     @media (max-width: 900px) {
         font-size: 0.8em;
+        padding: 2em;
     }
 
     .footer-links {
@@ -47,7 +48,7 @@
         z-index: 1;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 0px;
 
         @media screen and (max-width: 900px) {
             flex-direction: row;
@@ -80,7 +81,7 @@
         display: flex;
         z-index: 1;
         flex-direction: column;
-        gap: 32px;
+        gap: 0px;
 
         @media screen and (max-width: 900px) {
             flex-direction: row;
@@ -96,6 +97,8 @@
         .squireslink {
             text-decoration: underline;
             color: #FFF6FD;
+            
+            
         }
 
         .MLHlink {
@@ -109,7 +112,7 @@
         z-index: 1; 
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 0px;
         align-items: flex-start;
 
         @media screen and (max-width: 900px) {
@@ -210,6 +213,12 @@
         width: 100%;
         justify-content: space-between;
 
+        @media screen and (max-width: 900px)  {
+                flex-direction: column;
+                padding-top: 1em;
+                align-items: center;
+            }
+
         .bobaemoji {
             height: 1.5em;
             align-items: center;
@@ -218,6 +227,8 @@
         .madewith {
             display: flex;
             flex-direction: row;
+
+            
         }
 
         p a {

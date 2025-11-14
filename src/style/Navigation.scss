@@ -7,13 +7,13 @@
     z-index: 1000;
 
     @media (max-width: 1360px) {
-        padding: 0 11.875%;
+        padding: 0 2%;
         @media (min-resolution: 1.25dppx) {
-            padding: 0 21.875%;
+            padding: 0 2%;
         }
     }
     @media (max-width: 900px) {
-        padding: 0 15.875%;
+        padding: 0 4%;
         top: 1em;
     }
 
@@ -25,14 +25,15 @@
         
         height: 4.2em;
         width: 100%;
-        padding: 0 3em;
+        padding: 0 6em 0 3em;
         border-radius: 99em;
         border: 1px solid #0000001A;
         backdrop-filter: blur(16px) saturate(120%);
         background-color: #7441FF0D; 
 
         @media (max-width: 900px) {
-            padding: 0 1em;
+            padding: 0 5em 0 2em;
+
         }
 
         .nav-left {
@@ -40,6 +41,17 @@
             flex-direction: row;
             align-items: center;
             gap: 2em;
+
+            @media (max-width: 900px) {
+                gap: 0;
+            }
+        }
+
+        .nav-right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
         }
 
         .logo {
@@ -60,8 +72,7 @@
                     padding-left: 1em;
 
                     @media (max-width: 900px) {
-                        width: 5em;
-                        padding-left: 0.2em;
+                        display: none;
                     }
                 }
 
@@ -78,14 +89,13 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            align-items: flex-start;
             
             margin-left: 0.4em;
             font-size: 1.05em;
             color: rgba(3, 33, 43, 1);
             background-color: #d5d6d9ad;
             border-radius: 99em;
-            padding: .2em 1em ;
+            padding: .2em 1em;
 
             a {
                 padding: 0.6em 1em;
@@ -113,6 +123,24 @@
             }
         }
 
+        
+
+        .desktop-resources {
+            display: flex;
+            
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
+
+        .mobile-resources {
+            display: none;
+            
+            @media (max-width: 900px) {
+                display: flex;
+            }
+        }
+
         .resources {
             padding: 0;
             display: flex;
@@ -123,7 +151,7 @@
                 cursor: pointer;
                 padding: 0.5em 2.3em;
                 padding-top: 0.6em;
-                background-color: #bfc1ff;
+                background-color: #acafff;
                 border-radius: 100em;
                 border-color: transparent;
                 
@@ -144,14 +172,15 @@
                 @media (max-width: 900px) {
                     font-family: "Funnel Sans";
                     font-size: 0.8em;
-                    padding: 0.5em 1.5em;
+                    padding: 0.5em 1.2em;
                 }
             }
         }
+
         .Register-btn {
             display: flex;
             flex-direction: row;
-            margin-right: 4em;
+            align-items: center;
             height: 46px;
             border-radius: 99px;
             font-weight: 400;
@@ -164,10 +193,28 @@
                 color: #ECF7FF;
                 font-weight: 400;
                 padding: 0px 40px 0px 10px;
+                border: none;
+                cursor: pointer;
+
+                @media (max-width: 900px) {
+                    display: none;
+                }
             }
 
-            img {
+            .registericon {
                 transform: scale(70%);
+
+                @media (max-width: 900px) {
+                    transform: scale(100%);
+                    padding: 0 0.5em;
+                }
+            }
+
+            @media (max-width: 900px) {
+                min-width: 46px;
+                width: 46px;
+                padding: 0;
+                justify-content: center;
             }
         }
     }
@@ -187,7 +234,9 @@
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 
         @media (max-width: 900px) {
-            font-size: 1em;
+            font-size: 0.9em;
+            padding: 1em 1.5em;
+            grid-template-columns: 1fr;
         }
 
         .resources_page_link {
@@ -205,5 +254,4 @@
         touch-action: none;
         height: 0;
     }
-       
 }

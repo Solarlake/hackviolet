@@ -1,0 +1,80 @@
+.rotating-text-container {
+  font-family: 'Funnel Sans';
+  font-size: 2.5em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1.6rem;
+  flex-wrap: wrap;
+  color: #03212B;
+  z-index: 100;
+  
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.3em;
+  }
+}
+
+.word-container {
+  position: relative;
+  height: 4.8rem;
+  display: inline-block;
+
+  @media screen and (max-width: 800px) {
+    height: 2.4rem;
+  }
+  
+}
+
+.word-container.first {
+  min-width: 200px;
+  
+
+  @media screen and (max-width: 800px) {
+    min-width: 100px;
+  }
+}
+
+.word-container.second {
+  min-width: 280px;
+
+  @media screen and (max-width: 800px) {
+    min-width: 140px;
+  }
+}
+
+.rotating-word {
+  position: absolute;
+  left: 0;
+  top: 10x;
+  width: 100%;
+  padding: 0.3rem 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  
+  @media screen and (max-width: 800px) {
+    padding: 0.3rem .8rem;
+    
+  }
+}
+
+.rotating-word.active {
+  transform: translateY(0);
+  opacity: 1;
+  
+}
+
+.rotating-word.before {
+  transform: translateY(-100%);
+  opacity: 0;
+
+  
+}
+
+.rotating-word.after {
+  transform: translateY(100%);
+  opacity: 0;
+}

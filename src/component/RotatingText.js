@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../style/RotatingText.scss';
 
 const RotatingText = () => {
   const [firstWordIndex, setFirstWordIndex] = useState(0);
@@ -19,64 +20,38 @@ const RotatingText = () => {
   ];
 
   useEffect(() => {
-  const firstTimer = setInterval(() => {
-    setFirstWordIndex(prev => (prev + 1) % firstWords.length);
-  }, 4500);
+    const firstTimer = setInterval(() => {
+      setFirstWordIndex(prev => (prev + 1) % firstWords.length);
+    }, 4500);
 
-  const secondTimer = setInterval(() => {
-    setSecondWordIndex(prev => (prev + 1) % secondWords.length);
-  }, 4500 + 500);  // 0.5s delay
+    const secondTimer = setInterval(() => {
+      setSecondWordIndex(prev => (prev + 1) % secondWords.length);
+    }, 5000); // 0.5s delay
 
-  return () => {
-    clearInterval(firstTimer);
-    clearInterval(secondTimer);
+    return () => {
+      clearInterval(firstTimer);
+      clearInterval(secondTimer);
+    };
+  }, []);
+
+  const getWordClass = (index, currentIndex) => {
+    if (index === currentIndex) return 'active';
+    if (index < currentIndex) return 'before';
+    return 'after';
   };
-}, []);
-
 
   return (
-    <div style={{
-      fontFamily: 'Funnel Sans',
-      fontSize: '2.5rem',
-      fontWeight: '700',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '1rem',
-      padding: '1rem 2rem',
-      flexWrap: 'wrap',
-      color: '#03212B',
-      zIndex: '100'
-    }}>
+    <div className="rotating-text-container">
       <span>Empowering you to</span>
       
-      <div style={{
-        position: 'relative',
-        height: '4.8rem',
-        
-        display: 'inline-block',
-        minWidth: '200px'
-      }}>
+      <div className="word-container first">
         {firstWords.map((word, index) => (
           <div
             key={word.text}
+            className={`rotating-word ${getWordClass(index, firstWordIndex)}`}
             style={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              width: '100%',
-              padding: '0.3rem 1.2rem',
-              borderRadius: '12px',
               backgroundColor: word.bg,
-              color: word.color,
-              textAlign: 'center',
-              transition: 'transform 0.6s ease-in-out, opacity 0.6s ease-in-out',
-              transform: index === firstWordIndex 
-                ? 'translateY(0)' 
-                : index < firstWordIndex 
-                  ? 'translateY(-100%)' 
-                  : 'translateY(100%)',
-              opacity: index === firstWordIndex ? 1 : 0
+              color: word.color
             }}
           >
             {word.text}
@@ -86,35 +61,14 @@ const RotatingText = () => {
 
       <span>the</span>
 
-      <div style={{
-        position: 'relative',
-        height: '4.8rem',
-        
-        display: 'inline-block',
-        minWidth: '280px'
-      }}>
+      <div className="word-container second">
         {secondWords.map((word, index) => (
           <div
             key={word.text}
+            className={`rotating-word ${getWordClass(index, secondWordIndex)}`}
             style={{
-              position: 'absolute',
-              left: 0,
-                top: 0,
-
-              width: '100%',
-              display: 'inline-block',
-              padding: '0.3rem 1.2rem',
-              borderRadius: '12px',
               backgroundColor: word.bg,
-              color: word.color,
-              textAlign: 'center',
-              transition: 'transform 0.6s ease-in-out, opacity 0.6s ease-in-out',
-              transform: index === secondWordIndex 
-                ? 'translateY(0)' 
-                : index < secondWordIndex 
-                  ? 'translateY(-100%)' 
-                  : 'translateY(100%)',
-              opacity: index === secondWordIndex ? 1 : 0
+              color: word.color
             }}
           >
             {word.text}
