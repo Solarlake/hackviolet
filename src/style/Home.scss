@@ -84,8 +84,8 @@ html {
                 }
 
                 @media (max-width: 500px) {
-                 left: -240px;
-                 top: -100px;
+                 left: -280px;
+                 top: -130px;
                  width: 140%;
                 }
 
@@ -108,7 +108,7 @@ html {
                 }
 
                 @media (max-width: 500px) {
-                 bottom: -300px;
+                 bottom: -340px;
                  right: -250px;
                  width: 140%;
                 }
@@ -161,6 +161,10 @@ html {
                 margin-left: calc(-50vw + 50%);
                 margin-right: calc(-50vw + 50%);
                 
+                @media screen and (max-width: 900px) {
+                    margin-top: 1em;
+                    margin-bottom: 2em;
+                }
                 
                 }
 
@@ -750,15 +754,5 @@ html {
         width: 100vw;
     }
 
-    .footer_blob {
-        position: absolute;
-        overflow: visible;
-        object-fit: none;
-        height: 50em;
-        width: 1000em;
-        bottom: 0;
-        left: 0;
-        z-index: -1000;
-        filter: saturate(1.1) brightness(1.1);
-    }
+    
 }

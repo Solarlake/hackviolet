@@ -25,11 +25,12 @@ function App() {
             <div className="App">
                 <Badge />
                 <Routes>
-                    {/* maintenance Route */}
+                    {/* maintenance Route 
                     <Route path="/*" element={<Maintenance />} />
+                    */}
 
                     {/* dev home route */}
-                    <Route path="dev-home" element={
+                    <Route path="/*" element={
                         <div>
                             <Navigation />
                             

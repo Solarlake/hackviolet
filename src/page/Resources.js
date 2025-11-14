@@ -7,6 +7,7 @@ import Button from "../component/Button";
 import StarterData from "../content/starter.json";
 import SubmissionData from "../content/submission.json";
 import AngleRight from "../asset/svg/angle-right.svg";
+import Socials from "../component/Socials";
 
 const Resources = () => {
 
@@ -40,16 +41,18 @@ const Resources = () => {
                 <div className="header">
                     <h1>Resources</h1>
                     <div className="copy">
-                        <p className="p1">Download the official HackViolet 2025 Information Sheet.</p>
+                        {/* <p className="p1">Download the official HackViolet 2025 Information Sheet.</p> */}
                         <p className="p2">Explore this page for additional resources.</p>
                     </div>
-                    <div className="buttons">
+                    {/* <div className="buttons">
                         <Button href="https://docs.google.com/document/d/1LnNpdvbG2Scqu0N-5f0t7J-5Xhm32G-6YbswWoQIljQ/edit?usp=sharing" newTab text="Info Sheet" />
                         <Button href="https://forms.gle/9fcnXGye34M52Dyg7" newTab clear text="Judging Preference Form" />
-                    </div>
-                    {/* <div className="socials">
-                        <Socials />
                     </div> */}
+
+                     {/* <div className="socials">
+                        <Socials />
+                    </div>  */}
+
                 </div>
                 </div>
             
@@ -82,18 +85,18 @@ const Resources = () => {
                 <div className="text">
                     <div className="copy">
                         <p><strong>PHYSICAL LOCATION</strong></p>
-                        <p>Our hackathon will be held mainly at the Data and Decision Sciences building, on the Virginia Tech campus. Once inside, check-in will be inside the lobby, and then our opening ceremony will be at Goodwin Hall. Hackers will then be directed back to the Data and Decision Sciences building, where they can work on their projects! Specific room locations for all events are detailed in the schedule below.</p>
+                        <p>Our hackathon will be held mainly at Squires Student Center, on the Virginia Tech campus.</p>
 
                         <ul>
-                            <li><strong>Data and Decision Sciences Address:</strong> 727 Prices Fork Rd, Blacksburg, VA 24060</li>
+                            <li><strong>Squires Student Center Address:</strong> 290 College Ave, Blacksburg, VA 24060</li>
                             <li><strong>Virginia Tech Campus Map:</strong> <a href="https://www.google.com/maps/place/Virginia+Tech/@37.2285035,-80.4193583,15z/data=!3m1!4b1!4m6!3m5!1s0x884b296ba53d92f1:0x3693781f598e7d3c!8m2!3d37.2285035!4d-80.4193583!16zL20vMGNqaGo" target="_blank">Link to the Map</a></li>
                         </ul>
 
                         <p><strong>DIGITAL LOCATION</strong></p>
-                        <p>The primary communication in HackViolet 2025 will take place over the Discord Server. You must have a Discord account to join.</p>
+                        <p>The primary communication in HackViolet 2026 will take place over the Discord Server. You must have a Discord account to join.</p>
 
-                        <p>Please reference the following guide detailing all of the Discord channels in our server:</p>
-                        <p><a href="https://docs.google.com/document/d/1eSeGhcFcXe78csKM_K0T1ZO4PS5DwWlbAE71popDaGk/edit?usp=sharing" target="_blank">HACKERS Discord Guide for HackViolet 2025</a></p>
+                        {/* <p>Please reference the following guide detailing all of the Discord channels in our server:</p>
+                        <p><a href="https://docs.google.com/document/d/1eSeGhcFcXe78csKM_K0T1ZO4PS5DwWlbAE71popDaGk/edit?usp=sharing" target="_blank">HACKERS Discord Guide for HackViolet 2025</a></p> */}
 
                         <p>New to Discord? This article may be helpful: <a href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord" target="_blank">Beginner's Guide to Discord</a></p>
                     </div>
@@ -104,7 +107,9 @@ const Resources = () => {
                 <p className="header">Raffle Giveaways</p>
                 <div className="text">
                     <div className="copy">
-                        <p><strong>Raffle System:</strong></p>
+                        <p>Raffle information coming soon!</p>
+
+                        {/* <p><strong>Raffle System:</strong></p>
                         <ul>
                         <li><strong>5 tickets:</strong> Attending Company Sponsor Fair, Q&A Session (*5 tickets for each event)</li>
                         <li><strong>3 tickets:</strong> Attending a workshop or event, Mentor Speed Dating</li>
@@ -116,7 +121,7 @@ const Resources = () => {
 
                         <p><strong>Raffle Winners:</strong> VT Backpack or VT Hoodie</p>
 
-                        <p>Winners will be announced at the Closing Ceremony on Sunday, Feb 2nd @ 5 PM.</p>
+                        <p>Winners will be announced at the Closing Ceremony on Sunday, Feb 2nd @ 5 PM.</p> */}
                     </div>
                 </div>
             </div>
@@ -149,7 +154,7 @@ const Resources = () => {
                         <li>Mentors are a resource for hackers during the hackathon.</li>
                         <li>Contacting mentors will primarily take place over the Discord server using a queuing system. Instructions can be found in the <strong>#how-to-join</strong> channel.</li>
                         <li>Learn more about mentors by referencing the <strong>#mentor-intros</strong> channel.</li>
-                        <li>Additionally, there is a Mentor Speed dating event taking place on Feb 1st from 11AM-12PM in DDS (Data and Decision Sciences) room 132.</li>
+                        
                         </ul>
                     </div>
                 </div>
@@ -159,7 +164,9 @@ const Resources = () => {
                 <p className="header">Judging</p>
                 <div className="text">
                     <div className="copy">
-                        <p><strong>Judging Preference</strong></p>
+                        <p>Judging information coming soon!</p>
+
+                        {/* <p><strong>Judging Preference</strong></p>
                         <ul>
                         <li>One person from each team must fill out the <a href="https://forms.gle/9fcnXGye34M52Dyg7" target="_blank">Judging Preference Form </a> for the entire group, which can be found in the Discord and sent out through email after the start of the Hackathon. Please note: neither option provides a distinct advantage over the other. This form is due on <strong>Feb. 2nd, at 10:30 AM</strong>.</li>
                         </ul>
@@ -182,13 +189,13 @@ const Resources = () => {
                         <p><strong>Judging Criteria:</strong></p>
                         <ul>
                         <li>Projects will be judged on Creativity, Design, Technology, and Completion.</li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                 </div>
             </div>
 
-            <div id="submission" className="submission">
+            {/* <div id="submission" className="submission">
                 <p className="submission_header">Project Submission</p>
                 <div className="questions">
                 {SubmissionData.map((question, index) => (
@@ -204,9 +211,9 @@ const Resources = () => {
                     </div>
                 ))}
                 </div>
-            </div>
+            </div> */}
 
-            <div id="starter" className="starter">
+            {/* <div id="starter" className="starter">
                 <p className="starter_header">Starter Packs & Resources</p>
                 <div className="questions">
                 {StarterData.map((question, index) => (
@@ -223,7 +230,7 @@ const Resources = () => {
                 ))}
             </div>
                 
-            </div>
+            </div> */}
 
             <div className="footer">
                 <Footer />

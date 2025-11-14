@@ -36,8 +36,8 @@ html {
             }
 
             h1 {
-                font-family: "PP Editorial New";
-                font-weight: 400;
+                font-family: "Obviously Narrow", sans-serif;
+                font-weight: 700;
                 font-size: 7.6em;
                 font-size: 6.5vw;
                 
@@ -67,7 +67,7 @@ html {
                 }
         
                 p {
-                    font-family: "Space Grotesk";
+                    font-family: "Funnel Sans";
                     font-weight: 400;
                     font-size: 1.2em;
                     line-height: 1.4em;
@@ -81,6 +81,7 @@ html {
                     animation-delay: 0s;
                 }
                 .p2 {
+                    margin-top: 1em;
                     animation-delay: 50ms;
                 }
             }
@@ -176,7 +177,7 @@ html {
     
         .copy {
             margin-bottom: 1em;
-            font-family: "Neue Haas Grotesk Text Pro";
+            font-family: "Funnel Sans";
             font-size: 1.4em;
             font-weight: 400;
             line-height: 1.4em;
@@ -220,11 +221,11 @@ html {
 
         .header {
             text-align: center;
-            font-family: "PP Editorial New";
+            font-family: "Obviously Narrow", sans-serif;
             font-size: 4em;
-            font-weight: 400;
+            font-weight: 700;
             font-style: italic;
-            color: black;
+            color: #03212B;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -240,11 +241,11 @@ html {
         scroll-margin-top: 10em;
         .submission_header {
             text-align: center;
-            font-family: "PP Editorial New";
+            font-family: "Obviously Narrow", sans-serif;
             font-size: 4em;
-            font-weight: 400;
+            font-weight: 700;
             font-style: italic;
-            color: black;
+            color: #03212B;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -256,11 +257,11 @@ html {
         scroll-margin-top: 10em;
         .starter_header {
             text-align: center;
-            font-family: "PP Editorial New";
+            font-family: "Obviously Narrow", sans-serif;
             font-size: 4em;
-            font-weight: 400;
+            font-weight: 700;
             font-style: italic;
-            color: black;
+            color: #03212B;
 
             @media (max-width: 900px) {
                 font-size: 2.5em;
@@ -270,7 +271,7 @@ html {
 
     .footer {
         margin-top: 15em;
-        width: 100%;
+        width: 100vw;
     }
 
     .footer_blob {

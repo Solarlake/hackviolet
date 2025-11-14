@@ -13,7 +13,7 @@
   
 
   @media screen and (max-width: 800px) {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
@@ -23,7 +23,7 @@
   display: inline-block;
 
   @media screen and (max-width: 800px) {
-    height: 2.4rem;
+    height: 1.6rem;
   }
   
 }
@@ -57,6 +57,7 @@
   
   @media screen and (max-width: 800px) {
     padding: 0.3rem .8rem;
+    margin-top: -.3em;
     
   }
 }
