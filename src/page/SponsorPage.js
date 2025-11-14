@@ -440,7 +440,7 @@ const SponsorPage = () => {
       </table>
       <div className="sponsor-footer">
         <div className='sponsor-footer-comp'><Footer /></div>
-                <img className="sponsor-footer_blob" src={FooterBlob} alt="" />
+                
             </div>
     </div>
   );
