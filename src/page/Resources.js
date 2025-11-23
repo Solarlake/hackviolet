@@ -8,6 +8,8 @@ import StarterData from "../content/starter.json";
 import SubmissionData from "../content/submission.json";
 import AngleRight from "../asset/svg/angle-right.svg";
 import Socials from "../component/Socials";
+import Marquee from "../component/Marquee";
+import { Link } from "react-router-dom";
 
 const Resources = () => {
 
@@ -37,9 +39,15 @@ const Resources = () => {
 
     return (
         <div className="resources">
+            <div className="purpleGradContainer"> </div>
             <div id="info" className="landing">
                 <div className="header">
-                    <h1>Resources</h1>
+                    <Marquee 
+                    text=" RESOURCES /" 
+                    speed={30}
+                    color="#03212B"
+                    
+                />
                     <div className="copy">
                         {/* <p className="p1">Download the official HackViolet 2025 Information Sheet.</p> */}
                         <p className="p2">Explore this page for additional resources.</p>
@@ -53,6 +61,8 @@ const Resources = () => {
                         <Socials />
                     </div>  */}
 
+                    
+
                 </div>
                 </div>
             
@@ -61,6 +71,15 @@ const Resources = () => {
             <div className="rocket_container">
                 <img className="rocket" src={Rocket} alt="" />
             </div> */}
+
+            <div className="quicklinks">
+                        <Link to="/resources#rules" className="quicklink">Rules & Eligibility</Link>
+                        <Link to="/resources#location" className="quicklink">Location</Link>
+                        <Link to="/resources#raffle" className="quicklink">Raffle Giveaways</Link>
+                        <Link to="/resources#teams" className="quicklink">Teams</Link>
+                        <Link to="/resources#mentors" className="quicklink">Help & Mentors</Link>
+                        <Link to="/resources#judging" className="quicklink">Judging</Link>
+                    </div>
 
             <div id="rules" className="section">
                 <p className="header">Rules & Eligibility</p>
@@ -234,7 +253,7 @@ const Resources = () => {
 
             <div className="footer">
                 <Footer />
-                <img className="footer_blob" src={FooterBlob} alt="" />
+                
             </div>
         </div>
     );

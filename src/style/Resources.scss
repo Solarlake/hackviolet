@@ -19,10 +19,21 @@ html {
     row-gap: 8em;
 
     overflow-x: hidden;
+
+    .purpleGradContainer {
+        position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -5;
+                pointer-events: none;
+                background: radial-gradient(156.65% 76.86% at 50% 1.99%, rgba(144, 148, 255, 0.65) 2.27%, rgba(226, 201, 255, 0.87) 15.46%, #F7FBFF 43.78%);
+            }
     
     .landing {
         text-align: center;
-        height: 100vh;
+        
 
         @media (max-width: 900px) {
             height: 70vh;
@@ -81,7 +92,7 @@ html {
                     animation-delay: 0s;
                 }
                 .p2 {
-                    margin-top: 1em;
+                    margin-top: 5em;
                     animation-delay: 50ms;
                 }
             }
@@ -111,58 +122,40 @@ html {
         }
     }
 
-    .clouds {
-        width: 1000em;
-        height: 35em;
-        object-fit: cover;
-        justify-self: center;
-        position: absolute;  
-        left: 0;
-        right: 0;
-        // top: 38em;
-        top: 60vh;
-        pointer-events: none;
-        
-        @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
-            width: 100vw;
-            height: 50vh;
-            // bottom: -10vh;
-        }
-        @media (max-width: 900px) {
-            width: 500em;
-            height: 10em;
-            // bottom: 3em;
-        }
-    }
-    
-    .rocket_container {
-        position: absolute;
+    .quicklinks {
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        top: 50vh;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        margin-top: -6em;
+        margin-bottom: 4em;
+        
+        
+        .quicklink {
+            font-family: "Funnel Sans", sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            color: #2718FF;
+            border: 2px solid #2718FF;
+            background-color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 99px;
+            transition: background-color 0.3s, color 0.3s;
 
-        @media (min-resolution: 1.25dppx) and (max-width: 1360px){
-            top: 60vh;
-        }
-        @media (max-width: 900px) {
-            top: 50vh;
+            &:hover {
+                background-color: #2718FF;
+                
+                color: #FFFFFF;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 0.9em;
+                padding: 0.4em 0.8em;
+                
+            }
         }
 
-        .rocket {
-            max-width: 32em;
-            object-fit: cover;
-            pointer-events: none;
-            
-            @media (min-resolution: 1.25dppx) and (max-width: 1360px) {
-                max-width: 70vw;
-                max-height: 70vh;
-            }
-            @media (max-width: 900px) {
-                max-width: 15em;
-            }
-        }
 
     }
 

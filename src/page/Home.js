@@ -113,8 +113,35 @@ const Home = () => {
                         <Link to="/sponsorpage" className="sponsor-button">
                             Sponsor
                         </Link>
+
+                        
                         
                     </div>
+                    <div className="apply-judge-mentor">
+                        <p>Apply to be a judge or mentor!</p>
+
+                        <div className="judge-mentor">
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLScTI1BJToNk_Yn4glzLpiZHmzVVneBfnYcgCYU_3AZFewqkEw/viewform"
+                                target="_blank"  
+                                rel="noopener noreferrer" 
+                                className="judge-button"
+                                >
+                                Judge
+                            </a>
+
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSd1XREWV_RI30xn_8n4-VqXkNQC8YSToZlwdHOssS_cqge6jw/viewform"
+                                target="_blank"  
+                                rel="noopener noreferrer" 
+                                className="mentor-button"
+                                >
+                                Mentor
+                            </a>
+                        </div>
+
+                    </div>
+
                     {/* <div className="socials">
                         <Socials />
                     </div> */}

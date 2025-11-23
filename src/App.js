@@ -40,7 +40,6 @@ function App() {
                     <Route path="/resources" element={
                         <div>
                             <Navigation />
-                            <ResourcesBackground />
                             <Resources />
                         </div>
                     } />
