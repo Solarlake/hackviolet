@@ -1,0 +1,220 @@
+h2 {
+    background: linear-gradient(269deg, #6118FF 34.07%, #9094FF 91.09%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20pt;
+    padding-bottom: 20px;
+                
+
+        @media (max-width: 900px) {
+        font-size: 16pt;
+
+    }
+                
+}
+
+.button {
+    display: inline-flex;
+    padding: 5px 10px;
+    width: 90px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: rgba(176 180 255) solid 2px;
+    border-radius: 99px;
+    background: rgba(176 180 255);
+    color: #03212B;
+    font-size: 0.8rem;
+    font-weight: 500;
+    pointer-events: auto;
+    cursor: pointer;
+
+    &:hover {
+       border: #9094FF solid 2px;
+                    border-radius: 99px;
+                    background-color: rgb(243, 244, 248);
+                    color: #03212B;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 0.7rem;
+        
+    }
+ }
+
+ h3 {
+    font-size: 18pt;
+    margin-bottom: 10px;
+    color: rgba(3, 33, 43, 1);
+
+    @media (max-width: 900px) {
+        font-size: 14pt;
+
+    }
+ }
+
+p {
+    color: #3A475A;
+    font-size: 1em;
+}
+
+.innovation-description {
+    margin-bottom: 40px;
+}
+
+
+
+.projects-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+
+    h4 {
+        font-size: 10pt;
+        font-weight: 600;
+        color: #3A475A70;
+    }
+
+    p {
+        font-size: 10pt;
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    .column1 {
+        display: flex;
+        max-width: 27%;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+
+        @media (max-width: 900px) {
+        max-width: 100%;
+    }
+
+        img {
+            height: 150px;
+            width: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 15px;
+
+            @media (max-width: 900px) {
+            height: 100px;
+    }
+        }
+
+        .separator {
+            border: none;
+            height: 1.5px;
+            background-color: rgba(118, 123, 255, 1);
+            width: 100%;
+            margin: 18px 0;
+            }
+        
+
+    }
+
+    .column2 {
+        display: flex;
+        max-width: 46%;
+        flex-direction: column; 
+        flex: 1;
+
+        @media (max-width: 900px) {
+        max-width: 100%;
+    }
+
+        .fundher-card {
+
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 15px;
+
+            @media (max-width: 900px) {
+            height: 100px;
+    }
+        }
+
+        .italics-quote {
+
+        p {
+            font-style: italic;
+            color: #70829f;
+
+        }}
+
+        .separator {
+        border: none;
+        height: 2px;
+        background-color: rgba(118, 123, 255, .30);
+        width: 100%;
+        margin: 18px 0;
+        }
+
+        }
+
+        .separator {
+            border: none;
+            height: 2px;
+            background-color: rgba(118, 123, 255, 1);
+            width: 100%;
+            margin: 18px 0;
+            }
+
+    }
+
+    .column3 {
+        display: flex;
+        max-width: 27%;
+        flex-direction: column;
+        flex: 1;
+
+        @media (max-width: 900px) {
+        max-width: 100%;
+    }
+
+    .judging-info-title {
+        @media screen and (max-width: 900px) {
+            margin-top: 40px;
+        }
+    }
+
+        img {
+            height: 420px;
+            width: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 15px;
+
+            @media (max-width: 900px) {
+            height: 100px;
+            object-position: center; 
+    }
+        }
+
+        .separator {
+            border: none;
+            height: 2px;
+            background-color: rgba(118, 123, 255, 1);
+            width: 100%;
+            margin: 18px 0;
+            }
+    }
+    
+}
+

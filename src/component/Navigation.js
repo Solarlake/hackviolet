@@ -40,17 +40,20 @@ const Navigation = () => {
                         </button>
                     </div>
                     
-                    <div className="Register-btn">
-                        <img className="registericon" src={registericon} alt="register icon" />
-                        <a
-                            href="https://tally.so/r/n0gdr6"
-                            target="_blank"  
-                            rel="noopener noreferrer" 
-                            className="register-button"
-                        >
-                            Register for 2026
-                        </a>
+                    <a
+                    href="https://tally.so/r/n0gdr6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="register-link"
+                    ><div className="Register-btn">
+                        <img
+                        className="registericon"
+                        src={registericon}
+                        alt="register icon"
+                        />
+                        <span className="register-button">Register for 2026</span>
                     </div>
+                    </a>
                 </div>
             </div>
 

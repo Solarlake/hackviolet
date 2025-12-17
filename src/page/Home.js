@@ -4,18 +4,15 @@ import { useLocation } from 'react-router-dom';
 import CountdownTimer from "react-countdown";
 import { Link } from 'react-router-dom';
 
-import Blob from "../asset/svg/blob.svg";
-import FooterBlob from "../asset/image/footer_blob.png";
+
 import HeaderText from "../asset/image/hackviolet_text_gradient.png";
-import Rocket from "../asset/image/rocket.png";
-import Island from "../asset/image/island.png";
-import Clouds from "../asset/image/clouds_plenty.png";
 import Gallery from "../component/Gallery";
 import FAQ from "../component/FAQ";
 import Schedule from "../component/Schedule";
 import Prizes from "../component/Prizes";
 import Sponsors from "../component/Sponsors";
 import Team from "../component/Team";
+import Innovation from "../component/Innovation";
 import Footer from "../component/Footer";
 import Socials from "../component/Socials";
 import Button from "../component/Button";
@@ -176,6 +173,10 @@ const Home = () => {
                     </div>
 
                 </div>
+            </div>
+
+            <div className="innovation-section">
+                <Innovation />
             </div>
 
 
