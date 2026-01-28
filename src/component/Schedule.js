@@ -4,7 +4,7 @@ import ScheduleData from "../content/schedule.json";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const eventTypeColors = {
-    HackViolet: "#6a4c9c",
+    HackViolet: "#8477ffff",
     Club: "#ff6347",
     Meal: "#28a745",
     MLH: "#00bcd4",

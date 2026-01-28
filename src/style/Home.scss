@@ -715,8 +715,11 @@ html {
     }
 
     .pinkFlower {
+        display: block;
+        
         @media screen and (max-width: 900px) {
-            transform: scale(70%);
+            transform: scale(40%);
+            transform-origin: bottom right;
         }
     }
 
@@ -761,20 +764,8 @@ html {
         // }
     }
 
-    .schedule {
-        scroll-margin-top: 10em;
-        .header {
-            text-align: center;
-            font-family: "PP Editorial New";
-            font-size: 4em;
-            font-weight: 400;
-            font-style: italic;
-            color: #3A475A;
-
-            @media (max-width: 900px) {
-                font-size: 3em;
-            }
-        }
+    .schedule-marquee {
+        margin-bottom: -4em;
     }
 
     .prizes {
@@ -794,11 +785,21 @@ html {
         }
     }
 
+    .sponsor-flowers {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+
     .sponsors {
         scroll-margin-top: 10em;
+        position: relative;
+        overflow: hidden;
         .header {
             text-align: center;
-            font-family: "PP Editorial New";
+            font-family: "Funnel Sans";
             font-size: 4em;
             font-weight: 400;
             font-style: italic;
@@ -809,6 +810,21 @@ html {
                 font-size: 3em;
             }
         }
+        #sponsors-thank-you {
+            text-align: center;
+            font-family: "Funnel Sans";
+            font-size: 1.2em;
+            font-weight: 400;
+            color: #ffffff;
+            margin: 2em 0em;
+            
+
+            @media (max-width: 900px) {
+                font-size: 1em;
+                margin: 0 1em 1.5em 1em;
+            }
+        }
+
     }
 
     .board {

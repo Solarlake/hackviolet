@@ -32,6 +32,13 @@ const Marquee = ({
         <span>{text}</span>
         <span>{text}</span>
         <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
+        <span>{text}</span>
       </div>
     </div>
   );

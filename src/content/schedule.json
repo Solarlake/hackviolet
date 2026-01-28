@@ -4,8 +4,8 @@
             "id": 1,
             "title": "Check-In",
             "startTime": "9:30AM",
-            "endTime": "10:30AM",
-            "location": "Goodwin 145",
+            "endTime": "10:00AM",
+            "location": "Room 226",
             "type": ""
         },
         {
@@ -13,7 +13,7 @@
             "title": "Opening Ceremony",
             "startTime": "10:30AM",
             "endTime": "11:00AM",
-            "location": "Goodwin Auditorium",
+            "location": "Squires Auditorium",
             "type": ""
         },
         {
@@ -21,233 +21,306 @@
             "title": "Team Formation + Brainstorming",
             "startTime": "11:00AM",
             "endTime": "11:30AM",
-            "location": "DDS 155",
+            "location": "Squires Auditorium",
             "type": "HackViolet"
         },
         {
             "id": 4,
-            "title": "Mentor Event (Speed Dating)",
+            "title": "Mentor Scavenger Hunt",
             "startTime": "11:00AM",
             "endTime": "12:30PM",
-            "location": "DDS 132",
+            "location": "Room 305",
             "type": "HackViolet"
         },
         {
             "id": 5,
-            "title": "Introduction to Hackathons with VT Hacks",
+            "title": "Hacking with GitHub Copilot with MLH",
             "startTime": "11:30AM",
             "endTime": "12:30PM",
-            "location": "DDS 150",
-            "type": "Club"
+            "location": "Room 219",
+            "type": "MLH"
         },
         {
             "id": 6,
-            "title": "Lunch - Cafe Mekong",
+            "title": "Lunch",
             "startTime": "12:30PM",
             "endTime": "1:00PM",
-            "location": "TBA",
+            "location": "Room 226",
             "type": "Meal"
         },
         {
             "id": 7,
-            "title": "Intro to API Integration with SWE",
+            "title": "A Guide to Hackathon Networking with Coffee Chats VT",
             "startTime": "1:00PM",
             "endTime": "1:30PM",
-            "location": "DDS 155",
+            "location": "Room 236",
             "type": "Club"
         },
         {
             "id": 8,
-            "title": "Company Sponsor Fair",
-            "startTime": "1:30PM",
-            "endTime": "2:30PM",
-            "location": "DDS Atrium",
-            "type": "Company"
+            "title": "Intro to Web Dev with Girls Who Code",
+            "startTime": "1:00PM",
+            "endTime": "1:30PM",
+            "location": "Room 238",
+            "type": "Club"
         },
         {
             "id": 9,
-            "title": "Club Fair",
+            "title": "Keynote Speaker Panel",
             "startTime": "1:30PM",
-            "endTime": "2:30PM",
-            "location": "DDS 150",
+            "endTime": "2:00PM",
+            "location": "Squires Auditorium",
             "type": "HackViolet"
         },
         {
             "id": 10,
-            "title": "MLH GitHub Copilot",
-            "startTime": "2:30PM",
-            "endTime": "3:00PM",
-            "location": "DDS 155",
-            "type": "MLH"
+            "title": "Intro to AI/ML",
+            "startTime": "2:00PM",
+            "endTime": "2:30PM",
+            "location": "Room 219",
+            "type": "HackViolet"
         },
         {
             "id": 11,
-            "title": "LLMs using Python with VT AIML",
-            "startTime": "3:00PM",
-            "endTime": "4:00PM",
-            "location": "DDS 155",
+            "title": "How to Win Recruiters' Hearts with CS Careers",
+            "startTime": "2:30PM",
+            "endTime": "3:00PM",
+            "location": "Rooom 232",
             "type": "Club"
         },
         {
             "id": 12,
-            "title": "Arcfield - Accelerating Model Based Systems Engineering with Generative AI",
-            "startTime": "4:00PM",
-            "endTime": "5:00PM",
-            "location": "DDS 150",
+            "title": "Company Career Fair",
+            "startTime": "3:00PM",
+            "endTime": "4:00PM",
+            "location": "Commonwealth Ballroom A",
             "type": "Company"
         },
         {
             "id": 13,
-            "title": "Q&A with Keynote Speaker",
-            "startTime": "5:00PM",
-            "endTime": "5:30PM",
-            "location": "DDS 155",
-            "type": "HackViolet"
+            "title": "Company Sponsor Workshop",
+            "startTime": "4:00PM",
+            "endTime": "4:30PM",
+            "location": "Room 236",
+            "type": "Company"
         },
+        
         {
             "id": 14,
-            "title": "Intro to ML + Neural Networks with VT GWC",
-            "startTime": "5:30PM",
-            "endTime": "6:30PM",
-            "location": "DDS 150",
-            "type": "Club"
-        },
-        {
-            "id": 15,
-            "title": "MLH Werewolf",
-            "startTime": "6:30PM",
-            "endTime": "7:00PM",
-            "location": "DDS 155",
+            "title": "Intro to Google AI Studio with MLH",
+            "startTime": "4:00PM",
+            "endTime": "4:30PM",
+            "location": "Room 219",
             "type": "MLH"
         },
         {
+            "id": 15,
+            "title": "Company Sponsor Workshop",
+            "startTime": "4:30PM",
+            "endTime": "5:00PM",
+            "location": "Room 234",
+            "type": "Company"
+        },
+        {
             "id": 16,
-            "title": "Neural Network Applications with VT GWC",
-            "startTime": "7:00PM",
-            "endTime": "8:00PM",
-            "location": "DDS 150",
-            "type": "Club"
+            "title": "Intern Panel",
+            "startTime": "5:00PM",
+            "endTime": "6:00PM",
+            "location": "Squires Auditorium",
+            "type": "HackViolet"
         },
         {
             "id": 17,
-            "title": "Dinner - Dominos",
-            "startTime": "8:00PM",
-            "endTime": "8:30PM",
-            "location": "TBA",
-            "type": "Meal"
+            "title": "Company/Engineers' Panel",
+            "startTime": "6:00PM",
+            "endTime": "6:30PM",
+            "location": "Squires Auditorium",
+            "type": "HackViolet"
         },
         {
             "id": 18,
-            "title": "Jeopardy",
-            "startTime": "8:00PM",
-            "endTime": "8:30PM",
-            "location": "DDS 155",
+            "title": "Resume Tips and Tricks",
+            "startTime": "6:30PM",
+            "endTime": "7:00PM",
+            "location": "Room 234",
             "type": "HackViolet"
         },
         {
             "id": 19,
-            "title": "Movie Night",
+            "title": "How to Organize a Hackathon",
+            "startTime": "7:00PM",
+            "endTime": "7:30PM",
+            "location": "Room 234",
+            "type": "HackViolet"
+        },
+        {
+            "id": 20,
+            "title": "Cybersecurity/CTF Workshop",
+            "startTime": "7:30PM",
+            "endTime": "8:00PM",
+            "location": "Room 236",
+            "type": "HackViolet"
+        },
+        {
+            "id": 21,
+            "title": "Dinner",
+            "startTime": "8:00PM",
+            "endTime": "8:30PM",
+            "location": "Room 226",
+            "type": "Meal"
+        },
+        {
+            "id": 22,
+            "title": "Leetcode",
             "startTime": "8:30PM",
-            "endTime": "11:30PM",
-            "location": "DDS 150",
+            "endTime": "9:30PM",
+            "location": "Room 234",
+            "type": "HackViolet"
+        },
+        {
+            "id": 23,
+            "title": "Tetris",
+            "startTime": "8:30PM",
+            "endTime": "9:30PM",
+            "location": "Room 236",
+            "type": "HackViolet"
+        },
+        {
+            "id": 24,
+            "title": "MonkeyType",
+            "startTime": "9:30PM",
+            "endTime": "10:30PM",
+            "location": "Room 238",
+            "type": "HackViolet"
+        },
+        {
+            "id": 25,
+            "title": "Console Video & Board Games",
+            "startTime": "9:30PM",
+            "endTime": "10:30PM",
+            "location": "Breakzone",
             "type": "HackViolet"
         }
     ],
     "sunday": [
         {
-            "id": 20,
-            "title": "Devpost & How to Demo Workshop",
-            "startTime": "9:30AM",
-            "endTime": "10:00AM",
-            "location": "DDS 150",
-            "type": "HackViolet"
-        },
-        {
-            "id": 21,
-            "title": "Pitching and Presentation Skills Workshop",
-            "startTime": "9:30AM",
-            "endTime": "10:00AM",
-            "location": "DDS 150",
-            "type": "HackViolet"
-        },
-        {
-            "id": 22,
-            "title": "Brunch - Panera",
-            "startTime": "10:00AM",
-            "endTime": "10:30AM",
-            "location": "TBA",
-            "type": "Meal"
-        },
-        {
-            "id": 23,
-            "title": "INITIAL SUBMISSIONS DUE @ DEVPOST",
-            "startTime": "10:30AM",
-            "endTime": "",
-            "location": "",
-            "type": ""
-        },
-        {
-            "id": 24,
-            "title": "Hack With Us (Legally!) - SQL Injection with WiCys VT",
-            "startTime": "11:00AM",
-            "endTime": "12:30PM",
-            "location": "DDS 150",
-            "type": "Club"
-        },
-        {
-            "id": 25,
-            "title": "CODING ENDS & FINAL DEMOS DUE @ DEVPOST",
-            "startTime": "12:30PM",
-            "endTime": "",
-            "location": "",
-            "type": ""
-        },
-        {
             "id": 26,
-            "title": "Speed Stacking",
-            "startTime": "1:00PM",
-            "endTime": "1:30PM",
-            "location": "DDS 155",
-            "type": "HackViolet"
+            "title": "9:30 AM - INITIAL SUBMISSIONS DUE @ DEVPOST",
+            "startTime": "9:30AM",
+            "endTime": "",
+            "location": "",
+            "type": ""
         },
         {
             "id": 27,
-            "title": "VT Therapy Dogs",
-            "startTime": "1:30PM",
-            "endTime": "2:00PM",
-            "location": "DDS Atrium",
+            "title": "Devpost & How to Demo Workshop",
+            "startTime": "10:00AM",
+            "endTime": "10:30AM",
+            "location": "Room 234",
             "type": "HackViolet"
         },
         {
             "id": 28,
-            "title": "Tetris",
-            "startTime": "2:00PM",
-            "endTime": "3:30PM",
-            "location": "DDS 155",
+            "title": "Pitching and Presentation Skills Workshop",
+            "startTime": "10:00AM",
+            "endTime": "10:30AM",
+            "location": "Room 238",
             "type": "HackViolet"
         },
         {
             "id": 29,
-            "title": "React with Entrepreneurship Club",
-            "startTime": "3:30PM",
-            "endTime": "4:00PM",
-            "location": "DDS 150",
-            "type": "Club"
+            "title": "Brunch",
+            "startTime": "10:30AM",
+            "endTime": "11:00AM",
+            "location": "Room 226",
+            "type": "Meal"
         },
         {
             "id": 30,
-            "title": "LinkedIn Essentials with CS Careers",
-            "startTime": "4:00PM",
-            "endTime": "5:00PM",
-            "location": "DDS 155",
-            "type": "Club"
+            "title": "11:00 AM - CODING ENDS & FINAL DEMOS DUE @ DEVPOST",
+            "startTime": "11:00 AM",
+            "endTime": "",
+            "location": "",
+            "type": ""
         },
         {
             "id": 31,
-            "title": "Closing Ceremony",
-            "startTime": "5:00PM",
+            "title": "TechTogether Meetup with MLH",
+            "startTime": "11:00AM",
+            "endTime": "12:00PM",
+            "location": "Room 219",
+            "type": "MLH"
+        },
+        {
+            "id": 32,
+            "title": "JUDGING BEGINS",
+            "startTime": "11:30AM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 33,
+            "title": "Console Video & Board Games",
+            "startTime": "12:00PM",
+            "endTime": "1:00PM",
+            "location": "BreakZone",
+            "type": "HackViolet"
+        },
+        {
+            "id": 34,
+            "title": "Resume Review - 1:1 Feedback",
+            "startTime": "1:00PM",
+            "endTime": "2:00PM",
+            "location": "Room 238",
+            "type": "HackViolet"
+        },
+        {
+            "id": 35,
+            "title": "LinkedIn Workshop",
+            "startTime": "2:00PM",
+            "endTime": "2:30PM",
+            "location": "Room 232",
+            "type": "HackViolet"
+        },
+        {
+            "id": 36,
+            "title": "Mock Interviews",
+            "startTime": "2:30PM",
+            "endTime": "3:30PM",
+            "location": "Room 234",
+            "type": "HackViolet"
+        },
+        {
+            "id": 37,
+            "title": "Jeopardy + Kahoot - VT/HV/Women in CS Trivia",
+            "startTime": "3:30PM",
+            "endTime": "4:30PM",
+            "location": "Room 236",
+            "type": "HackViolet"
+        },
+        {
+            "id": 38,
+            "title": "Movie Night",
+            "startTime": "4:30PM",
             "endTime": "6:00PM",
-            "location": "Hitt 338",
+            "location": "Room 219",
+            "type": "HackViolet"
+        },
+        {
+            "id": 39,
+            "title": "JUDGING ENDS",
+            "startTime": "6:00PM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 39,
+            "title": "CLOSING CEREMONY & AWARDS",
+            "startTime": "6:00PM",
+            "endTime": "7:00PM",
+            "location": "Squires Auditorium",
             "type": ""
         }
     ]

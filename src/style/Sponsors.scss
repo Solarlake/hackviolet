@@ -13,8 +13,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 4em; // space between tiers
-        margin-bottom: 4em;
+        gap: 2em; // space between tiers
+        margin-bottom: 3em;
 
         .tier {
             display: flex;
@@ -24,9 +24,10 @@
             gap: 1em; // space between tier name and logos
 
             p {
-                font-family: "PP Supply Sans";
+                font-family: "Funnel Sans";
                 text-transform: uppercase;
-                font-size: 1.3em;
+                font-size: 2.3em;
+                font-weight: 600;
             }
 
             .logo_container {
@@ -35,7 +36,7 @@
                 align-items: center;
                 row-gap: 1.4em; // space between logos
                 column-gap: 3em; // space between logos
-                flex-wrap: wrap;
+                flex-wrap: column;
             }
         }
 
@@ -55,29 +56,38 @@
         
         
         .lilac {
-            p {
-                color: #ab64be;
-            }
-            
-            .logo_container .company_logo {
-                max-height: 5em;
-                
-                @media (max-width: 900px) {
-                    max-height: 2em;
-                }
-            }    
+    p {
+        color: #ffffff;
+    }
+    
+    .logo_container {
+        display: flex;
+        flex-direction: row;
+        
+        @media (max-width: 900px) {
+            flex-direction: column;
         }
+        
+        .company_logo {
+            max-height: 9em;
+            
+            @media (max-width: 900px) {
+                max-height: 5em;
+            }
+        }
+    }    
+}
         
         .lavender {
             p {
-                color: #725bf2;
+                color: #ffffff;
             }
             
             .logo_container .company_logo {
-                max-height: 2em;
+                max-height: 6em;
 
                 @media (max-width: 900px) {
-                    max-height: 1em;
+                    max-height: 4em;
                 }
             }    
         }

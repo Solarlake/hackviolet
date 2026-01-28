@@ -9,10 +9,15 @@
     align-items: flex-start;
     row-gap: 0.5em;
     width: 100vw;
+    p {
+        color: #FFF6FD;
+    }
+
     h3 {
         font-weight: 600;
         font-family: 'Funnel Sans';
         font-size: 24pt;
+        color: #FFF6FD;
 
         @media screen and (max-width: 900px) {
             font-size: 2em;

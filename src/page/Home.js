@@ -107,14 +107,14 @@ const Home = () => {
                             >
                             Register
                         </a>
-                        <Link to="/sponsorpage" className="sponsor-button">
+                        {/* <Link to="/sponsorpage" className="sponsor-button">
                             Sponsor
-                        </Link>
+                        </Link> */}
 
                         
                         
                     </div>
-                    <div className="apply-judge-mentor">
+                    {/* <div className="apply-judge-mentor">
                         <p>Apply to be a judge or mentor!</p>
 
                         <div className="judge-mentor">
@@ -137,7 +137,7 @@ const Home = () => {
                             </a>
                         </div>
 
-                    </div>
+                    </div> */}
 
                     {/* <div className="socials">
                         <Socials />
@@ -175,6 +175,15 @@ const Home = () => {
                 </div>
             </div>
 
+            <div className="schedule-marquee">
+                <Marquee 
+                    text=" SCHEDULE /" 
+                    speed={50}
+                    color="#08142fff"
+                />
+            </div>
+            <Schedule />
+
             <div className="innovation-section">
                 <Innovation />
             </div>
@@ -183,10 +192,13 @@ const Home = () => {
             <div className= "sponsors" id="sponsors">
                 <Marquee 
                     text=" SPONSORS /" 
-                    speed={30}
+                    speed={50}
                     color="#FFF6FD"
                 />
-                <div className="sponsors-text">
+                <p id="sponsors-thank-you">Thank you to the sponsors that help make HackViolet 2026 possible!</p>
+                <Sponsors />
+                
+                {/* <div className="sponsors-text">
                     <p className="sponsors-support">Supporting HackViolet gives your organization a chance to champion diversity in tech, gain visibility among engaged and ambitious student innovators, and help shape the next generation of makers, problem-solvers, and future employees.</p>
                     <p>Email us at hackvioletvt@gmail.com</p>
                 </div>
@@ -210,25 +222,23 @@ const Home = () => {
                         >
                             Sponsorship Package
                         </a>
-                    </div>
+                    </div> */}
                     <div className="sponsor-flowers">
                         <img src={pinkFlower} alt="" className="pinkFlower" />
                     </div>
-                </div>
-
-
+                
             </div>
 
-            {/* 
-            <div id="schedule" className="schedule">
-            <p className="header">Schedule</p>
-             <Schedule />
-            </div>
+            
+            {/* <Marquee 
+                text=" PRIZES /" 
+                speed={40}
+            />
+
             <div id="prizes" className="prizes">
-            <p className="header">Prizes</p>
             <Prizes />
-            </div>
-            */}
+            </div> */}
+            
 
 
             <div className="faqshape">
@@ -237,7 +247,7 @@ const Home = () => {
 
             <Marquee 
                 text=" FREQUENTLY ASKED QUESTIONS /" 
-                speed={60}
+                speed={80}
             />
 
             <div id="faq" className="faq">
@@ -256,7 +266,7 @@ const Home = () => {
            */ }
             <Marquee 
                 text="MEET THE TEAM /" 
-                speed={30}
+                speed={40}
             />
             <div className="board">
                 <Team />

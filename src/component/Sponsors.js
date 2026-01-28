@@ -4,27 +4,28 @@ import Button from "./Button";
 
 import apexLogo from "../asset/image/logos/apex.jpg";
 import arcfieldLogo from "../asset/image/logos/arcfield.jpg";
-import capitalOneLogo from "../asset/image/logos/capital-one.jpg";
-import cciLogo from "../asset/image/logos/cci.jpg";
+import capitalOneLogo from "../asset/image/logos/capital-one-1.png";
+import cciLogo from "../asset/image/logos/cci-1.png";
 import codePathLogo from "../asset/image/logos/codepath.jpg";
 import convergintLogo from "../asset/image/logos/convergint.jpg";
-import mcDeanLogo from "../asset/image/logos/mc-dean.jpg";
+import mcDeanLogo from "../asset/image/logos/mc-dean-1.png";
 
 const Sponsors = () => {
     return (
         <div className="sponsors_container">
             <div className="tier_container">
-                <div className="tier orchid">
+                {/* <div className="tier orchid">
                     <p>Orchid</p>
                     <div className="logo_container">
                         <a href="https://www.arcfield.com/" target="_blank" rel="noopener noreferrer">
                             <img src={arcfieldLogo} alt="Arcfield Logo" className="company_logo" />
                         </a>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="tier lilac">
                     <p>Lilac</p>
+                    <div style={{ width: '900px', height: '1px', backgroundColor: 'white' }} />
                     <div className="logo_container">
                         <a href="https://www.mcdean.com/" target="_blank" rel="noopener noreferrer">
                             <img src={mcDeanLogo} alt="MC Dean Logo" className="company_logo" />
@@ -32,24 +33,19 @@ const Sponsors = () => {
                         <a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">
                             <img src={capitalOneLogo} alt="Capital One Logo" className="company_logo" />
                         </a>
-                        <a href="https://apex.vt.edu/" target="_blank" rel="noopener noreferrer">
-                            <img src={apexLogo} alt="Apex Logo" className="company_logo" />
-                        </a>
+                        
                     </div>
                 </div>
 
                 <div className="tier lavender">
                     <p>Lavender</p>
+                    <div style={{ width: '300px', height: '1px', backgroundColor: 'white' }} />
                     <div className="logo_container">
-                        <a href="https://www.convergint.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={convergintLogo} alt="Convergint Logo" className="company_logo" />
-                        </a>
+                        
                         <a href="https://cyberinitiative.org/" target="_blank" rel="noopener noreferrer">
                             <img src={cciLogo} alt="CCI Logo" className="company_logo" />
                         </a>
-                        <a href="https://www.codepath.org/" target="_blank" rel="noopener noreferrer">
-                            <img src={codePathLogo} alt="CodePath Logo" className="company_logo" />
-                        </a>
+                        
                     </div>
                 </div>
             </div>
