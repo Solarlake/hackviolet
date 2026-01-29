@@ -42,7 +42,7 @@
         },
         {
             "id": 6,
-            "title": "Lunch",
+            "title": "Lunch - Pizza",
             "startTime": "12:30PM",
             "endTime": "1:00PM",
             "location": "Room 226",
@@ -163,7 +163,7 @@
         },
         {
             "id": 21,
-            "title": "Dinner",
+            "title": "Dinner - Cafe Mekong",
             "startTime": "8:00PM",
             "endTime": "8:30PM",
             "location": "Room 226",
@@ -229,7 +229,7 @@
         },
         {
             "id": 29,
-            "title": "Brunch",
+            "title": "Brunch - Panera",
             "startTime": "10:30AM",
             "endTime": "11:00AM",
             "location": "Room 226",
@@ -316,7 +316,7 @@
             "type": ""
         },
         {
-            "id": 39,
+            "id": 40,
             "title": "CLOSING CEREMONY & AWARDS",
             "startTime": "6:00PM",
             "endTime": "7:00PM",

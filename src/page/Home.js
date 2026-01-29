@@ -110,7 +110,15 @@ const Home = () => {
                         {/* <Link to="/sponsorpage" className="sponsor-button">
                             Sponsor
                         </Link> */}
-
+                        <a
+                            href="https://discord.gg/DUpdFB6742"
+                            target="_blank"  
+                            rel="noopener noreferrer" 
+                            className="discord-button"
+                            >
+                            Join Discord Server
+                        </a>
+    
                         
                         
                     </div>
@@ -175,14 +183,16 @@ const Home = () => {
                 </div>
             </div>
 
+            <div className="schedule-container">
             <div className="schedule-marquee">
                 <Marquee 
                     text=" SCHEDULE /" 
                     speed={50}
-                    color="#08142fff"
+                    color="rgb(251, 240, 255)"
                 />
             </div>
             <Schedule />
+            </div>
 
             <div className="innovation-section">
                 <Innovation />
