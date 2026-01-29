@@ -9,6 +9,9 @@ const Marquee = ({
   backgroundColor = 'transparent',
   padding = '1rem 0'
 }) => {
+  // Create an array with exactly the amount of repetitions needed
+  const repetitions = Array(10).fill(text);
+  
   return (
     <div 
       className="marquee-container" 
@@ -21,24 +24,13 @@ const Marquee = ({
       }}
     >
       <div className="marquee-content">
-        {/* repeat text multiple times for looping */}
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
-        <span>{text}</span>
+        {repetitions.map((item, index) => (
+          <span key={index}>{item}</span>
+        ))}
+        {/* Duplicate the exact same content for seamless loop */}
+        {repetitions.map((item, index) => (
+          <span key={`duplicate-${index}`}>{item}</span>
+        ))}
       </div>
     </div>
   );

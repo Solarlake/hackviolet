@@ -257,7 +257,7 @@ const Home = () => {
 
             <Marquee 
                 text=" FREQUENTLY ASKED QUESTIONS /" 
-                speed={80}
+                speed={90}
             />
 
             <div id="faq" className="faq">
