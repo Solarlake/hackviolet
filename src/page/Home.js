@@ -190,7 +190,9 @@ const Home = () => {
                     speed={50}
                     color="rgb(251, 240, 255)"
                 />
+                
             </div>
+            <p className="sponsors-thank-you">Attendees of these events will be entered into a separate lottery for giftcards!</p>
             <Schedule />
             </div>
 
@@ -205,7 +207,7 @@ const Home = () => {
                     speed={50}
                     color="#FFF6FD"
                 />
-                <p id="sponsors-thank-you">Thank you to the sponsors that help make HackViolet 2026 possible!</p>
+                <p className="sponsors-thank-you">Thank you to the sponsors that help make HackViolet 2026 possible!</p>
                 <Sponsors />
                 
                 {/* <div className="sponsors-text">

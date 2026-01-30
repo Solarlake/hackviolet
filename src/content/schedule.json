@@ -66,7 +66,7 @@
         },
         {
             "id": 9,
-            "title": "Keynote Speaker Panel",
+            "title": "Keynote Speaker Panel with Lisa Finneran - VP of Engineering at General Dynamics Mission Systems",
             "startTime": "1:30PM",
             "endTime": "2:00PM",
             "location": "Squires Auditorium",
@@ -254,7 +254,7 @@
         {
             "id": 32,
             "title": "JUDGING BEGINS",
-            "startTime": "11:30AM",
+            "startTime": "11:45AM",
             "endTime": "",
             "location": "",
             "type": ""
@@ -269,7 +269,7 @@
         },
         {
             "id": 34,
-            "title": "Resume Review - 1:1 Feedback",
+            "title": "Resume Review Workshop",
             "startTime": "1:00PM",
             "endTime": "2:00PM",
             "location": "Room 238",
@@ -293,7 +293,7 @@
         },
         {
             "id": 37,
-            "title": "Jeopardy + Kahoot - VT/HV/Women in CS Trivia",
+            "title": "Women in CS Jeopardy and Kahoot",
             "startTime": "3:30PM",
             "endTime": "4:30PM",
             "location": "Room 236",
@@ -301,20 +301,21 @@
         },
         {
             "id": 38,
+            "title": "JUDGING ENDS",
+            "startTime": "4:00PM",
+            "endTime": "",
+            "location": "",
+            "type": ""
+        },
+        {
+            "id": 39,
             "title": "Movie Night",
             "startTime": "4:30PM",
             "endTime": "6:00PM",
             "location": "Room 219",
             "type": "HackViolet"
         },
-        {
-            "id": 39,
-            "title": "JUDGING ENDS",
-            "startTime": "6:00PM",
-            "endTime": "",
-            "location": "",
-            "type": ""
-        },
+        
         {
             "id": 40,
             "title": "CLOSING CEREMONY & AWARDS",
