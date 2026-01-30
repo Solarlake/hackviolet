@@ -209,6 +209,18 @@ html {
         }
     }
 
+        .arrow {
+        width: 1em;
+        height: 1em;
+    }
+    .arrow__down {
+    width: 1em;
+    height: 1em;
+    transform: rotate(90deg); 
+}
+
+
+
     .section {
         scroll-margin-top: 10em;
 

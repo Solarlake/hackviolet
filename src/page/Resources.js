@@ -77,8 +77,11 @@ const Resources = () => {
                         <Link to="/resources#location" className="quicklink">Location</Link>
                         <Link to="/resources#raffle" className="quicklink">Raffle Giveaways</Link>
                         <Link to="/resources#teams" className="quicklink">Teams</Link>
+                        <Link to="/resources#themes" className="quicklink">Themes</Link>
                         <Link to="/resources#mentors" className="quicklink">Help & Mentors</Link>
                         <Link to="/resources#judging" className="quicklink">Judging</Link>
+                        <Link to="/resources#submission" className="quicklink">Project Submission</Link>
+                        <Link to="/resources#starter" className="quicklink">Starter Packs</Link>
                     </div>
 
             <div id="rules" className="section">
@@ -93,6 +96,7 @@ const Resources = () => {
                         <li>Most code must be written by you, but public APIs are allowed. You must cite any sources used.</li>
                         <li>All projects will be screened for plagiarism. If your team’s project is suspected of plagiarism by the judges, HackViolet will review your submission to confirm for signs of cheating. If your submission is not found satisfactory, your project will be disqualified.</li>
                         <li className="indented">Invalid submissions can include: missing or broken Github link, missing elements in the Devpost, using code without citing it.</li>
+                        <li> HackViolet does NOT provide housing and no one is allowed to stay on campus overnight. Please plan accordingly.</li>
                     </ul>
                     </p>
                     </div>
@@ -104,7 +108,7 @@ const Resources = () => {
                 <div className="text">
                     <div className="copy">
                         <p><strong>PHYSICAL LOCATION</strong></p>
-                        <p>Our hackathon will be held mainly at Squires Student Center, on the Virginia Tech campus.</p>
+                        <p>Our hackathon will be held mainly at Squires Student Center, on the Virginia Tech campus. Once inside, check-in will be held in Room 226, and then our opening ceremony will be in the Squires Auditorium. Hackers will then be directed to the Commonwealth Ballroom, where they can work on their projects! Specific room locations for all events are detailed in the schedule below.</p>
 
                         <ul>
                             <li><strong>Squires Student Center Address:</strong> 290 College Ave, Blacksburg, VA 24060</li>
@@ -126,21 +130,21 @@ const Resources = () => {
                 <p className="header">Raffle Giveaways</p>
                 <div className="text">
                     <div className="copy">
-                        <p>Raffle information coming soon!</p>
 
-                        {/* <p><strong>Raffle System:</strong></p>
+                        <p>Instead of using raffle tickets, this year we will use a check-in system. Find a HackViolet officer at the event you attend to fill out the check-in form and earn points to win a prize!</p>
+                        <p><strong>Point System:</strong></p>
                         <ul>
-                        <li><strong>5 tickets:</strong> Attending Company Sponsor Fair, Q&A Session (*5 tickets for each event)</li>
-                        <li><strong>3 tickets:</strong> Attending a workshop or event, Mentor Speed Dating</li>
-                        <li><strong>1 ticket:</strong> Asking a question during a workshop</li>
-                        <li><strong>1 ticket:</strong> Follow us on Instagram @hackvioletvt</li>
+                        <li><strong>5 tickets:</strong> Attending Keynote Speaker Panel, Company Career Fair, Company/Engineers’ Panel, or Intern Panel</li>
+                        <li><strong>3 tickets:</strong>  Attending a workshop or Mentor Scavenger Hunt</li>
                         </ul>
 
-                        <p><strong>Most Engaged Hacker:</strong> $150 gift card will be awarded to the hacker holding the most tickets by Sunday!</p>
+                        <p><strong>Most Engaged Hacker:</strong>  awarded to the hacker holding the most tickets by Sunday!
+24” HD Smart TV
+</p>
 
-                        <p><strong>Raffle Winners:</strong> VT Backpack or VT Hoodie</p>
+                        <p><strong>Raffle Winners:</strong> Squishmallows</p>
 
-                        <p>Winners will be announced at the Closing Ceremony on Sunday, Feb 2nd @ 5 PM.</p> */}
+                        <p>Winners will be announced at the Closing Ceremony on Sunday, Feb 1st @ 6 PM.</p>
                     </div>
                 </div>
             </div>
@@ -149,11 +153,26 @@ const Resources = () => {
                 <p className="header">Teams</p>
                 <div className="text">
                     <div className="copy">
-                        <p>If you are planning to demo your project to compete for a prize, you must be in a team of 2-4 people. You can create a team beforehand or find team members in the <strong>#🔍find-a-team</strong> channel. We'll also have team formation activities and plenty of opportunities for you to meet other people!</p>
+                        <p>If you are planning to demo your project to compete for a prize, you must be in a team of 2-4 people. You can create a team beforehand or find team members in the <strong>#looking-for-team</strong> channel. We'll also have team formation activities and plenty of opportunities for you to meet other people!</p>
 
                         <p><strong>First-Time Hacker Teams</strong></p>
                         <p>First-time hacker teams are composed of majority first-time hackers, or people who are submitting to a hackathon for the first time. For example, if you have a team of 4, 3 of the members must be first-time hackers to be eligible for first-time hacker prize categories.</p>
                     </div>
+                </div>
+            </div>
+
+            <div id="themes" className="section">
+                <p className="header">Themes</p>
+                <div className="text">
+                    <div className="copy">
+                        <p>There are no strict themes for HackViolet 2026, so you are free to build any project you’d like. You can use these topics for inspiration:</p>
+                        <ul>
+                            <li><strong>Female-Empowerment: </strong>Create a project that tackles issues that women face, aids female-empowerment, and/or combats the gender gap in tech.</li>
+                            <li><strong>Social Good: </strong>Create a project that aims to create a real-world solution. How can we benefit a large number of people and make a positive impact on society?</li>
+                            <li><strong>Sustainability</strong>Create a project that is dedicated to supporting sustainability and conservation efforts. How can we live harmoniously with our planet?</li>
+                        </ul>
+                        <p>You may also want to keep the prize categories in mind and base your project on one or more of those.</p>
+                        </div>
                 </div>
             </div>
 
@@ -163,17 +182,18 @@ const Resources = () => {
                     <div className="copy">
                         <p><strong>General Help</strong></p>
                         <ul>
-                        <li>Post questions in the appropriate Question channels in the Discord Server, such as <strong>#❓-ask-organizers</strong>. You can receive help from mentors, organizers, and fellow hackers!</li>
-                        <li>Please check the <strong>#faq</strong> channel before asking your question, as it may be answered there.</li>
+                        <li>Post questions in the appropriate Question channels in the Discord Server, such as <strong>#❓-ask-an-organizer</strong>. You can receive help from mentors, organizers, and fellow hackers!</li>
+                        <li>Please check the <strong>#resources</strong> channel before asking your question, as it may be answered there.</li>
                         <li>Please refrain from DMing organizers privately and use the help channels, as DMs are very hard for us to keep track of.</li>
+                        <li>Find a HackViolet officer! We will be wearing hoodies that say HackViolet Executive Board.</li>
+                        <li>Also find us at our info desk outside of the Commonwealth Ballroom.</li>
                         </ul>
 
                         <p><strong>Mentor Info</strong></p>
                         <ul>
                         <li>Mentors are a resource for hackers during the hackathon.</li>
-                        <li>Contacting mentors will primarily take place over the Discord server using a queuing system. Instructions can be found in the <strong>#how-to-join</strong> channel.</li>
-                        <li>Learn more about mentors by referencing the <strong>#mentor-intros</strong> channel.</li>
-                        
+                        <li>Mentors will be able to help you in the Commonwealth Ballroom or over the Discord server using a queuing system.</li>                   
+                        <li>Learn more about mentors by referencing the # 👋-mentor-intros channel. Additionally, there is a Mentor Speed dating event taking place on January 31st from 11AM-12PM in room 305.</li>
                         </ul>
                     </div>
                 </div>
@@ -214,7 +234,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            {/* <div id="submission" className="submission">
+            <div id="submission" className="submission">
                 <p className="submission_header">Project Submission</p>
                 <div className="questions">
                 {SubmissionData.map((question, index) => (
@@ -230,9 +250,9 @@ const Resources = () => {
                     </div>
                 ))}
                 </div>
-            </div> */}
+            </div>
 
-            {/* <div id="starter" className="starter">
+            <div id="starter" className="starter">
                 <p className="starter_header">Starter Packs & Resources</p>
                 <div className="questions">
                 {StarterData.map((question, index) => (
@@ -249,7 +269,7 @@ const Resources = () => {
                 ))}
             </div>
                 
-            </div> */}
+            </div>
 
             <div className="footer">
                 <Footer />
