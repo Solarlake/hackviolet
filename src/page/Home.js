@@ -107,6 +107,14 @@ const Home = () => {
                             >
                             Register
                         </a>
+                        <a
+                            href="https://hackviolet-2026.devpost.com/?_gl=1*rdmepk*_gcl_au*MTYwOTY3ODk5My4xNzY4NzkwMTY4*_ga*MTc1MTUxODQ5Mi4xNzU5MzM2MzAz*_ga_0YHJK3Y10M*czE3Njk4NzY5NzgkbzkkZzEkdDE3Njk4NzcyMzgkajUkbDAkaDA"
+                            target="_blank"  
+                            rel="noopener noreferrer" 
+                            className="devpost-button"
+                            >
+                            Devpost
+                        </a>
                         {/* <Link to="/sponsorpage" className="sponsor-button">
                             Sponsor
                         </Link> */}
@@ -242,14 +250,14 @@ const Home = () => {
             </div>
 
             
-            {/* <Marquee 
+            <Marquee 
                 text=" PRIZES /" 
                 speed={40}
             />
 
             <div id="prizes" className="prizes">
             <Prizes />
-            </div> */}
+            </div> 
             
 
 

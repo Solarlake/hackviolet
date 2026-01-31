@@ -220,6 +220,33 @@ html {
                 }
             }
 
+            .devpost-button {
+                display: flex;
+                padding: 10px 20px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border: #9a91ff solid 2px;
+                border-radius: 99px;
+                background: #9a91ff;
+                color: #edf4f6;
+                font-size: 1rem;
+                font-weight: 500;
+                pointer-events: auto;
+                z-index: 2;
+                cursor: pointer;
+
+                &:hover {
+                            color: #9a91ff;
+                            background: #f8f9fc00;
+                        }
+
+                @media screen and (max-width: 900px) {
+                    font-size: 0.9rem;
+                    padding: 10px 30px;
+                }
+            }
+
             .discord-button {
                 display: flex;
                 padding: 10px 20px;
