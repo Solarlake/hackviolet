@@ -191,7 +191,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="schedule-container">
+            <div className="schedule-container" id="schedule">
             <div className="schedule-marquee">
                 <Marquee 
                     text=" SCHEDULE /" 
