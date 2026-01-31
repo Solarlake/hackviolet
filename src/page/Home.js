@@ -256,6 +256,7 @@ const Home = () => {
             />
 
             <div id="prizes" className="prizes">
+                <p className="more-prizes">More prizes on Devpost!</p>
             <Prizes />
             </div> 
             

@@ -506,7 +506,19 @@ html {
     }
     
     
+    .more-prizes {
+        text-align: center;
+        font-family: "Funnel Sans";
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #3A475A;
+        margin-bottom: 1em;
 
+        @media (max-width: 900px) {
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+    }
 
     .about {
         color: #3A475A;
